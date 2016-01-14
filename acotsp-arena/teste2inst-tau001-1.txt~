@@ -1,0 +1,597 @@
+irace	version: 1.06.997
+********************************************************************************
+* irace: An implementation in R of Iterated Race                               *
+* Copyright (C) 2010-2014                                                      *
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@ulb.ac.be>                      *
+* Jeremie Dubois-Lacoste  <jeremie.dubois-lacoste@ulb.ac.be>                   *
+*                                                                              *
+* This is free software, and you are welcome to redistribute it under certain  *
+* conditions.  See the GNU General Public License for details. There is NO     *
+* warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  *
+*                                                                              *
+* irace builds upon previous code from the race package                        *
+* Copyright (C) 2003 Mauro Birattari                                           *
+********************************************************************************
+Warning: A default configuration file './tune-conf' has been found and will be read
+Média dos algoritmos para os problemas: 
+100.9985
+Efeito da instancia i: 
+1
+[1] -0.2890417
+
+Efeito da instancia i: 
+2
+[1] -0.320738
+
+# 2015-11-06 14:20:55 BRST: Initialization
+# nbIterations: 5
+# minNbSurvival: 5
+# nbParameters: 11
+# seed: 1569584590.53821
+# confidence level: 0.95
+# remainingBudget: 300
+# mu: 5
+
+
+# 2015-11-06 14:20:55 BRST: Iteration 1 of 5
+# experimentsUsedSoFar: 0
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 300
+# currentBudget: 60
+# nbCandidates: 10
+[1] "Funcao race iniciando..."
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|         10|          6|      100.7|         10|
+|x|          2|         10|          6|      100.7|         20|
+|x|          3|         10|          6|      100.7|         30|
+|x|          4|         10|          6|      100.7|         40|
+ 
+Estrutura não agregada
+         [,1]     [,2]     [,3]     [,4]     [,5]     [,6]     [,7]     [,8]     [,9]    [,10] [,11]
+[1,] 100.7122 100.7143 100.7031 100.7051 100.7131 100.6992 100.7236 100.7175 100.7331 100.7083     1
+[2,] 100.6827 100.6831 100.6696 100.6694 100.6770 100.6668 100.6923 100.6853 100.7008 100.6763     2
+[3,] 100.7147 100.7148 100.7047 100.7056 100.7088 100.6951 100.7230 100.7208 100.7298 100.7089     1
+[4,] 100.6835 100.6816 100.6713 100.6718 100.6794 100.6660 100.6944 100.6842 100.7014 100.6757     2
+[5,] 100.7100 100.7153 100.7073 100.7036 100.7073 100.6964 100.7241 100.7203 100.7315 100.7074     1
+
+Teste de Friedman com estrutura não agregada 
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+43.51636
+valor do p-value:
+1.73259e-06
+|-|hipótese H0 rejeitada, teste não agregado...
+Valor do teste t: 3.941906
+best 6
+Estrutura agregada
+        V1       V2       V3       V4       V5       V6       V7       V8       V9      V10 V11
+1 100.7123 100.7148 100.7050 100.7048 100.7097 100.6969 100.7236 100.7196 100.7315 100.7082   1
+2 100.6831 100.6824 100.6704 100.6706 100.6782 100.6664 100.6933 100.6848 100.7011 100.6760   2
+
+Teste de Friedman com estrutura agregada 
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+17.78182
+valor do p-value:
+0.03779089
+|-|hipótese H0 rejeitada, teste agregado...
+Valor do teste t: 2.132782
+bestagg 6
+          5|          1|          6|      100.7|         50|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           6	mean value:      100.7
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+6       acs           1  1.33 4.01 0.49   45   38 0.65   1      NA          NA
+
+
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate aggregated test:           6	mean value:         NA
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+6       acs           1  1.33 4.01 0.49   45   38 0.65   1      NA          NA
+
+
+
+# Elite candidates:
+  algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+6       acs           1  1.33 4.01 0.49   45   38 0.65   1      NA          NA
+
+# Elite candidates Aggregated Test:
+  algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+6       acs           1  1.33 4.01 0.49   45   38 0.65   1      NA          NA
+
+# 2015-11-06 14:20:55 BRST: Iteration 2 of 5
+# experimentsUsedSoFar: 50
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 250
+# currentBudget: 62
+# nbCandidates: 8
+[1] "Funcao race iniciando..."
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          8|          3|      100.7|          8|
+|x|          2|          8|          3|      100.7|         16|
+|x|          3|          8|          3|      100.7|         24|
+|x|          4|          8|          3|      100.7|         32|
+ 
+Estrutura não agregada
+         [,1]     [,2]     [,3]     [,4]     [,5]     [,6]     [,7]     [,8] [,9]
+[1,] 100.6679 100.6754 100.6570 100.6874 100.6688 100.6683 100.6932 100.6661    2
+[2,] 100.6951 100.7041 100.6900 100.7191 100.7019 100.7031 100.7274 100.6956    1
+[3,] 100.6663 100.6764 100.6592 100.6922 100.6676 100.6691 100.6954 100.6639    2
+[4,] 100.6988 100.7068 100.6945 100.7218 100.7000 100.7039 100.7286 100.6946    1
+[5,] 100.6623 100.6742 100.6594 100.6890 100.6694 100.6724 100.6913 100.6654    2
+
+Teste de Friedman com estrutura não agregada 
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+34.33333
+valor do p-value:
+1.491858e-05
+|-|hipótese H0 rejeitada, teste não agregado...
+Valor do teste t: 2.448315
+best 3
+Estrutura agregada
+        V1       V2       V3       V4       V5       V6       V7       V8 V9
+1 100.6973 100.7193 100.7143 100.7229 100.7195 100.6981 100.7165 100.7146  1
+2 100.6653 100.6893 100.6766 100.6901 100.6901 100.6699 100.6850 100.6848  2
+
+Teste de Friedman com estrutura agregada 
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+13.83333
+valor do p-value:
+0.05422634
+hipótese H0 não rejeitada, teste agregado
+|=|bestagg 1
+          5|          1|          3|      100.7|         40|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           3	mean value:      100.7
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+12      mmas           1  2.49 0.85 0.75   34   44 NA   1      NA          NA
+
+
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate aggregated test:           1	mean value:         NA
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+6       acs           1  1.33 4.01 0.49   45   38 0.65   1      NA          NA
+
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+12      mmas           1  2.49 0.85 0.75   34   44 NA   1      NA          NA
+
+# Elite candidates Aggregated Test:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+6        acs           1  1.33 4.01 0.49   45   38 0.65    1      NA          NA
+15       eas           1  0.39 6.02 0.31   60   10   NA    1      NA         228
+12       acs           3  1.54 7.05 0.75   33    9 0.23    1      NA          NA
+17       ras           0  2.01 0.74 0.47   67   NA   NA <NA>      38          NA
+16       ras           3  1.82 8.30 0.76   74   42   NA    1      96          NA
+
+# 2015-11-06 14:20:55 BRST: Iteration 3 of 5
+# experimentsUsedSoFar: 90
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 210
+# currentBudget: 70
+# nbCandidates: 8
+[1] "Funcao race iniciando..."
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          8|          1|      100.7|          8|
+|x|          2|          8|          1|      100.7|         16|
+|x|          3|          8|          1|      100.7|         24|
+|x|          4|          8|          1|      100.7|         32|
+ 
+Estrutura não agregada
+         [,1]     [,2]     [,3]     [,4]     [,5]     [,6]     [,7]     [,8] [,9]
+[1,] 100.6859 100.6950 100.7126 100.7150 100.7112 100.7250 100.7171 100.7116    1
+[2,] 100.6574 100.6628 100.6815 100.6876 100.6769 100.6962 100.6861 100.6784    2
+[3,] 100.6916 100.6959 100.7120 100.7195 100.7087 100.7265 100.7202 100.7099    1
+[4,] 100.6589 100.6634 100.6811 100.6851 100.6768 100.6963 100.6837 100.6795    2
+[5,] 100.6944 100.6955 100.7102 100.7161 100.7100 100.7257 100.7208 100.7092    1
+
+Teste de Friedman com estrutura não agregada 
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+34.33333
+valor do p-value:
+1.491858e-05
+|-|hipótese H0 rejeitada, teste não agregado...
+Valor do teste t: 2.448315
+best 1
+Estrutura agregada
+        V1       V2       V3       V4       V5       V6       V7       V8 V9
+1 100.6970 100.6980 100.7106 100.7174 100.7169 100.6977 100.7066 100.7032  1
+2 100.6663 100.6676 100.6787 100.6835 100.6850 100.6669 100.6716 100.6722  2
+
+Teste de Friedman com estrutura agregada 
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+13.66667
+valor do p-value:
+0.05743773
+hipótese H0 não rejeitada, teste agregado
+|=|bestagg 1
+          5|          1|          1|      100.7|         40|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           1	mean value:      100.7
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+12      mmas           1  2.49 0.85 0.75   34   44 NA   1      NA          NA
+
+
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate aggregated test:           1	mean value:         NA
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+12      mmas           1  2.49 0.85 0.75   34   44 NA   1      NA          NA
+
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+12      mmas           1  2.49 0.85 0.75   34   44 NA   1      NA          NA
+
+# Elite candidates Aggregated Test:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+6        acs           1  1.33 4.01 0.49   45   38 0.65   1      NA          NA
+18       acs           1  0.35 7.78 0.60   14   17 0.90   0      NA          NA
+15       eas           1  0.39 6.02 0.31   60   10   NA   1      NA         228
+19       acs           3  0.53 3.42 0.70   18   18 0.32   1      NA          NA
+20      mmas           3  0.69 4.39 0.50   25   28   NA   1      NA          NA
+
+# 2015-11-06 14:20:55 BRST: Iteration 4 of 5
+# experimentsUsedSoFar: 130
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 170
+# currentBudget: 85
+# nbCandidates: 9
+[1] "Funcao race iniciando..."
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          9|          1|      100.7|          9|
+|x|          2|          9|          1|      100.7|         18|
+|x|          3|          9|          1|      100.7|         27|
+|x|          4|          9|          1|      100.7|         36|
+ 
+Estrutura não agregada
+         [,1]     [,2]     [,3]     [,4]     [,5]     [,6]     [,7]     [,8]     [,9] [,10]
+[1,] 100.6606 100.6882 100.6641 100.6820 100.6743 100.6877 100.6811 100.6915 100.6700     2
+[2,] 100.6910 100.7238 100.6957 100.7089 100.7069 100.7179 100.7134 100.7227 100.7013     1
+[3,] 100.6597 100.6907 100.6611 100.6785 100.6748 100.6856 100.6806 100.6906 100.6700     2
+[4,] 100.6894 100.7235 100.6945 100.7091 100.7081 100.7191 100.7074 100.7187 100.7028     1
+[5,] 100.6648 100.6903 100.6634 100.6790 100.6719 100.6897 100.6800 100.6891 100.6707     2
+
+Teste de Friedman com estrutura não agregada 
+Nro. de Candidatos: 
+9
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+38.45333
+valor do p-value:
+6.206741e-06
+|-|hipótese H0 rejeitada, teste não agregado...
+Valor do teste t: 3.878206
+best 1
+Estrutura agregada
+        V1       V2       V3       V4       V5       V6       V7       V8       V9 V10
+1 100.6968 100.6984 100.6981 100.7032 100.7044 100.7186 100.7070 100.6865 100.7037   1
+2 100.6665 100.6668 100.6695 100.6729 100.6738 100.6863 100.6771 100.6542 100.6704   2
+
+Teste de Friedman com estrutura agregada 
+Nro. de Candidatos: 
+9
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+15.73333
+valor do p-value:
+0.04635991
+|-|hipótese H0 rejeitada, teste agregado...
+Valor do teste t: 2.306004
+bestagg 8
+          5|          2|          1|      100.7|         45|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           1	mean value:      100.7
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+12      mmas           1  2.49 0.85 0.75   34   44 NA   1      NA          NA
+
+
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate aggregated test:           8	mean value:         NA
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+31      mmas           1  3.63 3.56 0.48   51   40 NA   1      NA          NA
+
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+12      mmas           1  2.49 0.85 0.75   34   44 NA   1      NA          NA
+26      mmas           1  2.28 1.71 0.99   46   31 NA   1      NA          NA
+
+# Elite candidates Aggregated Test:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+23       acs           1  2.08 8.02 0.57   31   17 0.77   0      NA          NA
+6        acs           1  1.33 4.01 0.49   45   38 0.65   1      NA          NA
+
+# 2015-11-06 14:20:56 BRST: Iteration 5 of 5
+# experimentsUsedSoFar: 175
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 125
+# currentBudget: 125
+# nbCandidates: 12
+[1] "Funcao race iniciando..."
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|         12|          3|      100.7|         12|
+|x|          2|         12|          3|      100.7|         24|
+|x|          3|         12|          3|      100.7|         36|
+|x|          4|         12|          3|      100.7|         48|
+ 
+Estrutura não agregada
+         [,1]     [,2]     [,3]     [,4]     [,5]     [,6]     [,7]     [,8]     [,9]    [,10]    [,11]    [,12] [,13]
+[1,] 100.6966 100.6950 100.6923 100.7357 100.7229 100.7227 100.6946 100.7014 100.7173 100.7057 100.6981 100.6932     1
+[2,] 100.6611 100.6650 100.6559 100.7055 100.6908 100.6847 100.6586 100.6709 100.6844 100.6740 100.6640 100.6637     2
+[3,] 100.6918 100.6966 100.6874 100.7361 100.7223 100.7186 100.6898 100.6999 100.7201 100.7062 100.6950 100.6923     1
+[4,] 100.6582 100.6629 100.6561 100.7021 100.6925 100.6877 100.6624 100.6666 100.6844 100.6728 100.6612 100.6617     2
+[5,] 100.6910 100.6951 100.6901 100.7354 100.7253 100.7183 100.6907 100.6991 100.7164 100.7032 100.6971 100.6913     1
+
+Teste de Friedman com estrutura não agregada 
+Nro. de Candidatos: 
+12
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+53.03077
+valor do p-value:
+1.77227e-07
+|-|hipótese H0 rejeitada, teste não agregado...
+Valor do teste t: 4.861249
+best 3
+Estrutura agregada
+        V1       V2       V3       V4       V5       V6       V7       V8       V9      V10      V11      V12 V13
+1 100.6857 100.6971 100.7173 100.7052 100.7065 100.6976 100.7192 100.7047 100.7197 100.7146 100.7016 100.7117   1
+2 100.6553 100.6656 100.6866 100.6705 100.6756 100.6660 100.6874 100.6756 100.6884 100.6813 100.6672 100.6820   2
+
+Teste de Friedman com estrutura agregada 
+Nro. de Candidatos: 
+12
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+21.84615
+valor do p-value:
+0.02559257
+|-|hipótese H0 rejeitada, teste agregado...
+Valor do teste t: 1.877006
+bestagg 1
+          5|          1|          3|      100.7|         60|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           3	mean value:      100.7
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+33      mmas           1  2.38 1.71 0.57   31   28 NA   1      NA          NA
+
+
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate aggregated test:           1	mean value:         NA
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+12      mmas           1  2.49 0.85 0.75   34   44 NA   1      NA          NA
+
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+33      mmas           1  2.38 1.71 0.57   31   28 NA   1      NA          NA
+
+# Elite candidates Aggregated Test:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+23       acs           1  2.08 8.02 0.57   31   17 0.77   0      NA          NA
+
+# 2015-11-06 14:20:56 BRST: Iteration 6 of 6
+# experimentsUsedSoFar: 235
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 65
+# currentBudget: 65
+# nbCandidates: 6
+[1] "Funcao race iniciando..."
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          6|          1|      100.7|          6|
+|x|          2|          6|          1|      100.7|         12|
+|x|          3|          6|          1|      100.7|         18|
+|x|          4|          6|          1|      100.7|         24|
+ 
+Estrutura não agregada
+         [,1]     [,2]     [,3]     [,4]     [,5]     [,6] [,7]
+[1,] 100.6871 100.6988 100.7077 100.7094 100.7013 100.7108    1
+[2,] 100.6540 100.6678 100.6760 100.6724 100.6698 100.6848    2
+[3,] 100.6875 100.7010 100.7080 100.7065 100.6990 100.7172    1
+[4,] 100.6589 100.6680 100.6778 100.6781 100.6685 100.6859    2
+[5,] 100.6874 100.6971 100.7081 100.7063 100.7027 100.7175    1
+
+Teste de Friedman com estrutura não agregada 
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+23.85714
+valor do p-value:
+0.0002312745
+|-|hipótese H0 rejeitada, teste não agregado...
+Valor do teste t: 2.949998
+best 1
+Estrutura agregada
+        V1       V2       V3       V4       V5       V6 V7
+1 100.6853 100.7112 100.6979 100.7337 100.6977 100.7119  1
+2 100.6536 100.6770 100.6668 100.7047 100.6692 100.6809  2
+
+Teste de Friedman com estrutura agregada 
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+9.714286
+valor do p-value:
+0.08374764
+hipótese H0 não rejeitada, teste agregado
+|=|bestagg 1
+          5|          1|          1|      100.7|         30|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           1	mean value:      100.7
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+33      mmas           1  2.38 1.71 0.57   31   28 NA   1      NA          NA
+
+
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate aggregated test:           1	mean value:         NA
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+33      mmas           1  2.38 1.71 0.57   31   28 NA   1      NA          NA
+
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+33      mmas           1  2.38 1.71 0.57   31   28 NA   1      NA          NA
+
+# Elite candidates Aggregated Test:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+23       acs           1  2.08 8.02 0.57   31   17 0.77   0      NA          NA
+36       acs           1  3.60 6.38 0.40   58   14 0.75   0      NA          NA
+38       acs           1  1.60 7.80 0.58   37   31 0.55   0      NA          NA
+35       acs           1  1.73 7.59 0.65   23   19 0.41   0      NA          NA
+39       acs           1  2.53 4.80 0.70   33    7 0.87   0      NA          NA
+# 2015-11-06 14:20:56 BRST: Stopped because there is no enough budget left to race more than the minimum (5)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 7
+# nbIterations: 7
+# experimentsUsedSoFar: 265
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 35
+# currentBudget: 35
+# number of elites: 1
+# nbCandidates: 3
+# nbCandidatesagg: 3
+# mu: 5
+# Best candidates - Non Aggregated Tests
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+33      mmas           1  2.38 1.71 0.57   31   28 NA   1      NA          NA
+# Best candidates (as commandlines)
+1  --mmas --localsearch 1 --alpha 2.38 --beta 1.71 --rho  0.57 --ants 31 --nnls 28 --dlb 1

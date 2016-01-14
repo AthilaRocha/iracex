@@ -1,0 +1,702 @@
+irace	version: 1.06.997
+********************************************************************************
+* irace: An implementation in R of Iterated Race                               *
+* Copyright (C) 2010-2014                                                      *
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@ulb.ac.be>                      *
+* Jeremie Dubois-Lacoste  <jeremie.dubois-lacoste@ulb.ac.be>                   *
+*                                                                              *
+* This is free software, and you are welcome to redistribute it under certain  *
+* conditions.  See the GNU General Public License for details. There is NO     *
+* warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  *
+*                                                                              *
+* irace builds upon previous code from the race package                        *
+* Copyright (C) 2003 Mauro Birattari                                           *
+********************************************************************************
+Warning: A default configuration file './tune-conf' has been found and will be read
+# 2015-09-11 17:15:27 BRT: Initialization
+# nbIterations: 5
+# minNbSurvival: 5
+# nbParameters: 11
+# seed: 516877470.01862
+# confidence level: 0.95
+# remainingBudget: 300
+# mu: 5
+
+# 2015-09-11 17:15:27 BRT: Iteration 1 of 5
+# experimentsUsedSoFar: 0
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 300
+# currentBudget: 60
+# nbCandidates: 10
+[1] "passou pela funcao race"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|         10|          5|  2.353e+07|         10|
+|x|          2|         10|          2|   2.34e+07|         20|
+|x|          3|         10|          2|  2.344e+07|         30|
+|x|          4|         10|          2|  2.338e+07|         40|
+[1] "Teste de Friedman...\n"
+
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+5
+Valor de TIES 
+$`1`
+
+ 1  2  3  4  5  6  7  8  9 10 
+ 1  1  1  1  1  1  1  1  1  1 
+
+$`2`
+
+ 1  2  3  4  5  6  7  8  9 10 
+ 1  1  1  1  1  1  1  1  1  1 
+
+$`3`
+
+ 1  2  3  4  5  6  7  8  9 10 
+ 1  1  1  1  1  1  1  1  1  1 
+
+$`4`
+
+ 1  2  3  4  5  6  7  8  9 10 
+ 1  1  1  1  1  1  1  1  1  1 
+
+$`5`
+
+ 1  2  3  4  5  6  7  8  9 10 
+ 1  1  1  1  1  1  1  1  1  1 
+
+[1] "valor de lapply(TIES, function (u) {u^3-u})\n"
+$`1`
+
+ 1  2  3  4  5  6  7  8  9 10 
+ 0  0  0  0  0  0  0  0  0  0 
+
+$`2`
+
+ 1  2  3  4  5  6  7  8  9 10 
+ 0  0  0  0  0  0  0  0  0  0 
+
+$`3`
+
+ 1  2  3  4  5  6  7  8  9 10 
+ 0  0  0  0  0  0  0  0  0  0 
+
+$`4`
+
+ 1  2  3  4  5  6  7  8  9 10 
+ 0  0  0  0  0  0  0  0  0  0 
+
+$`5`
+
+ 1  2  3  4  5  6  7  8  9 10 
+ 0  0  0  0  0  0  0  0  0  0 
+
+[1] "valor de unlist(lapply(TIES, function (u) {u^3 - u}))\n"
+
+ 1.1  1.2  1.3  1.4  1.5  1.6  1.7  1.8  1.9 1.10  2.1  2.2  2.3  2.4  2.5  2.6  2.7  2.8  2.9 2.10  3.1  3.2  3.3  3.4  3.5  3.6  3.7  3.8  3.9 3.10  4.1  4.2  4.3  4.4  4.5  4.6  4.7  4.8  4.9 4.10  5.1  5.2  5.3  5.4  5.5  5.6  5.7  5.8  5.9 5.10 
+   0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0 
+
+[1] "somatorio (sum(unlist(lapply(TIES, function (u) {u^3 - u})))\n"
+[1] 0
+
+Valor da estatistica: 
+42.99273
+
+valor do p-value:
+2.162243e-06
+
+vetor r: 
+8 7 7 7 8 2 1 1 1 2 7 8 8 8 7 5 5 5 5 5 1 3 3 2 4 4 4 4 3 1 6 6 6 6 6 3 2 2 4 3 9 9 9 9 9 10 10 10 10 10
+
+valor de A: 
+1925
+
+vetor R: 
+37 7 38 25 13 16 30 14 45 50
+
+Vetor J: 
+2 5 8 6 4 7 1 3 9 10
+
+|-|hipótese Ho rejeitada...
+
+Valor do teste t:
+4.585068
+
+vetor o:
+2 5 8 6 4 7 1 3 9 10          5|          1|          2|  2.342e+07|         50|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           2	mean value:  2.342e+07
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+2      mmas           3   1.6 4.99 0.67   11   48 NA   0      NA          NA
+
+
+# Elite candidates:
+  algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+2      mmas           3   1.6 4.99 0.67   11   48 NA   0      NA          NA
+# 2015-09-11 17:32:23 BRT: Iteration 2 of 5
+# experimentsUsedSoFar: 50
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 250
+# currentBudget: 62
+# nbCandidates: 8
+[1] "passou pela funcao race"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          8|          1|   2.33e+07|          8|
+|x|          2|          8|          1|  2.335e+07|         16|
+|x|          3|          8|          1|  2.332e+07|         24|
+|x|          4|          8|          1|  2.336e+07|         32|
+[1] "Teste de Friedman...\n"
+Nro. de Candidatos: 
+8Nro. de Instancias: 
+5Valor de TIES 
+$`1`
+
+1 2 3 4 5 6 7 8 
+1 1 1 1 1 1 1 1 
+
+$`2`
+
+1 2 3 4 5 6 7 8 
+1 1 1 1 1 1 1 1 
+
+$`3`
+
+1 2 3 4 5 6 7 8 
+1 1 1 1 1 1 1 1 
+
+$`4`
+
+1 2 3 4 5 6 7 8 
+1 1 1 1 1 1 1 1 
+
+$`5`
+
+1 2 3 4 5 6 7 8 
+1 1 1 1 1 1 1 1 
+
+[1] "valor de lapply(TIES, function (u) {u^3-u})\n"
+$`1`
+
+1 2 3 4 5 6 7 8 
+0 0 0 0 0 0 0 0 
+
+$`2`
+
+1 2 3 4 5 6 7 8 
+0 0 0 0 0 0 0 0 
+
+$`3`
+
+1 2 3 4 5 6 7 8 
+0 0 0 0 0 0 0 0 
+
+$`4`
+
+1 2 3 4 5 6 7 8 
+0 0 0 0 0 0 0 0 
+
+$`5`
+
+1 2 3 4 5 6 7 8 
+0 0 0 0 0 0 0 0 
+
+[1] "valor de unlist(lapply(TIES, function (u) {u^3 - u}))\n"
+1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 2.1 2.2 2.3 2.4 2.5 2.6 2.7 2.8 3.1 3.2 3.3 3.4 3.5 3.6 3.7 3.8 4.1 4.2 4.3 4.4 4.5 4.6 4.7 4.8 5.1 5.2 5.3 5.4 5.5 5.6 5.7 5.8 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+[1] "somatorio (sum(unlist(lapply(TIES, function (u) {u^3 - u})))\n"
+[1] 0
+Valor da estatistica: 
+35valor do p-value:
+1.118443e-05vetor r: 
+1 1 1 1 1 3 3 3 3 3 5 5 5 5 5 4 4 4 4 4 7 7 7 7 7 8 8 8 8 8 6 6 6 6 6 2 2 2 2 2valor de A: 
+1020vetor R: 
+5 15 25 20 35 40 30 10Vetor J: 
+1 8 2 4 3 7 5 6|-|hipótese Ho rejeitada...
+Valor do teste t:
+0vetor o:
+1 8 2 4 3 7 5 6          5|          1|          1|  2.334e+07|         40|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           1	mean value:  2.334e+07
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+2      mmas           3   1.6 4.99 0.67   11   48 NA   0      NA          NA
+
+
+# Elite candidates:
+  algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+2      mmas           3   1.6 4.99 0.67   11   48 NA   0      NA          NA
+# 2015-09-11 17:45:57 BRT: Iteration 3 of 5
+# experimentsUsedSoFar: 90
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 210
+# currentBudget: 70
+# nbCandidates: 8
+[1] "passou pela funcao race"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          8|          4|  2.341e+07|          8|
+|x|          2|          8|          4|  2.331e+07|         16|
+|x|          3|          8|          4|  2.335e+07|         24|
+|x|          4|          8|          8|  2.332e+07|         32|
+[1] "Teste de Friedman...\n"
+Nro. de Candidatos: 
+8Nro. de Instancias: 
+5Valor de TIES 
+$`1`
+
+1 2 3 4 5 6 7 8 
+1 1 1 1 1 1 1 1 
+
+$`2`
+
+1 2 3 4 5 6 7 8 
+1 1 1 1 1 1 1 1 
+
+$`3`
+
+1 2 3 4 5 6 7 8 
+1 1 1 1 1 1 1 1 
+
+$`4`
+
+1 2 3 4 5 6 7 8 
+1 1 1 1 1 1 1 1 
+
+$`5`
+
+1 2 3 4 5 6 7 8 
+1 1 1 1 1 1 1 1 
+
+[1] "valor de lapply(TIES, function (u) {u^3-u})\n"
+$`1`
+
+1 2 3 4 5 6 7 8 
+0 0 0 0 0 0 0 0 
+
+$`2`
+
+1 2 3 4 5 6 7 8 
+0 0 0 0 0 0 0 0 
+
+$`3`
+
+1 2 3 4 5 6 7 8 
+0 0 0 0 0 0 0 0 
+
+$`4`
+
+1 2 3 4 5 6 7 8 
+0 0 0 0 0 0 0 0 
+
+$`5`
+
+1 2 3 4 5 6 7 8 
+0 0 0 0 0 0 0 0 
+
+[1] "valor de unlist(lapply(TIES, function (u) {u^3 - u}))\n"
+1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 2.1 2.2 2.3 2.4 2.5 2.6 2.7 2.8 3.1 3.2 3.3 3.4 3.5 3.6 3.7 3.8 4.1 4.2 4.3 4.4 4.5 4.6 4.7 4.8 5.1 5.2 5.3 5.4 5.5 5.6 5.7 5.8 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+[1] "somatorio (sum(unlist(lapply(TIES, function (u) {u^3 - u})))\n"
+[1] 0
+Valor da estatistica: 
+33.06667valor do p-value:
+2.572995e-05vetor r: 
+3 4 5 2 3 7 7 7 7 7 5 5 4 5 5 1 2 1 3 1 8 8 8 8 8 6 6 6 6 6 4 3 3 4 4 2 1 2 1 2valor de A: 
+1020vetor R: 
+17 35 24 8 40 30 18 8Vetor J: 
+4 8 1 7 3 6 2 5|-|hipótese Ho rejeitada...
+Valor do teste t:
+4.16933vetor o:
+4 8 1 7 3 6 2 5          5|          2|          4|  2.335e+07|         40|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           4	mean value:  2.335e+07
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+20       acs           3  2.52 0.26 0.74    5   18 0.97   1      NA          NA
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+20       acs           3  2.52 0.26 0.74    5   18 0.97   1      NA          NA
+24      mmas           3  1.14 3.19 0.79   12   49   NA   0      NA          NA
+# 2015-09-11 18:00:04 BRT: Iteration 4 of 5
+# experimentsUsedSoFar: 130
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 170
+# currentBudget: 85
+# nbCandidates: 9
+[1] "passou pela funcao race"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          9|          6|  2.346e+07|          9|
+|x|          2|          9|          6|  2.334e+07|         18|
+|x|          3|          9|          3|  2.337e+07|         27|
+|x|          4|          9|          6|  2.333e+07|         36|
+[1] "Teste de Friedman...\n"
+Nro. de Candidatos: 
+9Nro. de Instancias: 
+5Valor de TIES 
+$`1`
+
+1 2 3 4 5 6 7 8 9 
+1 1 1 1 1 1 1 1 1 
+
+$`2`
+
+1 2 3 4 5 6 7 8 9 
+1 1 1 1 1 1 1 1 1 
+
+$`3`
+
+1 2 3 4 5 6 7 8 9 
+1 1 1 1 1 1 1 1 1 
+
+$`4`
+
+1 2 3 4 5 6 7 8 9 
+1 1 1 1 1 1 1 1 1 
+
+$`5`
+
+1 2 3 4 5 6 7 8 9 
+1 1 1 1 1 1 1 1 1 
+
+[1] "valor de lapply(TIES, function (u) {u^3-u})\n"
+$`1`
+
+1 2 3 4 5 6 7 8 9 
+0 0 0 0 0 0 0 0 0 
+
+$`2`
+
+1 2 3 4 5 6 7 8 9 
+0 0 0 0 0 0 0 0 0 
+
+$`3`
+
+1 2 3 4 5 6 7 8 9 
+0 0 0 0 0 0 0 0 0 
+
+$`4`
+
+1 2 3 4 5 6 7 8 9 
+0 0 0 0 0 0 0 0 0 
+
+$`5`
+
+1 2 3 4 5 6 7 8 9 
+0 0 0 0 0 0 0 0 0 
+
+[1] "valor de unlist(lapply(TIES, function (u) {u^3 - u}))\n"
+1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2.1 2.2 2.3 2.4 2.5 2.6 2.7 2.8 2.9 3.1 3.2 3.3 3.4 3.5 3.6 3.7 3.8 3.9 4.1 4.2 4.3 4.4 4.5 4.6 4.7 4.8 4.9 5.1 5.2 5.3 5.4 5.5 5.6 5.7 5.8 5.9 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+[1] "somatorio (sum(unlist(lapply(TIES, function (u) {u^3 - u})))\n"
+[1] 0
+Valor da estatistica: 
+29.17333valor do p-value:
+0.0002956353vetor r: 
+4 1 3 4 1 5 6 6 2 3 3 3 1 5 6 2 4 7 1 2 6 5 2 6 5 1 2 4 3 4 8 8 8 8 8 7 7 5 7 7 9 9 9 9 9valor de A: 
+1425vetor R: 
+13 22 18 16 24 14 40 33 45Vetor J: 
+1 6 4 3 2 5 8 7 9|-|hipótese Ho rejeitada...
+Valor do teste t:
+10.26077vetor o:
+1 6 4 3 2 5 8 7 9          5|          5|          1|  2.334e+07|         45|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           1	mean value:  2.334e+07
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+20       acs           3  2.52 0.26 0.74    5   18 0.97   1      NA          NA
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+20       acs           3  2.52 0.26 0.74    5   18 0.97   1      NA          NA
+28       acs           3  3.29 3.70 0.83   16   10 0.58   1      NA          NA
+26       acs           3  0.58 4.05 0.79   33    9 0.75   1      NA          NA
+25       acs           3  1.41 0.86 0.80   15   47 0.99   1      NA          NA
+24      mmas           3  1.14 3.19 0.79   12   49   NA   0      NA          NA
+# 2015-09-11 18:15:44 BRT: Iteration 5 of 5
+# experimentsUsedSoFar: 175
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 125
+# currentBudget: 125
+# nbCandidates: 12
+[1] "passou pela funcao race"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|         12|          5|  2.314e+07|         12|
+|x|          2|         12|         10|  2.325e+07|         24|
+|x|          3|         12|         10|   2.32e+07|         36|
+|x|          4|         12|         10|  2.326e+07|         48|
+[1] "Teste de Friedman...\n"
+Nro. de Candidatos: 
+12Nro. de Instancias: 
+5Valor de TIES 
+$`1`
+
+ 1  2  3  4  5  6  7  8  9 10 11 12 
+ 1  1  1  1  1  1  1  1  1  1  1  1 
+
+$`2`
+
+ 1  2  3  4  5  6  7  8  9 10 11 12 
+ 1  1  1  1  1  1  1  1  1  1  1  1 
+
+$`3`
+
+ 1  2  3  4  5  6  7  8  9 10 11 12 
+ 1  1  1  1  1  1  1  1  1  1  1  1 
+
+$`4`
+
+ 1  2  3  4  5  6  7  8  9 10 11 12 
+ 1  1  1  1  1  1  1  1  1  1  1  1 
+
+$`5`
+
+ 1  2  3  4  5  6  7  8  9 10 11 12 
+ 1  1  1  1  1  1  1  1  1  1  1  1 
+
+[1] "valor de lapply(TIES, function (u) {u^3-u})\n"
+$`1`
+
+ 1  2  3  4  5  6  7  8  9 10 11 12 
+ 0  0  0  0  0  0  0  0  0  0  0  0 
+
+$`2`
+
+ 1  2  3  4  5  6  7  8  9 10 11 12 
+ 0  0  0  0  0  0  0  0  0  0  0  0 
+
+$`3`
+
+ 1  2  3  4  5  6  7  8  9 10 11 12 
+ 0  0  0  0  0  0  0  0  0  0  0  0 
+
+$`4`
+
+ 1  2  3  4  5  6  7  8  9 10 11 12 
+ 0  0  0  0  0  0  0  0  0  0  0  0 
+
+$`5`
+
+ 1  2  3  4  5  6  7  8  9 10 11 12 
+ 0  0  0  0  0  0  0  0  0  0  0  0 
+
+[1] "valor de unlist(lapply(TIES, function (u) {u^3 - u}))\n"
+ 1.1  1.2  1.3  1.4  1.5  1.6  1.7  1.8  1.9 1.10 1.11 1.12  2.1  2.2  2.3  2.4  2.5  2.6  2.7  2.8  2.9 2.10 2.11 2.12  3.1  3.2  3.3  3.4  3.5  3.6  3.7  3.8  3.9 3.10 3.11 3.12  4.1  4.2  4.3  4.4  4.5  4.6  4.7  4.8  4.9 4.10 4.11 4.12  5.1  5.2  5.3  5.4  5.5  5.6  5.7  5.8  5.9 5.10 5.11 5.12 
+   0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0 
+[1] "somatorio (sum(unlist(lapply(TIES, function (u) {u^3 - u})))\n"
+[1] 0
+Valor da estatistica: 
+37.09231valor do p-value:
+0.000111199vetor r: 
+4 10 5 6 5 7 2 4 9 2 10 9 9 7 8 6 4 7 4 10 1 8 6 10 9 3 7 2 5 1 11 12 12 11 12 12 6 11 8 7 5 3 3 3 3 2 1 1 1 4 8 5 8 2 6 9 11 10 12 11valor de A: 
+3250vetor R: 
+30 24 43 31 34 18 58 44 17 9 29 53Vetor J: 
+10 9 6 2 11 1 4 5 3 8 12 7|-|hipótese Ho rejeitada...
+Valor do teste t:
+14.65951vetor o:
+10 9 6 2 11 1 4 5 3 8 12 7          5|          3|         10|  2.323e+07|         60|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:          10	mean value:  2.323e+07
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+36       acs           3  2.45  5.6 0.86   62   14 0.45   1      NA          NA
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+36       acs           3  2.45 5.60 0.86   62   14 0.45   1      NA          NA
+35       acs           3  2.53 3.26 0.36   15    8 0.74   1      NA          NA
+32       acs           3  2.14 7.42 0.75   43    7 0.88   1      NA          NA
+# 2015-09-11 18:36:02 BRT: Iteration 6 of 6
+# experimentsUsedSoFar: 235
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 65
+# currentBudget: 65
+# nbCandidates: 6
+[1] "passou pela funcao race"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          6|          1|  2.315e+07|          6|
+|x|          2|          6|          1|  2.326e+07|         12|
+|x|          3|          6|          1|  2.323e+07|         18|
+|x|          4|          6|          1|  2.327e+07|         24|
+[1] "Teste de Friedman...\n"
+Nro. de Candidatos: 
+6Nro. de Instancias: 
+5Valor de TIES 
+$`1`
+
+1 2 3 4 5 6 
+1 1 1 1 1 1 
+
+$`2`
+
+1 2 3 4 5 6 
+1 1 1 1 1 1 
+
+$`3`
+
+1 2 3 4 5 6 
+1 1 1 1 1 1 
+
+$`4`
+
+1 2 3 4 5 6 
+1 1 1 1 1 1 
+
+$`5`
+
+1 2 3 4 5 6 
+1 1 1 1 1 1 
+
+[1] "valor de lapply(TIES, function (u) {u^3-u})\n"
+$`1`
+
+1 2 3 4 5 6 
+0 0 0 0 0 0 
+
+$`2`
+
+1 2 3 4 5 6 
+0 0 0 0 0 0 
+
+$`3`
+
+1 2 3 4 5 6 
+0 0 0 0 0 0 
+
+$`4`
+
+1 2 3 4 5 6 
+0 0 0 0 0 0 
+
+$`5`
+
+1 2 3 4 5 6 
+0 0 0 0 0 0 
+
+[1] "valor de unlist(lapply(TIES, function (u) {u^3 - u}))\n"
+1.1 1.2 1.3 1.4 1.5 1.6 2.1 2.2 2.3 2.4 2.5 2.6 3.1 3.2 3.3 3.4 3.5 3.6 4.1 4.2 4.3 4.4 4.5 4.6 5.1 5.2 5.3 5.4 5.5 5.6 
+  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 
+[1] "somatorio (sum(unlist(lapply(TIES, function (u) {u^3 - u})))\n"
+[1] 0
+Valor da estatistica: 
+12.54286valor do p-value:
+0.02806084vetor r: 
+1 1 3 1 2 6 2 5 5 6 3 6 2 3 4 5 5 4 6 5 2 3 6 4 3 4 4 1 2 1valor de A: 
+455vetor R: 
+8 24 18 25 18 12Vetor J: 
+1 6 3 5 2 4|-|hipótese Ho rejeitada...
+Valor do teste t:
+9.739461vetor o:
+1 6 3 5 2 4          5|          2|          1|  2.324e+07|         30|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           1	mean value:  2.324e+07
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+36       acs           3  2.45  5.6 0.86   62   14 0.45   1      NA          NA
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+36       acs           3  2.45 5.60 0.86   62   14 0.45   1      NA          NA
+41       acs           3  1.55 5.29 0.85   19   10 0.79   1      NA          NA
+# 2015-09-11 18:46:12 BRT: Stopped because there is no enough budget left to race more than the minimum (5)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 7
+# nbIterations: 7
+# experimentsUsedSoFar: 265
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 35
+# currentBudget: 35
+# number of elites: 2
+# nbCandidates: 3
+# mu: 5
+# Best candidates
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+36       acs           3  2.45 5.60 0.86   62   14 0.45   1      NA          NA
+41       acs           3  1.55 5.29 0.85   19   10 0.79   1      NA          NA
+# Best candidates (as commandlines)
+1  --acs --localsearch 3 --alpha 2.45 --beta 5.6 --rho  0.86 --ants 62 --nnls 14 --q0 0.45 --dlb 1
+2  --acs --localsearch 3 --alpha 1.55 --beta 5.29 --rho  0.85 --ants 19 --nnls 10 --q0 0.79 --dlb 1

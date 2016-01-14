@@ -1,0 +1,3738 @@
+irace	version: 1.06.997
+********************************************************************************
+* irace: An implementation in R of Iterated Race                               *
+* Copyright (C) 2010-2014                                                      *
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@ulb.ac.be>                      *
+* Jeremie Dubois-Lacoste  <jeremie.dubois-lacoste@ulb.ac.be>                   *
+*                                                                              *
+* This is free software, and you are welcome to redistribute it under certain  *
+* conditions.  See the GNU General Public License for details. There is NO     *
+* warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  *
+*                                                                              *
+* irace builds upon previous code from the race package                        *
+* Copyright (C) 2003 Mauro Birattari                                           *
+********************************************************************************
+Warning: A default configuration file './tune-conf' has been found and will be read
+[1] "antes da chamada de irace.main"
+[1] "cheguei no fim de defaultConfiguration \n "
+[1] "cheguei aqui no irace \n"
+[1] "cheguei no fim de defaultConfiguration \n "
+[1] "cheguei no fim de defaultConfiguration \n "
+# 2015-10-26 20:49:16 BRST: Initialization
+# nbIterations: 5
+# minNbSurvival: 5
+# nbParameters: 11
+# seed: 451007644.079966
+# confidence level: 0.95
+# remainingBudget: 300
+# mu: 5
+
+[1] "nbCandidates \n"
+[1] 0
+[1] "nbCandidatesagg \n"
+[1] 0
+# 2015-10-26 20:49:16 BRST: Iteration 1 of 5
+# experimentsUsedSoFar: 0
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 300
+# currentBudget: 60
+# nbCandidates: 10
+[1] "testCandidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+1     1       eas           2  1.07 8.19 0.01   24   14   NA    1      NA         103       NA
+2     2       eas           0  2.58 5.66 0.44   71   NA   NA <NA>      NA         360       NA
+3     3       eas           3  0.98 9.09 0.65   99   25   NA    0      NA         130       NA
+4     4        as           3  4.03 6.61 0.96   55   50   NA    0      NA          NA       NA
+5     5       ras           2  0.83 1.95 0.45   13   35   NA    0      20          NA       NA
+6     6      mmas           1  0.18 4.98 0.93   28   38   NA    0      NA          NA       NA
+7     7       acs           3  1.18 0.54 0.44   34   45 0.26    1      NA          NA       NA
+8     8      mmas           2  0.63 8.05 0.56   37   38   NA    0      NA          NA       NA
+9     9        as           0  3.53 2.48 0.43   84   NA   NA <NA>      NA          NA       NA
+10   10      mmas           1  1.20 7.85 0.05   80   31   NA    1      NA          NA       NA
+[1] "Funcao race iniciando..."
+no.tasks 
+[1] 1000
+no.subtasks 
+[1] 1
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|         10|         10|   2.01e+06|         10|
+|x|          2|         10|          5|  4.856e+06|         20|
+|x|          3|         10|          5|   4.24e+06|         30|
+|x|          4|         10|          5|  3.192e+06|         40|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]    [,2]    [,3]    [,4]       [,5]      [,6]    [,7]       [,8]      [,9]   [,10] [,11]
+[1,] 9254437 9001835 8076365 3992845 5449958.83 6496660.8 5909722 2432343.58 9422608.4 2009515     1
+[2,] 1469333 1585138 4916529 5030062 4262662.40 4277418.4 2219067 8966592.76 1333262.0 5816656     2
+[3,] 3723130 7845956 8753645 5469228 3007491.58  390604.8 4959373 3058637.75 2269638.3 3136068     1
+[4,] 5714071 6452398 2750312 6354787   49669.35 3004708.5 9546392   15889.14 4793715.2 4240755     2
+[5,] 8563049 2394721 7890191 7675677 3682090.36 8471341.4 2791594 2484985.74  832709.8 1089322     1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+7.865455
+valor do p-value:
+0.5477601
+hipótese H0 não rejeitada 
+|=|best 
+5
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7      V8      V9     V10 V11
+1 7180205 6414171 8240067 5712583 4046514 5119536 4553563 2658656 4174986 2078302   1
+2 3591702 4018768 3833420 5692425 2156166 3641063 5882730 4491241 3063489 5028705   2
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+8.181818
+valor do p-value:
+0.5159324
+hipótese H0 não rejeitada 
+|=|bestagg 
+5          5|         10|          5|   3.29e+06|         50|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]    [,2]    [,3]    [,4]       [,5]      [,6]    [,7]       [,8]      [,9]   [,10] [,11]
+[1,] 9254437 9001835 8076365 3992845 5449958.83 6496660.8 5909722 2432343.58 9422608.4 2009515     1
+[2,] 1469333 1585138 4916529 5030062 4262662.40 4277418.4 2219067 8966592.76 1333262.0 5816656     2
+[3,] 3723130 7845956 8753645 5469228 3007491.58  390604.8 4959373 3058637.75 2269638.3 3136068     1
+[4,] 5714071 6452398 2750312 6354787   49669.35 3004708.5 9546392   15889.14 4793715.2 4240755     2
+[5,] 8563049 2394721 7890191 7675677 3682090.36 8471341.4 2791594 2484985.74  832709.8 1089322     1
+[6,] 8412324 5224145 7127672 1514819 1982113.73 1413529.3 7215840 2717370.95 4031783.1 3150471     2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+6
+Valor da estatistica: 
+10.90909
+valor do p-value:
+0.2819918
+hipótese H0 não rejeitada 
+|=|best 
+5
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7      V8      V9     V10 V11
+1 7180205 6414171 8240067 5712583 4046514 5119536 4553563 2658656 4174986 2078302   1
+2 6002013 4621456 5480546 3603622 2069140 2527296 6549285 3604306 3547636 4089588   2
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+12.87273
+valor do p-value:
+0.1684503
+hipótese H0 não rejeitada 
+|=|bestagg 
+5          6|         10|          5|  3.072e+06|         60|
+[1] 5
+[1] 5
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           5	mean value:  3.072e+06
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+5       eas           3   2.8 2.45 0.49   57   22 NA   0      NA         565
+
+
+[1] "variável Result \n"
+$precis
+[1] "\nRacing methods for the selection of the best\nCopyright (C) 2003 Mauro Birattari\nThis software comes with ABSOLUTELY NO WARRANTY\n\nRace name:                                                                irace \nNumber of candidates:                                                        10 \nNumber of available tasks:                                                 1000 \nMax number of experiments:                                                   60 \nStatistical test:                                                 Friedman test \nTasks seen before discarding:                                                 5 \nInitialization function:                                                     ok \n"
+
+$results
+        [,1]    [,2]    [,3]    [,4]       [,5]      [,6]    [,7]       [,8]      [,9]   [,10] [,11]
+[1,] 9254437 9001835 8076365 3992845 5449958.83 6496660.8 5909722 2432343.58 9422608.4 2009515     1
+[2,] 1469333 1585138 4916529 5030062 4262662.40 4277418.4 2219067 8966592.76 1333262.0 5816656     2
+[3,] 3723130 7845956 8753645 5469228 3007491.58  390604.8 4959373 3058637.75 2269638.3 3136068     1
+[4,] 5714071 6452398 2750312 6354787   49669.35 3004708.5 9546392   15889.14 4793715.2 4240755     2
+[5,] 8563049 2394721 7890191 7675677 3682090.36 8471341.4 2791594 2484985.74  832709.8 1089322     1
+[6,] 8412324 5224145 7127672 1514819 1982113.73 1413529.3 7215840 2717370.95 4031783.1 3150471     2
+
+$time
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+[1,]   NA   NA   NA   NA   NA   NA   NA   NA   NA    NA
+[2,]   NA   NA   NA   NA   NA   NA   NA   NA   NA    NA
+[3,]   NA   NA   NA   NA   NA   NA   NA   NA   NA    NA
+[4,]   NA   NA   NA   NA   NA   NA   NA   NA   NA    NA
+[5,]   NA   NA   NA   NA   NA   NA   NA   NA   NA    NA
+[6,]   NA   NA   NA   NA   NA   NA   NA   NA   NA    NA
+
+$no.candidates
+[1] 10
+
+$no.tasks
+[1] 6
+
+$no.subtasks
+[1] 1
+
+$no.experiments
+[1] 60
+
+$no.alive
+[1] 10
+
+$alive
+ [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+
+$best
+[1] 5
+
+$mean.best
+[1] 3072331
+
+$timestamp.start
+[1] "Mon Oct 26 20:49:16 2015"
+
+$race.data
+$race.data$no.candidates
+[1] 10
+
+$race.data$no.tasks
+[1] 1000
+
+$race.data$race.instances
+   [1] 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2
+
+$race.data$candidates
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+1         as           3  0.63 4.68 0.89   49   45   NA    1      NA          NA
+2       mmas           1  2.30 9.29 0.74   58   37   NA    1      NA          NA
+3         as           1  1.29 2.32 0.10   24   10   NA    1      NA          NA
+4       mmas           2  4.25 0.88 0.09   40    9   NA    1      NA          NA
+5        eas           3  2.80 2.45 0.49   57   22   NA    0      NA         565
+6        acs           3  3.86 7.91 1.00   43   11 0.71    0      NA          NA
+7         as           0  1.19 1.93 0.76   95   NA   NA <NA>      NA          NA
+8        eas           2  3.54 8.79 0.35   29   43   NA    0      NA          75
+9        acs           2  1.47 6.66 0.85   20    5 0.89    0      NA          NA
+10       ras           3  2.65 5.81 0.38   54   27   NA    1       6          NA
+
+$race.data$candidatesagg
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+1        eas           2  1.07 8.19 0.01   24   14   NA    1      NA         103
+2        eas           0  2.58 5.66 0.44   71   NA   NA <NA>      NA         360
+3        eas           3  0.98 9.09 0.65   99   25   NA    0      NA         130
+4         as           3  4.03 6.61 0.96   55   50   NA    0      NA          NA
+5        ras           2  0.83 1.95 0.45   13   35   NA    0      20          NA
+6       mmas           1  0.18 4.98 0.93   28   38   NA    0      NA          NA
+7        acs           3  1.18 0.54 0.44   34   45 0.26    1      NA          NA
+8       mmas           2  0.63 8.05 0.56   37   38   NA    0      NA          NA
+9         as           0  3.53 2.48 0.43   84   NA   NA <NA>      NA          NA
+10      mmas           1  1.20 7.85 0.05   80   31   NA    1      NA          NA
+
+$race.data$parameters
+$race.data$parameters$names
+$race.data$parameters$names$algorithm
+[1] "algorithm"
+
+$race.data$parameters$names$localsearch
+[1] "localsearch"
+
+$race.data$parameters$names$alpha
+[1] "alpha"
+
+$race.data$parameters$names$beta
+[1] "beta"
+
+$race.data$parameters$names$rho
+[1] "rho"
+
+$race.data$parameters$names$ants
+[1] "ants"
+
+$race.data$parameters$names$nnls
+[1] "nnls"
+
+$race.data$parameters$names$q0
+[1] "q0"
+
+$race.data$parameters$names$dlb
+[1] "dlb"
+
+$race.data$parameters$names$rasrank
+[1] "rasrank"
+
+$race.data$parameters$names$elitistants
+[1] "elitistants"
+
+
+$race.data$parameters$types
+$race.data$parameters$types$algorithm
+[1] "c"
+
+$race.data$parameters$types$localsearch
+[1] "c"
+
+$race.data$parameters$types$alpha
+[1] "r"
+
+$race.data$parameters$types$beta
+[1] "r"
+
+$race.data$parameters$types$rho
+[1] "r"
+
+$race.data$parameters$types$ants
+[1] "i"
+
+$race.data$parameters$types$nnls
+[1] "i"
+
+$race.data$parameters$types$q0
+[1] "r"
+
+$race.data$parameters$types$dlb
+[1] "c"
+
+$race.data$parameters$types$rasrank
+[1] "i"
+
+$race.data$parameters$types$elitistants
+[1] "i"
+
+
+$race.data$parameters$switches
+$race.data$parameters$switches$algorithm
+[1] "--"
+
+$race.data$parameters$switches$localsearch
+[1] "--localsearch "
+
+$race.data$parameters$switches$alpha
+[1] "--alpha "
+
+$race.data$parameters$switches$beta
+[1] "--beta "
+
+$race.data$parameters$switches$rho
+[1] "--rho  "
+
+$race.data$parameters$switches$ants
+[1] "--ants "
+
+$race.data$parameters$switches$nnls
+[1] "--nnls "
+
+$race.data$parameters$switches$q0
+[1] "--q0 "
+
+$race.data$parameters$switches$dlb
+[1] "--dlb "
+
+$race.data$parameters$switches$rasrank
+[1] "--rasranks "
+
+$race.data$parameters$switches$elitistants
+[1] "--elitistants "
+
+
+$race.data$parameters$boundary
+$race.data$parameters$boundary$algorithm
+[1] "as"   "mmas" "eas"  "ras"  "acs" 
+
+$race.data$parameters$boundary$localsearch
+[1] "0" "1" "2" "3"
+
+$race.data$parameters$boundary$alpha
+[1] 0 5
+
+$race.data$parameters$boundary$beta
+[1]  0 10
+
+$race.data$parameters$boundary$rho
+[1] 0.01 1.00
+
+$race.data$parameters$boundary$ants
+[1]   5 100
+
+$race.data$parameters$boundary$nnls
+[1]  5 50
+
+$race.data$parameters$boundary$q0
+[1] 0 1
+
+$race.data$parameters$boundary$dlb
+[1] "0" "1"
+
+$race.data$parameters$boundary$rasrank
+[1]   1 100
+
+$race.data$parameters$boundary$elitistants
+[1]   1 750
+
+
+$race.data$parameters$conditions
+$race.data$parameters$conditions$algorithm
+expression(TRUE)
+
+$race.data$parameters$conditions$localsearch
+expression(TRUE)
+
+$race.data$parameters$conditions$alpha
+expression(TRUE)
+
+$race.data$parameters$conditions$beta
+expression(TRUE)
+
+$race.data$parameters$conditions$rho
+expression(TRUE)
+
+$race.data$parameters$conditions$ants
+expression(TRUE)
+
+$race.data$parameters$conditions$nnls
+expression(localsearch %in% c(1, 2, 3))
+
+$race.data$parameters$conditions$q0
+expression(algorithm %in% c("acs"))
+
+$race.data$parameters$conditions$dlb
+expression(localsearch %in% c(1,2,3))
+
+$race.data$parameters$conditions$rasrank
+expression(algorithm %in% c("ras"))
+
+$race.data$parameters$conditions$elitistants
+expression(algorithm %in% c("eas"))
+
+
+$race.data$parameters$isFixed
+$race.data$parameters$isFixed$algorithm
+[1] FALSE
+
+$race.data$parameters$isFixed$localsearch
+[1] FALSE
+
+$race.data$parameters$isFixed$alpha
+[1] FALSE
+
+$race.data$parameters$isFixed$beta
+[1] FALSE
+
+$race.data$parameters$isFixed$rho
+[1] FALSE
+
+$race.data$parameters$isFixed$ants
+[1] FALSE
+
+$race.data$parameters$isFixed$nnls
+[1] FALSE
+
+$race.data$parameters$isFixed$q0
+[1] FALSE
+
+$race.data$parameters$isFixed$dlb
+[1] FALSE
+
+$race.data$parameters$isFixed$rasrank
+[1] FALSE
+
+$race.data$parameters$isFixed$elitistants
+[1] FALSE
+
+
+$race.data$parameters$nbParameters
+[1] 11
+
+$race.data$parameters$nbFixed
+[1] 0
+
+$race.data$parameters$nbVariable
+[1] 11
+
+
+$race.data$config
+$race.data$config$parameterFile
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/parameters-acotsp.txt"
+
+$race.data$config$execDir
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/acotsp-arena"
+
+$race.data$config$instanceDir
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances"
+
+$race.data$config$maxExperiments
+[1] 300
+
+$race.data$config$digits
+[1] 2
+
+$race.data$config$configurationFile
+[1] "./tune-conf"
+
+$race.data$config$logFile
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/acotsp-arena/irace.Rdata"
+
+$race.data$config$instances
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances//1000-1.tsp" "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances//1000-2.tsp"
+
+$race.data$config$instanceFile
+[1] ""
+
+$race.data$config$candidatesFile
+[1] ""
+
+$race.data$config$forbiddenFile
+[1] ""
+
+$race.data$config$hookRun
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/hook-run"
+
+$race.data$config$hookRunData
+[1] ""
+
+$race.data$config$timeBudget
+[1] 0
+
+$race.data$config$timeEstimate
+[1] 0
+
+$race.data$config$debugLevel
+[1] 0
+
+$race.data$config$nbIterations
+[1] 0
+
+$race.data$config$nbExperimentsPerIteration
+[1] 0
+
+$race.data$config$sampleInstances
+[1] TRUE
+
+$race.data$config$testType
+[1] "friedman"
+
+$race.data$config$firstTest
+[1] 5
+
+$race.data$config$eachTest
+[1] 1
+
+$race.data$config$minNbSurvival
+[1] 0
+
+$race.data$config$nbCandidates
+[1] 0
+
+$race.data$config$nbCandidatesagg
+[1] "0"
+
+$race.data$config$mu
+[1] 5
+
+$race.data$config$confidence
+[1] 0.95
+
+$race.data$config$seed
+[1] 451007644
+
+$race.data$config$parallel
+[1] 0
+
+$race.data$config$mpi
+[1] FALSE
+
+$race.data$config$sgeCluster
+[1] FALSE
+
+$race.data$config$softRestart
+[1] TRUE
+
+
+
+$ranks
+ [1] 44 39 43 36 23 27 40 25 26 27
+
+$timestamp.end
+[1] "Mon Oct 26 20:49:16 2015"
+
+$description.best
+  algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+5       eas           3   2.8 2.45 0.49   57   22 NA   0      NA         565
+
+$alive.inTime
+[1] 11
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+5        eas           3  2.80 2.45 0.49   57   22   NA   0      NA         565
+8        eas           2  3.54 8.79 0.35   29   43   NA   0      NA          75
+9        acs           2  1.47 6.66 0.85   20    5 0.89   0      NA          NA
+6        acs           3  3.86 7.91 1.00   43   11 0.71   0      NA          NA
+10       ras           3  2.65 5.81 0.38   54   27   NA   1       6          NA
+[1] "nbCandidates \n"
+[1] 10
+[1] "nbCandidatesagg \n"
+[1] 10
+# 2015-10-26 20:49:16 BRST: Iteration 2 of 5
+# experimentsUsedSoFar: 60
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 240
+# currentBudget: 60
+# nbCandidates: 8
+# 2015-10-26 20:49:16 BRST: Only 10 from candidates file will be used, the rest are discarded
+[1] "testCandidatesagg \n"
+  .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+1    1       eas           2  1.07 8.19 0.01   24   14   NA    1      NA         103       NA
+2    2       eas           0  2.58 5.66 0.44   71   NA   NA <NA>      NA         360       NA
+3    3       eas           3  0.98 9.09 0.65   99   25   NA    0      NA         130       NA
+4    4        as           3  4.03 6.61 0.96   55   50   NA    0      NA          NA       NA
+5    5       ras           2  0.83 1.95 0.45   13   35   NA    0      20          NA       NA
+6    6      mmas           1  0.18 4.98 0.93   28   38   NA    0      NA          NA       NA
+7    7       acs           3  1.18 0.54 0.44   34   45 0.26    1      NA          NA       NA
+8    8      mmas           2  0.63 8.05 0.56   37   38   NA    0      NA          NA       NA
+[1] "Funcao race iniciando..."
+no.tasks 
+[1] 1000
+no.subtasks 
+[1] 1
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          8|          3|  2.037e+06|          8|
+|x|          2|          8|          3|  1.404e+06|         16|
+|x|          3|          8|          7|  2.609e+06|         24|
+|x|          4|          8|          3|  3.184e+06|         32|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]      [,3]    [,4]    [,5]    [,6]    [,7]      [,8] [,9]
+[1,] 3088187.0 7506487 2037158.8 8565058 2920862 8860801 4087071 7270429.9    1
+[2,] 7004971.8 4343974  769878.3 6106100 4974678 8377941 1426322  409761.3    2
+[3,]  187603.2 4567955 6918370.5 3589070 4497920 8451196 2314768 5095731.6    1
+[4,] 5806890.4 3126903 3010398.3 6668794 6989144 9080599 5125733 5861068.2    2
+[5,] 4781165.3 8977692 1234517.0 6238006 6557900 8986490 1151297 3030983.9    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+17.66667
+valor do p-value:
+0.01356796
+|-|hipótese H0 rejeitada...
+Valor do teste t:
+12.48401vetor o:
+3 7 1 8 2 5 4 6best 
+3
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7      V8 V9
+1 2685652 7017378 3396682 6130711 4658894 8766162 2517712 5132382  1
+2 6405931 3735438 1890138 6387447 5981911 8729270 3276028 3135415  2
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+9.666667
+valor do p-value:
+0.2082631
+hipótese H0 não rejeitada 
+|=|bestagg 
+3          5|          6|          3|  2.794e+06|         40|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]      [,3]    [,4]    [,5]    [,6]    [,7]      [,8] [,9]
+[1,] 3088187.0 7506487 2037158.8 8565058 2920862 8860801 4087071 7270429.9    1
+[2,] 7004971.8 4343974  769878.3 6106100 4974678 8377941 1426322  409761.3    2
+[3,]  187603.2 4567955 6918370.5 3589070 4497920 8451196 2314768 5095731.6    1
+[4,] 5806890.4 3126903 3010398.3 6668794 6989144 9080599 5125733 5861068.2    2
+[5,] 4781165.3 8977692 1234517.0 6238006 6557900 8986490 1151297 3030983.9    1
+[6,] 1582891.8 9774366 9096929.2      NA 9498096      NA 2831495 8038461.6    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+6
+Valor da estatistica: 
+6.666667
+valor do p-value:
+0.2466342
+hipótese H0 não rejeitada 
+|=|best 
+7
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7      V8 V9
+1 2685652 7017378 3396682 6130711 4658894 8766162 2517712 5132382  1
+2 3994411 6754902 5493534 7942772 7740004 8383866 3053761 5586938  2
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+13.16667
+valor do p-value:
+0.06815022
+hipótese H0 não rejeitada 
+|=|bestagg 
+7          6|          6|          7|  2.823e+06|         46|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]      [,3]    [,4]    [,5]    [,6]    [,7]      [,8] [,9]
+[1,] 3088187.0 7506487 2037158.8 8565058 2920862 8860801 4087071 7270429.9    1
+[2,] 7004971.8 4343974  769878.3 6106100 4974678 8377941 1426322  409761.3    2
+[3,]  187603.2 4567955 6918370.5 3589070 4497920 8451196 2314768 5095731.6    1
+[4,] 5806890.4 3126903 3010398.3 6668794 6989144 9080599 5125733 5861068.2    2
+[5,] 4781165.3 8977692 1234517.0 6238006 6557900 8986490 1151297 3030983.9    1
+[6,] 1582891.8 9774366 9096929.2      NA 9498096      NA 2831495 8038461.6    2
+[7,]  570187.5 9782699 7072018.6      NA 5983433      NA 3423707 5464175.4    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+7
+Valor da estatistica: 
+8.55102
+valor do p-value:
+0.1283692
+hipótese H0 não rejeitada 
+|=|best 
+7
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7      V8 V9
+1 1627920 8400038 5234350 6057072 5321164 7115169 2970709 5298279  1
+2 3994411 6754902 5493534 7942772 7740004 8383866 3053761 5586938  2
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+12.83333
+valor do p-value:
+0.07627483
+hipótese H0 não rejeitada 
+|=|bestagg 
+1          7|          6|          7|  2.909e+06|         52|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]      [,2]      [,3]    [,4]    [,5]    [,6]    [,7]      [,8] [,9]
+[1,] 3088187.0 7506487.4 2037158.8 8565058 2920862 8860801 4087071 7270429.9    1
+[2,] 7004971.8 4343973.7  769878.3 6106100 4974678 8377941 1426322  409761.3    2
+[3,]  187603.2 4567954.9 6918370.5 3589070 4497920 8451196 2314768 5095731.6    1
+[4,] 5806890.4 3126902.5 3010398.3 6668794 6989144 9080599 5125733 5861068.2    2
+[5,] 4781165.3 8977692.0 1234517.0 6238006 6557900 8986490 1151297 3030983.9    1
+[6,] 1582891.8 9774365.6 9096929.2      NA 9498096      NA 2831495 8038461.6    2
+[7,]  570187.5 9782698.9 7072018.6      NA 5983433      NA 3423707 5464175.4    1
+[8,] 9552660.3  214256.6 8059228.8      NA 4966148      NA 5750205 5268181.7    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+8
+Valor da estatistica: 
+4.357143
+valor do p-value:
+0.4992216
+hipótese H0 não rejeitada 
+|=|best 
+7
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7      V8 V9
+1 1627920 8400038 5234350 6057072 5321164 7115169 2970709 5298279  1
+2 6773536 3484579 6776381 6454460 6353076 6826024 4401983 5427560  2
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+6.166667
+valor do p-value:
+0.5204291
+hipótese H0 não rejeitada 
+|=|bestagg 
+7          8|          6|          7|  3.264e+06|         58|
+[1] 7
+[1] 7
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           7	mean value:  3.264e+06
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0  dlb rasrank elitistants
+12      mmas           0  4.14 5.81 0.26   61   NA NA <NA>      NA          NA
+
+
+[1] "variável Result \n"
+$precis
+[1] "\nRacing methods for the selection of the best\nCopyright (C) 2003 Mauro Birattari\nThis software comes with ABSOLUTELY NO WARRANTY\n\nRace name:                                                                irace \nNumber of candidates:                                                         8 \nNumber of available tasks:                                                 1000 \nMax number of experiments:                                                   60 \nStatistical test:                                                 Friedman test \nTasks seen before discarding:                                                 5 \nInitialization function:                                                     ok \n"
+
+$results
+          [,1]      [,2]      [,3]    [,4]    [,5]    [,6]    [,7]      [,8] [,9]
+[1,] 3088187.0 7506487.4 2037158.8 8565058 2920862 8860801 4087071 7270429.9    1
+[2,] 7004971.8 4343973.7  769878.3 6106100 4974678 8377941 1426322  409761.3    2
+[3,]  187603.2 4567954.9 6918370.5 3589070 4497920 8451196 2314768 5095731.6    1
+[4,] 5806890.4 3126902.5 3010398.3 6668794 6989144 9080599 5125733 5861068.2    2
+[5,] 4781165.3 8977692.0 1234517.0 6238006 6557900 8986490 1151297 3030983.9    1
+[6,] 1582891.8 9774365.6 9096929.2      NA 9498096      NA 2831495 8038461.6    2
+[7,]  570187.5 9782698.9 7072018.6      NA 5983433      NA 3423707 5464175.4    1
+[8,] 9552660.3  214256.6 8059228.8      NA 4966148      NA 5750205 5268181.7    2
+
+$time
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
+[1,]   NA   NA   NA   NA   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA   NA   NA   NA   NA
+[7,]   NA   NA   NA   NA   NA   NA   NA   NA
+[8,]   NA   NA   NA   NA   NA   NA   NA   NA
+
+$no.candidates
+[1] 8
+
+$no.tasks
+[1] 8
+
+$no.subtasks
+[1] 1
+
+$no.experiments
+[1] 58
+
+$no.alive
+[1] 6
+
+$alive
+[1]  TRUE  TRUE  TRUE FALSE  TRUE FALSE  TRUE  TRUE
+
+$best
+[1] 7
+
+$mean.best
+[1] 3263825
+
+$timestamp.start
+[1] "Mon Oct 26 20:49:16 2015"
+
+$race.data
+$race.data$no.candidates
+[1] 8
+
+$race.data$no.tasks
+[1] 1000
+
+$race.data$race.instances
+   [1] 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2
+
+$race.data$candidates
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+5        eas           3  2.80 2.45 0.49   57   22   NA    0      NA         565
+8        eas           2  3.54 8.79 0.35   29   43   NA    0      NA          75
+9        acs           2  1.47 6.66 0.85   20    5 0.89    0      NA          NA
+6        acs           3  3.86 7.91 1.00   43   11 0.71    0      NA          NA
+10       ras           3  2.65 5.81 0.38   54   27   NA    1       6          NA
+11       acs           2  2.73 6.07 0.19    9   12 0.56    0      NA          NA
+12      mmas           0  4.14 5.81 0.26   61   NA   NA <NA>      NA          NA
+13       ras           0  3.23 7.35 0.66   65   NA   NA <NA>      60          NA
+
+$race.data$candidatesagg
+  algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+1       eas           2  1.07 8.19 0.01   24   14   NA    1      NA         103
+2       eas           0  2.58 5.66 0.44   71   NA   NA <NA>      NA         360
+3       eas           3  0.98 9.09 0.65   99   25   NA    0      NA         130
+4        as           3  4.03 6.61 0.96   55   50   NA    0      NA          NA
+5       ras           2  0.83 1.95 0.45   13   35   NA    0      20          NA
+6      mmas           1  0.18 4.98 0.93   28   38   NA    0      NA          NA
+7       acs           3  1.18 0.54 0.44   34   45 0.26    1      NA          NA
+8      mmas           2  0.63 8.05 0.56   37   38   NA    0      NA          NA
+
+$race.data$parameters
+$race.data$parameters$names
+$race.data$parameters$names$algorithm
+[1] "algorithm"
+
+$race.data$parameters$names$localsearch
+[1] "localsearch"
+
+$race.data$parameters$names$alpha
+[1] "alpha"
+
+$race.data$parameters$names$beta
+[1] "beta"
+
+$race.data$parameters$names$rho
+[1] "rho"
+
+$race.data$parameters$names$ants
+[1] "ants"
+
+$race.data$parameters$names$nnls
+[1] "nnls"
+
+$race.data$parameters$names$q0
+[1] "q0"
+
+$race.data$parameters$names$dlb
+[1] "dlb"
+
+$race.data$parameters$names$rasrank
+[1] "rasrank"
+
+$race.data$parameters$names$elitistants
+[1] "elitistants"
+
+
+$race.data$parameters$types
+$race.data$parameters$types$algorithm
+[1] "c"
+
+$race.data$parameters$types$localsearch
+[1] "c"
+
+$race.data$parameters$types$alpha
+[1] "r"
+
+$race.data$parameters$types$beta
+[1] "r"
+
+$race.data$parameters$types$rho
+[1] "r"
+
+$race.data$parameters$types$ants
+[1] "i"
+
+$race.data$parameters$types$nnls
+[1] "i"
+
+$race.data$parameters$types$q0
+[1] "r"
+
+$race.data$parameters$types$dlb
+[1] "c"
+
+$race.data$parameters$types$rasrank
+[1] "i"
+
+$race.data$parameters$types$elitistants
+[1] "i"
+
+
+$race.data$parameters$switches
+$race.data$parameters$switches$algorithm
+[1] "--"
+
+$race.data$parameters$switches$localsearch
+[1] "--localsearch "
+
+$race.data$parameters$switches$alpha
+[1] "--alpha "
+
+$race.data$parameters$switches$beta
+[1] "--beta "
+
+$race.data$parameters$switches$rho
+[1] "--rho  "
+
+$race.data$parameters$switches$ants
+[1] "--ants "
+
+$race.data$parameters$switches$nnls
+[1] "--nnls "
+
+$race.data$parameters$switches$q0
+[1] "--q0 "
+
+$race.data$parameters$switches$dlb
+[1] "--dlb "
+
+$race.data$parameters$switches$rasrank
+[1] "--rasranks "
+
+$race.data$parameters$switches$elitistants
+[1] "--elitistants "
+
+
+$race.data$parameters$boundary
+$race.data$parameters$boundary$algorithm
+[1] "as"   "mmas" "eas"  "ras"  "acs" 
+
+$race.data$parameters$boundary$localsearch
+[1] "0" "1" "2" "3"
+
+$race.data$parameters$boundary$alpha
+[1] 0 5
+
+$race.data$parameters$boundary$beta
+[1]  0 10
+
+$race.data$parameters$boundary$rho
+[1] 0.01 1.00
+
+$race.data$parameters$boundary$ants
+[1]   5 100
+
+$race.data$parameters$boundary$nnls
+[1]  5 50
+
+$race.data$parameters$boundary$q0
+[1] 0 1
+
+$race.data$parameters$boundary$dlb
+[1] "0" "1"
+
+$race.data$parameters$boundary$rasrank
+[1]   1 100
+
+$race.data$parameters$boundary$elitistants
+[1]   1 750
+
+
+$race.data$parameters$conditions
+$race.data$parameters$conditions$algorithm
+expression(TRUE)
+
+$race.data$parameters$conditions$localsearch
+expression(TRUE)
+
+$race.data$parameters$conditions$alpha
+expression(TRUE)
+
+$race.data$parameters$conditions$beta
+expression(TRUE)
+
+$race.data$parameters$conditions$rho
+expression(TRUE)
+
+$race.data$parameters$conditions$ants
+expression(TRUE)
+
+$race.data$parameters$conditions$nnls
+expression(localsearch %in% c(1, 2, 3))
+
+$race.data$parameters$conditions$q0
+expression(algorithm %in% c("acs"))
+
+$race.data$parameters$conditions$dlb
+expression(localsearch %in% c(1,2,3))
+
+$race.data$parameters$conditions$rasrank
+expression(algorithm %in% c("ras"))
+
+$race.data$parameters$conditions$elitistants
+expression(algorithm %in% c("eas"))
+
+
+$race.data$parameters$isFixed
+$race.data$parameters$isFixed$algorithm
+[1] FALSE
+
+$race.data$parameters$isFixed$localsearch
+[1] FALSE
+
+$race.data$parameters$isFixed$alpha
+[1] FALSE
+
+$race.data$parameters$isFixed$beta
+[1] FALSE
+
+$race.data$parameters$isFixed$rho
+[1] FALSE
+
+$race.data$parameters$isFixed$ants
+[1] FALSE
+
+$race.data$parameters$isFixed$nnls
+[1] FALSE
+
+$race.data$parameters$isFixed$q0
+[1] FALSE
+
+$race.data$parameters$isFixed$dlb
+[1] FALSE
+
+$race.data$parameters$isFixed$rasrank
+[1] FALSE
+
+$race.data$parameters$isFixed$elitistants
+[1] FALSE
+
+
+$race.data$parameters$nbParameters
+[1] 11
+
+$race.data$parameters$nbFixed
+[1] 0
+
+$race.data$parameters$nbVariable
+[1] 11
+
+
+$race.data$config
+$race.data$config$parameterFile
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/parameters-acotsp.txt"
+
+$race.data$config$execDir
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/acotsp-arena"
+
+$race.data$config$instanceDir
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances"
+
+$race.data$config$maxExperiments
+[1] 300
+
+$race.data$config$digits
+[1] 2
+
+$race.data$config$configurationFile
+[1] "./tune-conf"
+
+$race.data$config$logFile
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/acotsp-arena/irace.Rdata"
+
+$race.data$config$instances
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances//1000-1.tsp" "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances//1000-2.tsp"
+
+$race.data$config$instanceFile
+[1] ""
+
+$race.data$config$candidatesFile
+[1] ""
+
+$race.data$config$forbiddenFile
+[1] ""
+
+$race.data$config$hookRun
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/hook-run"
+
+$race.data$config$hookRunData
+[1] ""
+
+$race.data$config$timeBudget
+[1] 0
+
+$race.data$config$timeEstimate
+[1] 0
+
+$race.data$config$debugLevel
+[1] 0
+
+$race.data$config$nbIterations
+[1] 0
+
+$race.data$config$nbExperimentsPerIteration
+[1] 0
+
+$race.data$config$sampleInstances
+[1] TRUE
+
+$race.data$config$testType
+[1] "friedman"
+
+$race.data$config$firstTest
+[1] 5
+
+$race.data$config$eachTest
+[1] 1
+
+$race.data$config$minNbSurvival
+[1] 0
+
+$race.data$config$nbCandidates
+[1] 0
+
+$race.data$config$nbCandidatesagg
+[1] "0"
+
+$race.data$config$mu
+[1] 5
+
+$race.data$config$confidence
+[1] 0.95
+
+$race.data$config$seed
+[1] 451007644
+
+$race.data$config$parallel
+[1] 0
+
+$race.data$config$mpi
+[1] FALSE
+
+$race.data$config$sgeCluster
+[1] FALSE
+
+$race.data$config$softRestart
+[1] TRUE
+
+
+
+$ranks
+[1] 26 35 26 32 21 28
+
+$timestamp.end
+[1] "Mon Oct 26 20:49:16 2015"
+
+$description.best
+   algorithm localsearch alpha beta  rho ants nnls q0  dlb rasrank elitistants
+12      mmas           0  4.14 5.81 0.26   61   NA NA <NA>      NA          NA
+
+$alive.inTime
+[1] 9
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+12      mmas           0  4.14 5.81 0.26   61   NA   NA <NA>      NA          NA
+5        eas           3  2.80 2.45 0.49   57   22   NA    0      NA         565
+9        acs           2  1.47 6.66 0.85   20    5 0.89    0      NA          NA
+13       ras           0  3.23 7.35 0.66   65   NA   NA <NA>      60          NA
+10       ras           3  2.65 5.81 0.38   54   27   NA    1       6          NA
+[1] "nbCandidates \n"
+[1] 8
+[1] "nbCandidatesagg \n"
+[1] 8
+# 2015-10-26 20:49:16 BRST: Iteration 3 of 5
+# experimentsUsedSoFar: 118
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 182
+# currentBudget: 60
+# nbCandidates: 7
+# 2015-10-26 20:49:16 BRST: Only 8 from candidates file will be used, the rest are discarded
+[1] "testCandidatesagg \n"
+  .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+1    1       eas           2  1.07 8.19 0.01   24   14   NA    1      NA         103       NA
+2    2       eas           0  2.58 5.66 0.44   71   NA   NA <NA>      NA         360       NA
+3    3       eas           3  0.98 9.09 0.65   99   25   NA    0      NA         130       NA
+4    4        as           3  4.03 6.61 0.96   55   50   NA    0      NA          NA       NA
+5    5       ras           2  0.83 1.95 0.45   13   35   NA    0      20          NA       NA
+6    6      mmas           1  0.18 4.98 0.93   28   38   NA    0      NA          NA       NA
+7    7       acs           3  1.18 0.54 0.44   34   45 0.26    1      NA          NA       NA
+[1] "Funcao race iniciando..."
+no.tasks 
+[1] 1000
+no.subtasks 
+[1] 1
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          7|          3|  3.491e+05|          7|
+|x|          2|          7|          1|   1.26e+06|         14|
+|x|          3|          7|          1|  2.024e+06|         21|
+|x|          4|          7|          3|  3.535e+06|         28|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]      [,3]    [,4]    [,5]    [,6]      [,7] [,8]
+[1,]  763885.6 4862009  349053.1 3210796 7509327 2680327  872609.3    2
+[2,] 1756719.6 1364156 8078233.7 4151818 1773781  704319 8484672.8    1
+[3,] 3551738.2 1329785 4282995.4 8033544 8629994 9990616 5064648.3    2
+[4,] 8237426.5 9309157 1429722.7 5997307 2197243 4624166 9777189.6    1
+[5,] 2809972.2 6016431 5566853.7 7546153 8734273 7492186 1605053.6    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+5.914286
+valor do p-value:
+0.4328601
+hipótese H0 não rejeitada 
+|=|best 
+1
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 4997073 5336656 4753978 5074563 1985512 2664243 9130931  1
+2 2375199 4069408 3399634 6263498 8291198 6721043 2514104  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+2.357143
+valor do p-value:
+0.8841006
+hipótese H0 não rejeitada 
+|=|bestagg 
+1          5|          7|          1|  3.424e+06|         35|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]      [,3]    [,4]    [,5]    [,6]      [,7] [,8]
+[1,]  763885.6 4862009  349053.1 3210796 7509327 2680327  872609.3    2
+[2,] 1756719.6 1364156 8078233.7 4151818 1773781  704319 8484672.8    1
+[3,] 3551738.2 1329785 4282995.4 8033544 8629994 9990616 5064648.3    2
+[4,] 8237426.5 9309157 1429722.7 5997307 2197243 4624166 9777189.6    1
+[5,] 2809972.2 6016431 5566853.7 7546153 8734273 7492186 1605053.6    2
+[6,] 9158784.3 1614088 8756966.5 9767998 8160526 6594788 7250477.2    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+6
+Valor da estatistica: 
+5.785714
+valor do p-value:
+0.4476177
+hipótese H0 não rejeitada 
+|=|best 
+3
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 7077929 3475372 6755472 7421280 5073019 4629515 8190704  1
+2 2375199 4069408 3399634 6263498 8291198 6721043 2514104  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+3
+valor do p-value:
+0.8088468
+hipótese H0 não rejeitada 
+|=|bestagg 
+2          6|          7|          3|  4.744e+06|         42|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]      [,3]    [,4]    [,5]    [,6]      [,7] [,8]
+[1,]  763885.6 4862009  349053.1 3210796 7509327 2680327  872609.3    2
+[2,] 1756719.6 1364156 8078233.7 4151818 1773781  704319 8484672.8    1
+[3,] 3551738.2 1329785 4282995.4 8033544 8629994 9990616 5064648.3    2
+[4,] 8237426.5 9309157 1429722.7 5997307 2197243 4624166 9777189.6    1
+[5,] 2809972.2 6016431 5566853.7 7546153 8734273 7492186 1605053.6    2
+[6,] 9158784.3 1614088 8756966.5 9767998 8160526 6594788 7250477.2    1
+[7,] 7008706.2 8336618 8580859.5 9121828 3259810 3901495 2897063.9    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+7
+Valor da estatistica: 
+5.632653
+valor do p-value:
+0.4655709
+hipótese H0 não rejeitada 
+|=|best 
+1
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 7077929 3475372 6755472 7421280 5073019 4629515 8190704  1
+2 4691952 6203013 5990247 7692663 5775504 5311269 2705584  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+4.071429
+valor do p-value:
+0.6670106
+hipótese H0 não rejeitada 
+|=|bestagg 
+6          7|          7|          1|  4.755e+06|         49|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]      [,3]    [,4]       [,5]    [,6]      [,7] [,8]
+[1,]  763885.6 4862009  349053.1 3210796 7509326.99 2680327  872609.3    2
+[2,] 1756719.6 1364156 8078233.7 4151818 1773780.64  704319 8484672.8    1
+[3,] 3551738.2 1329785 4282995.4 8033544 8629994.46 9990616 5064648.3    2
+[4,] 8237426.5 9309157 1429722.7 5997307 2197243.31 4624166 9777189.6    1
+[5,] 2809972.2 6016431 5566853.7 7546153 8734272.68 7492186 1605053.6    2
+[6,] 9158784.3 1614088 8756966.5 9767998 8160526.43 6594788 7250477.2    1
+[7,] 7008706.2 8336618 8580859.5 9121828 3259809.82 3901495 2897063.9    2
+[8,] 9763012.2 4794835  750587.4 2904451   54742.21 1671889 3497224.6    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+8
+Valor da estatistica: 
+4.446429
+valor do p-value:
+0.6164958
+hipótese H0 não rejeitada 
+|=|best 
+3
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 8420470 4135104 3753030 5162866 2563881 3150702 5843964  1
+2 4691952 6203013 5990247 7692663 5775504 5311269 2705584  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+4.285714
+valor do p-value:
+0.6380726
+hipótese H0 não rejeitada 
+|=|bestagg 
+5          8|          7|          3|  4.724e+06|         56|
+[1] 3
+[1] 5
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           3	mean value:  4.724e+06
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+9       acs           2  1.47 6.66 0.85   20    5 0.89   0      NA          NA
+
+
+[1] "variável Result \n"
+$precis
+[1] "\nRacing methods for the selection of the best\nCopyright (C) 2003 Mauro Birattari\nThis software comes with ABSOLUTELY NO WARRANTY\n\nRace name:                                                                irace \nNumber of candidates:                                                         7 \nNumber of available tasks:                                                 1000 \nMax number of experiments:                                                   60 \nStatistical test:                                                 Friedman test \nTasks seen before discarding:                                                 5 \nInitialization function:                                                     ok \n"
+
+$results
+          [,1]    [,2]      [,3]    [,4]       [,5]    [,6]      [,7] [,8]
+[1,]  763885.6 4862009  349053.1 3210796 7509326.99 2680327  872609.3    2
+[2,] 1756719.6 1364156 8078233.7 4151818 1773780.64  704319 8484672.8    1
+[3,] 3551738.2 1329785 4282995.4 8033544 8629994.46 9990616 5064648.3    2
+[4,] 8237426.5 9309157 1429722.7 5997307 2197243.31 4624166 9777189.6    1
+[5,] 2809972.2 6016431 5566853.7 7546153 8734272.68 7492186 1605053.6    2
+[6,] 9158784.3 1614088 8756966.5 9767998 8160526.43 6594788 7250477.2    1
+[7,] 7008706.2 8336618 8580859.5 9121828 3259809.82 3901495 2897063.9    2
+[8,] 9763012.2 4794835  750587.4 2904451   54742.21 1671889 3497224.6    1
+
+$time
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7]
+[1,]   NA   NA   NA   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA   NA   NA   NA
+[7,]   NA   NA   NA   NA   NA   NA   NA
+[8,]   NA   NA   NA   NA   NA   NA   NA
+
+$no.candidates
+[1] 7
+
+$no.tasks
+[1] 8
+
+$no.subtasks
+[1] 1
+
+$no.experiments
+[1] 56
+
+$no.alive
+[1] 7
+
+$alive
+[1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+
+$best
+[1] 3
+
+$mean.best
+[1] 4724409
+
+$timestamp.start
+[1] "Mon Oct 26 20:49:16 2015"
+
+$race.data
+$race.data$no.candidates
+[1] 7
+
+$race.data$no.tasks
+[1] 1000
+
+$race.data$race.instances
+   [1] 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1
+
+$race.data$candidates
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+12      mmas           0  4.14 5.81 0.26   61   NA   NA <NA>      NA          NA
+5        eas           3  2.80 2.45 0.49   57   22   NA    0      NA         565
+9        acs           2  1.47 6.66 0.85   20    5 0.89    0      NA          NA
+13       ras           0  3.23 7.35 0.66   65   NA   NA <NA>      60          NA
+10       ras           3  2.65 5.81 0.38   54   27   NA    1       6          NA
+14       acs           2  4.90 0.78 0.76   38    5 0.34    0      NA          NA
+15       ras           0  3.59 4.93 0.59   54   NA   NA <NA>      88          NA
+
+$race.data$candidatesagg
+  algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+1       eas           2  1.07 8.19 0.01   24   14   NA    1      NA         103
+2       eas           0  2.58 5.66 0.44   71   NA   NA <NA>      NA         360
+3       eas           3  0.98 9.09 0.65   99   25   NA    0      NA         130
+4        as           3  4.03 6.61 0.96   55   50   NA    0      NA          NA
+5       ras           2  0.83 1.95 0.45   13   35   NA    0      20          NA
+6      mmas           1  0.18 4.98 0.93   28   38   NA    0      NA          NA
+7       acs           3  1.18 0.54 0.44   34   45 0.26    1      NA          NA
+
+$race.data$parameters
+$race.data$parameters$names
+$race.data$parameters$names$algorithm
+[1] "algorithm"
+
+$race.data$parameters$names$localsearch
+[1] "localsearch"
+
+$race.data$parameters$names$alpha
+[1] "alpha"
+
+$race.data$parameters$names$beta
+[1] "beta"
+
+$race.data$parameters$names$rho
+[1] "rho"
+
+$race.data$parameters$names$ants
+[1] "ants"
+
+$race.data$parameters$names$nnls
+[1] "nnls"
+
+$race.data$parameters$names$q0
+[1] "q0"
+
+$race.data$parameters$names$dlb
+[1] "dlb"
+
+$race.data$parameters$names$rasrank
+[1] "rasrank"
+
+$race.data$parameters$names$elitistants
+[1] "elitistants"
+
+
+$race.data$parameters$types
+$race.data$parameters$types$algorithm
+[1] "c"
+
+$race.data$parameters$types$localsearch
+[1] "c"
+
+$race.data$parameters$types$alpha
+[1] "r"
+
+$race.data$parameters$types$beta
+[1] "r"
+
+$race.data$parameters$types$rho
+[1] "r"
+
+$race.data$parameters$types$ants
+[1] "i"
+
+$race.data$parameters$types$nnls
+[1] "i"
+
+$race.data$parameters$types$q0
+[1] "r"
+
+$race.data$parameters$types$dlb
+[1] "c"
+
+$race.data$parameters$types$rasrank
+[1] "i"
+
+$race.data$parameters$types$elitistants
+[1] "i"
+
+
+$race.data$parameters$switches
+$race.data$parameters$switches$algorithm
+[1] "--"
+
+$race.data$parameters$switches$localsearch
+[1] "--localsearch "
+
+$race.data$parameters$switches$alpha
+[1] "--alpha "
+
+$race.data$parameters$switches$beta
+[1] "--beta "
+
+$race.data$parameters$switches$rho
+[1] "--rho  "
+
+$race.data$parameters$switches$ants
+[1] "--ants "
+
+$race.data$parameters$switches$nnls
+[1] "--nnls "
+
+$race.data$parameters$switches$q0
+[1] "--q0 "
+
+$race.data$parameters$switches$dlb
+[1] "--dlb "
+
+$race.data$parameters$switches$rasrank
+[1] "--rasranks "
+
+$race.data$parameters$switches$elitistants
+[1] "--elitistants "
+
+
+$race.data$parameters$boundary
+$race.data$parameters$boundary$algorithm
+[1] "as"   "mmas" "eas"  "ras"  "acs" 
+
+$race.data$parameters$boundary$localsearch
+[1] "0" "1" "2" "3"
+
+$race.data$parameters$boundary$alpha
+[1] 0 5
+
+$race.data$parameters$boundary$beta
+[1]  0 10
+
+$race.data$parameters$boundary$rho
+[1] 0.01 1.00
+
+$race.data$parameters$boundary$ants
+[1]   5 100
+
+$race.data$parameters$boundary$nnls
+[1]  5 50
+
+$race.data$parameters$boundary$q0
+[1] 0 1
+
+$race.data$parameters$boundary$dlb
+[1] "0" "1"
+
+$race.data$parameters$boundary$rasrank
+[1]   1 100
+
+$race.data$parameters$boundary$elitistants
+[1]   1 750
+
+
+$race.data$parameters$conditions
+$race.data$parameters$conditions$algorithm
+expression(TRUE)
+
+$race.data$parameters$conditions$localsearch
+expression(TRUE)
+
+$race.data$parameters$conditions$alpha
+expression(TRUE)
+
+$race.data$parameters$conditions$beta
+expression(TRUE)
+
+$race.data$parameters$conditions$rho
+expression(TRUE)
+
+$race.data$parameters$conditions$ants
+expression(TRUE)
+
+$race.data$parameters$conditions$nnls
+expression(localsearch %in% c(1, 2, 3))
+
+$race.data$parameters$conditions$q0
+expression(algorithm %in% c("acs"))
+
+$race.data$parameters$conditions$dlb
+expression(localsearch %in% c(1,2,3))
+
+$race.data$parameters$conditions$rasrank
+expression(algorithm %in% c("ras"))
+
+$race.data$parameters$conditions$elitistants
+expression(algorithm %in% c("eas"))
+
+
+$race.data$parameters$isFixed
+$race.data$parameters$isFixed$algorithm
+[1] FALSE
+
+$race.data$parameters$isFixed$localsearch
+[1] FALSE
+
+$race.data$parameters$isFixed$alpha
+[1] FALSE
+
+$race.data$parameters$isFixed$beta
+[1] FALSE
+
+$race.data$parameters$isFixed$rho
+[1] FALSE
+
+$race.data$parameters$isFixed$ants
+[1] FALSE
+
+$race.data$parameters$isFixed$nnls
+[1] FALSE
+
+$race.data$parameters$isFixed$q0
+[1] FALSE
+
+$race.data$parameters$isFixed$dlb
+[1] FALSE
+
+$race.data$parameters$isFixed$rasrank
+[1] FALSE
+
+$race.data$parameters$isFixed$elitistants
+[1] FALSE
+
+
+$race.data$parameters$nbParameters
+[1] 11
+
+$race.data$parameters$nbFixed
+[1] 0
+
+$race.data$parameters$nbVariable
+[1] 11
+
+
+$race.data$config
+$race.data$config$parameterFile
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/parameters-acotsp.txt"
+
+$race.data$config$execDir
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/acotsp-arena"
+
+$race.data$config$instanceDir
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances"
+
+$race.data$config$maxExperiments
+[1] 300
+
+$race.data$config$digits
+[1] 2
+
+$race.data$config$configurationFile
+[1] "./tune-conf"
+
+$race.data$config$logFile
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/acotsp-arena/irace.Rdata"
+
+$race.data$config$instances
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances//1000-1.tsp" "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances//1000-2.tsp"
+
+$race.data$config$instanceFile
+[1] ""
+
+$race.data$config$candidatesFile
+[1] ""
+
+$race.data$config$forbiddenFile
+[1] ""
+
+$race.data$config$hookRun
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/hook-run"
+
+$race.data$config$hookRunData
+[1] ""
+
+$race.data$config$timeBudget
+[1] 0
+
+$race.data$config$timeEstimate
+[1] 0
+
+$race.data$config$debugLevel
+[1] 0
+
+$race.data$config$nbIterations
+[1] 0
+
+$race.data$config$nbExperimentsPerIteration
+[1] 0
+
+$race.data$config$sampleInstances
+[1] TRUE
+
+$race.data$config$testType
+[1] "friedman"
+
+$race.data$config$firstTest
+[1] 5
+
+$race.data$config$eachTest
+[1] 1
+
+$race.data$config$minNbSurvival
+[1] 0
+
+$race.data$config$nbCandidates
+[1] 0
+
+$race.data$config$nbCandidatesagg
+[1] "0"
+
+$race.data$config$mu
+[1] 5
+
+$race.data$config$confidence
+[1] 0.95
+
+$race.data$config$seed
+[1] 451007644
+
+$race.data$config$parallel
+[1] 0
+
+$race.data$config$mpi
+[1] FALSE
+
+$race.data$config$sgeCluster
+[1] FALSE
+
+$race.data$config$softRestart
+[1] TRUE
+
+
+
+$ranks
+[1] 31 31 27 43 33 28 31
+
+$timestamp.end
+[1] "Mon Oct 26 20:49:17 2015"
+
+$description.best
+  algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+9       acs           2  1.47 6.66 0.85   20    5 0.89   0      NA          NA
+
+$alive.inTime
+[1] 8
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+9        acs           2  1.47 6.66 0.85   20    5 0.89    0      NA          NA
+14       acs           2  4.90 0.78 0.76   38    5 0.34    0      NA          NA
+12      mmas           0  4.14 5.81 0.26   61   NA   NA <NA>      NA          NA
+5        eas           3  2.80 2.45 0.49   57   22   NA    0      NA         565
+15       ras           0  3.59 4.93 0.59   54   NA   NA <NA>      88          NA
+[1] "nbCandidates \n"
+[1] 7
+[1] "nbCandidatesagg \n"
+[1] 7
+# 2015-10-26 20:49:17 BRST: Iteration 4 of 5
+# experimentsUsedSoFar: 174
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 126
+# currentBudget: 63
+# nbCandidates: 7
+[1] "testCandidatesagg \n"
+  .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+1    1       eas           2  1.07 8.19 0.01   24   14   NA    1      NA         103       NA
+2    2       eas           0  2.58 5.66 0.44   71   NA   NA <NA>      NA         360       NA
+3    3       eas           3  0.98 9.09 0.65   99   25   NA    0      NA         130       NA
+4    4        as           3  4.03 6.61 0.96   55   50   NA    0      NA          NA       NA
+5    5       ras           2  0.83 1.95 0.45   13   35   NA    0      20          NA       NA
+6    6      mmas           1  0.18 4.98 0.93   28   38   NA    0      NA          NA       NA
+7    7       acs           3  1.18 0.54 0.44   34   45 0.26    1      NA          NA       NA
+[1] "Funcao race iniciando..."
+no.tasks 
+[1] 1000
+no.subtasks 
+[1] 1
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          7|          7|  2.316e+05|          7|
+|x|          2|          7|          4|  4.356e+06|         14|
+|x|          3|          7|          4|  4.098e+06|         21|
+|x|          4|          7|          3|   3.82e+06|         28|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]    [,3]      [,4]    [,5]    [,6]      [,7] [,8]
+[1,] 3708358.4 5021556 2259710  941174.1 5802480 6803516  231564.2    2
+[2,] 8280849.8 7076985 9155598 7770921.8 9574299 9085263 8771183.7    1
+[3,] 9777658.0 7669078 1596616 3582006.2 2368556 4863606 6078612.0    2
+[4,] 9240166.3 4047514 2266605 8926245.3 4995967 5148315 7842838.6    1
+[5,]  189540.2 1140923 2677765  540335.2 7419707 5827330 8755780.2    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+4.628571
+valor do p-value:
+0.592254
+hipótese H0 não rejeitada 
+|=|best 
+3
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 8760508 5562249 5711102 8348584 7285133 7116789 8307011  1
+2 4558519 4610519 2178030 1687839 5196915 5831484 5021985  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+4.5
+valor do p-value:
+0.6093393
+hipótese H0 não rejeitada 
+|=|bestagg 
+3          5|          7|          3|  3.591e+06|         35|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]    [,3]      [,4]      [,5]    [,6]      [,7] [,8]
+[1,] 3708358.4 5021556 2259710  941174.1 5802480.2 6803516  231564.2    2
+[2,] 8280849.8 7076985 9155598 7770921.8 9574298.5 9085263 8771183.7    1
+[3,] 9777658.0 7669078 1596616 3582006.2 2368556.1 4863606 6078612.0    2
+[4,] 9240166.3 4047514 2266605 8926245.3 4995966.5 5148315 7842838.6    1
+[5,]  189540.2 1140923 2677765  540335.2 7419707.3 5827330 8755780.2    2
+[6,] 8539452.7 6225000 9779181 2441550.6  937720.6 6290799 1563616.1    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+6
+Valor da estatistica: 
+3.642857
+valor do p-value:
+0.7248763
+hipótese H0 não rejeitada 
+|=|best 
+4
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 8649980 5893625 7745141 5395067 4111427 6703794 4935314  1
+2 4558519 4610519 2178030 1687839 5196915 5831484 5021985  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+4.071429
+valor do p-value:
+0.6670106
+hipótese H0 não rejeitada 
+|=|bestagg 
+4          6|          7|          4|  4.034e+06|         42|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]    [,3]      [,4]      [,5]    [,6]      [,7] [,8]
+[1,] 3708358.4 5021556 2259710  941174.1 5802480.2 6803516  231564.2    2
+[2,] 8280849.8 7076985 9155598 7770921.8 9574298.5 9085263 8771183.7    1
+[3,] 9777658.0 7669078 1596616 3582006.2 2368556.1 4863606 6078612.0    2
+[4,] 9240166.3 4047514 2266605 8926245.3 4995966.5 5148315 7842838.6    1
+[5,]  189540.2 1140923 2677765  540335.2 7419707.3 5827330 8755780.2    2
+[6,] 8539452.7 6225000 9779181 2441550.6  937720.6 6290799 1563616.1    1
+[7,] 8512605.9 7219912 1816487 2151865.2 2688535.6 5397555  863899.6    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+7
+Valor da estatistica: 
+5.326531
+valor do p-value:
+0.5026656
+hipótese H0 não rejeitada 
+|=|best 
+4
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 8649980 5893625 7745141 5395067 4111427 6703794 4935314  1
+2 6535562 5915216 1997259 1919852 3942725 5614520 2942943  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+8.357143
+valor do p-value:
+0.2130881
+hipótese H0 não rejeitada 
+|=|bestagg 
+4          7|          7|          4|  3.765e+06|         49|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]    [,3]      [,4]      [,5]    [,6]      [,7] [,8]
+[1,] 3708358.4 5021556 2259710  941174.1 5802480.2 6803516  231564.2    2
+[2,] 8280849.8 7076985 9155598 7770921.8 9574298.5 9085263 8771183.7    1
+[3,] 9777658.0 7669078 1596616 3582006.2 2368556.1 4863606 6078612.0    2
+[4,] 9240166.3 4047514 2266605 8926245.3 4995966.5 5148315 7842838.6    1
+[5,]  189540.2 1140923 2677765  540335.2 7419707.3 5827330 8755780.2    2
+[6,] 8539452.7 6225000 9779181 2441550.6  937720.6 6290799 1563616.1    1
+[7,] 8512605.9 7219912 1816487 2151865.2 2688535.6 5397555  863899.6    2
+[8,]  784670.4 8051958 1023053 2814301.2 4214463.0 9885877 9417171.8    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+8
+Valor da estatistica: 
+5.839286
+valor do p-value:
+0.4414323
+hipótese H0 não rejeitada 
+|=|best 
+4
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 4717325 6972791 4384097 4104684 4162945 8294836 7176243  1
+2 6535562 5915216 1997259 1919852 3942725 5614520 2942943  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+9
+valor do p-value:
+0.1735781
+hipótese H0 não rejeitada 
+|=|bestagg 
+4          8|          7|          4|  3.646e+06|         56|
+ 
+[1] "Estrutura não agregada \n"
+           [,1]    [,2]    [,3]      [,4]      [,5]      [,6]      [,7] [,8]
+ [1,] 3708358.4 5021556 2259710  941174.1 5802480.2 6803515.7  231564.2    2
+ [2,] 8280849.8 7076985 9155598 7770921.8 9574298.5 9085262.5 8771183.7    1
+ [3,] 9777658.0 7669078 1596616 3582006.2 2368556.1 4863605.8 6078612.0    2
+ [4,] 9240166.3 4047514 2266605 8926245.3 4995966.5 5148315.0 7842838.6    1
+ [5,]  189540.2 1140923 2677765  540335.2 7419707.3 5827330.0 8755780.2    2
+ [6,] 8539452.7 6225000 9779181 2441550.6  937720.6 6290799.4 1563616.1    1
+ [7,] 8512605.9 7219912 1816487 2151865.2 2688535.6 5397555.2  863899.6    2
+ [8,]  784670.4 8051958 1023053 2814301.2 4214463.0 9885877.3 9417171.8    1
+ [9,] 2244667.1 9941037 3281401 1811788.1 8093717.3  658410.6 4454949.5    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+9
+Valor da estatistica: 
+5.047619
+valor do p-value:
+0.5377203
+hipótese H0 não rejeitada 
+|=|best 
+4
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 4717325 6972791 4384097 4104684 4162945 8294836 7176243  1
+2 4390115 7928126 2639330 1865820 6018221 3136465 3698946  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+7.5
+valor do p-value:
+0.2770684
+hipótese H0 não rejeitada 
+|=|bestagg 
+4          9|          7|          4|  3.442e+06|         63|
+[1] 4
+[1] 4
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           4	mean value:  3.442e+06
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+5       eas           3   2.8 2.45 0.49   57   22 NA   0      NA         565
+
+
+[1] "variável Result \n"
+$precis
+[1] "\nRacing methods for the selection of the best\nCopyright (C) 2003 Mauro Birattari\nThis software comes with ABSOLUTELY NO WARRANTY\n\nRace name:                                                                irace \nNumber of candidates:                                                         7 \nNumber of available tasks:                                                 1000 \nMax number of experiments:                                                   63 \nStatistical test:                                                 Friedman test \nTasks seen before discarding:                                                 5 \nInitialization function:                                                     ok \n"
+
+$results
+           [,1]    [,2]    [,3]      [,4]      [,5]      [,6]      [,7] [,8]
+ [1,] 3708358.4 5021556 2259710  941174.1 5802480.2 6803515.7  231564.2    2
+ [2,] 8280849.8 7076985 9155598 7770921.8 9574298.5 9085262.5 8771183.7    1
+ [3,] 9777658.0 7669078 1596616 3582006.2 2368556.1 4863605.8 6078612.0    2
+ [4,] 9240166.3 4047514 2266605 8926245.3 4995966.5 5148315.0 7842838.6    1
+ [5,]  189540.2 1140923 2677765  540335.2 7419707.3 5827330.0 8755780.2    2
+ [6,] 8539452.7 6225000 9779181 2441550.6  937720.6 6290799.4 1563616.1    1
+ [7,] 8512605.9 7219912 1816487 2151865.2 2688535.6 5397555.2  863899.6    2
+ [8,]  784670.4 8051958 1023053 2814301.2 4214463.0 9885877.3 9417171.8    1
+ [9,] 2244667.1 9941037 3281401 1811788.1 8093717.3  658410.6 4454949.5    2
+
+$time
+      [,1] [,2] [,3] [,4] [,5] [,6] [,7]
+ [1,]   NA   NA   NA   NA   NA   NA   NA
+ [2,]   NA   NA   NA   NA   NA   NA   NA
+ [3,]   NA   NA   NA   NA   NA   NA   NA
+ [4,]   NA   NA   NA   NA   NA   NA   NA
+ [5,]   NA   NA   NA   NA   NA   NA   NA
+ [6,]   NA   NA   NA   NA   NA   NA   NA
+ [7,]   NA   NA   NA   NA   NA   NA   NA
+ [8,]   NA   NA   NA   NA   NA   NA   NA
+ [9,]   NA   NA   NA   NA   NA   NA   NA
+
+$no.candidates
+[1] 7
+
+$no.tasks
+[1] 9
+
+$no.subtasks
+[1] 1
+
+$no.experiments
+[1] 63
+
+$no.alive
+[1] 7
+
+$alive
+[1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+
+$best
+[1] 4
+
+$mean.best
+[1] 3442243
+
+$timestamp.start
+[1] "Mon Oct 26 20:49:17 2015"
+
+$race.data
+$race.data$no.candidates
+[1] 7
+
+$race.data$no.tasks
+[1] 1000
+
+$race.data$race.instances
+   [1] 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1
+
+$race.data$candidates
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+9        acs           2  1.47 6.66 0.85   20    5 0.89    0      NA          NA
+14       acs           2  4.90 0.78 0.76   38    5 0.34    0      NA          NA
+12      mmas           0  4.14 5.81 0.26   61   NA   NA <NA>      NA          NA
+5        eas           3  2.80 2.45 0.49   57   22   NA    0      NA         565
+15       ras           0  3.59 4.93 0.59   54   NA   NA <NA>      88          NA
+16       acs           1  2.61 3.57 0.73   26   15 0.38    1      NA          NA
+17       eas           2  3.49 1.06 0.97   37   10   NA    0      NA         307
+
+$race.data$candidatesagg
+  algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+1       eas           2  1.07 8.19 0.01   24   14   NA    1      NA         103
+2       eas           0  2.58 5.66 0.44   71   NA   NA <NA>      NA         360
+3       eas           3  0.98 9.09 0.65   99   25   NA    0      NA         130
+4        as           3  4.03 6.61 0.96   55   50   NA    0      NA          NA
+5       ras           2  0.83 1.95 0.45   13   35   NA    0      20          NA
+6      mmas           1  0.18 4.98 0.93   28   38   NA    0      NA          NA
+7       acs           3  1.18 0.54 0.44   34   45 0.26    1      NA          NA
+
+$race.data$parameters
+$race.data$parameters$names
+$race.data$parameters$names$algorithm
+[1] "algorithm"
+
+$race.data$parameters$names$localsearch
+[1] "localsearch"
+
+$race.data$parameters$names$alpha
+[1] "alpha"
+
+$race.data$parameters$names$beta
+[1] "beta"
+
+$race.data$parameters$names$rho
+[1] "rho"
+
+$race.data$parameters$names$ants
+[1] "ants"
+
+$race.data$parameters$names$nnls
+[1] "nnls"
+
+$race.data$parameters$names$q0
+[1] "q0"
+
+$race.data$parameters$names$dlb
+[1] "dlb"
+
+$race.data$parameters$names$rasrank
+[1] "rasrank"
+
+$race.data$parameters$names$elitistants
+[1] "elitistants"
+
+
+$race.data$parameters$types
+$race.data$parameters$types$algorithm
+[1] "c"
+
+$race.data$parameters$types$localsearch
+[1] "c"
+
+$race.data$parameters$types$alpha
+[1] "r"
+
+$race.data$parameters$types$beta
+[1] "r"
+
+$race.data$parameters$types$rho
+[1] "r"
+
+$race.data$parameters$types$ants
+[1] "i"
+
+$race.data$parameters$types$nnls
+[1] "i"
+
+$race.data$parameters$types$q0
+[1] "r"
+
+$race.data$parameters$types$dlb
+[1] "c"
+
+$race.data$parameters$types$rasrank
+[1] "i"
+
+$race.data$parameters$types$elitistants
+[1] "i"
+
+
+$race.data$parameters$switches
+$race.data$parameters$switches$algorithm
+[1] "--"
+
+$race.data$parameters$switches$localsearch
+[1] "--localsearch "
+
+$race.data$parameters$switches$alpha
+[1] "--alpha "
+
+$race.data$parameters$switches$beta
+[1] "--beta "
+
+$race.data$parameters$switches$rho
+[1] "--rho  "
+
+$race.data$parameters$switches$ants
+[1] "--ants "
+
+$race.data$parameters$switches$nnls
+[1] "--nnls "
+
+$race.data$parameters$switches$q0
+[1] "--q0 "
+
+$race.data$parameters$switches$dlb
+[1] "--dlb "
+
+$race.data$parameters$switches$rasrank
+[1] "--rasranks "
+
+$race.data$parameters$switches$elitistants
+[1] "--elitistants "
+
+
+$race.data$parameters$boundary
+$race.data$parameters$boundary$algorithm
+[1] "as"   "mmas" "eas"  "ras"  "acs" 
+
+$race.data$parameters$boundary$localsearch
+[1] "0" "1" "2" "3"
+
+$race.data$parameters$boundary$alpha
+[1] 0 5
+
+$race.data$parameters$boundary$beta
+[1]  0 10
+
+$race.data$parameters$boundary$rho
+[1] 0.01 1.00
+
+$race.data$parameters$boundary$ants
+[1]   5 100
+
+$race.data$parameters$boundary$nnls
+[1]  5 50
+
+$race.data$parameters$boundary$q0
+[1] 0 1
+
+$race.data$parameters$boundary$dlb
+[1] "0" "1"
+
+$race.data$parameters$boundary$rasrank
+[1]   1 100
+
+$race.data$parameters$boundary$elitistants
+[1]   1 750
+
+
+$race.data$parameters$conditions
+$race.data$parameters$conditions$algorithm
+expression(TRUE)
+
+$race.data$parameters$conditions$localsearch
+expression(TRUE)
+
+$race.data$parameters$conditions$alpha
+expression(TRUE)
+
+$race.data$parameters$conditions$beta
+expression(TRUE)
+
+$race.data$parameters$conditions$rho
+expression(TRUE)
+
+$race.data$parameters$conditions$ants
+expression(TRUE)
+
+$race.data$parameters$conditions$nnls
+expression(localsearch %in% c(1, 2, 3))
+
+$race.data$parameters$conditions$q0
+expression(algorithm %in% c("acs"))
+
+$race.data$parameters$conditions$dlb
+expression(localsearch %in% c(1,2,3))
+
+$race.data$parameters$conditions$rasrank
+expression(algorithm %in% c("ras"))
+
+$race.data$parameters$conditions$elitistants
+expression(algorithm %in% c("eas"))
+
+
+$race.data$parameters$isFixed
+$race.data$parameters$isFixed$algorithm
+[1] FALSE
+
+$race.data$parameters$isFixed$localsearch
+[1] FALSE
+
+$race.data$parameters$isFixed$alpha
+[1] FALSE
+
+$race.data$parameters$isFixed$beta
+[1] FALSE
+
+$race.data$parameters$isFixed$rho
+[1] FALSE
+
+$race.data$parameters$isFixed$ants
+[1] FALSE
+
+$race.data$parameters$isFixed$nnls
+[1] FALSE
+
+$race.data$parameters$isFixed$q0
+[1] FALSE
+
+$race.data$parameters$isFixed$dlb
+[1] FALSE
+
+$race.data$parameters$isFixed$rasrank
+[1] FALSE
+
+$race.data$parameters$isFixed$elitistants
+[1] FALSE
+
+
+$race.data$parameters$nbParameters
+[1] 11
+
+$race.data$parameters$nbFixed
+[1] 0
+
+$race.data$parameters$nbVariable
+[1] 11
+
+
+$race.data$config
+$race.data$config$parameterFile
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/parameters-acotsp.txt"
+
+$race.data$config$execDir
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/acotsp-arena"
+
+$race.data$config$instanceDir
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances"
+
+$race.data$config$maxExperiments
+[1] 300
+
+$race.data$config$digits
+[1] 2
+
+$race.data$config$configurationFile
+[1] "./tune-conf"
+
+$race.data$config$logFile
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/acotsp-arena/irace.Rdata"
+
+$race.data$config$instances
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances//1000-1.tsp" "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances//1000-2.tsp"
+
+$race.data$config$instanceFile
+[1] ""
+
+$race.data$config$candidatesFile
+[1] ""
+
+$race.data$config$forbiddenFile
+[1] ""
+
+$race.data$config$hookRun
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/hook-run"
+
+$race.data$config$hookRunData
+[1] ""
+
+$race.data$config$timeBudget
+[1] 0
+
+$race.data$config$timeEstimate
+[1] 0
+
+$race.data$config$debugLevel
+[1] 0
+
+$race.data$config$nbIterations
+[1] 0
+
+$race.data$config$nbExperimentsPerIteration
+[1] 0
+
+$race.data$config$sampleInstances
+[1] TRUE
+
+$race.data$config$testType
+[1] "friedman"
+
+$race.data$config$firstTest
+[1] 5
+
+$race.data$config$eachTest
+[1] 1
+
+$race.data$config$minNbSurvival
+[1] 0
+
+$race.data$config$nbCandidates
+[1] 0
+
+$race.data$config$nbCandidatesagg
+[1] "0"
+
+$race.data$config$mu
+[1] 5
+
+$race.data$config$confidence
+[1] 0.95
+
+$race.data$config$seed
+[1] 451007644
+
+$race.data$config$parallel
+[1] 0
+
+$race.data$config$mpi
+[1] FALSE
+
+$race.data$config$sgeCluster
+[1] FALSE
+
+$race.data$config$softRestart
+[1] TRUE
+
+
+
+$ranks
+[1] 39 39 30 26 39 43 36
+
+$timestamp.end
+[1] "Mon Oct 26 20:49:17 2015"
+
+$description.best
+  algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+5       eas           3   2.8 2.45 0.49   57   22 NA   0      NA         565
+
+$alive.inTime
+[1] 8
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+5        eas           3  2.80 2.45 0.49   57   22   NA    0      NA         565
+12      mmas           0  4.14 5.81 0.26   61   NA   NA <NA>      NA          NA
+17       eas           2  3.49 1.06 0.97   37   10   NA    0      NA         307
+9        acs           2  1.47 6.66 0.85   20    5 0.89    0      NA          NA
+14       acs           2  4.90 0.78 0.76   38    5 0.34    0      NA          NA
+[1] "nbCandidates \n"
+[1] 7
+[1] "nbCandidatesagg \n"
+[1] 7
+# 2015-10-26 20:49:17 BRST: Iteration 5 of 5
+# experimentsUsedSoFar: 237
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 63
+# currentBudget: 63
+# nbCandidates: 6
+# 2015-10-26 20:49:17 BRST: Only 7 from candidates file will be used, the rest are discarded
+[1] "testCandidatesagg \n"
+  .ID. algorithm localsearch alpha beta  rho ants nnls q0  dlb rasrank elitistants .PARENT.
+1    1       eas           2  1.07 8.19 0.01   24   14 NA    1      NA         103       NA
+2    2       eas           0  2.58 5.66 0.44   71   NA NA <NA>      NA         360       NA
+3    3       eas           3  0.98 9.09 0.65   99   25 NA    0      NA         130       NA
+4    4        as           3  4.03 6.61 0.96   55   50 NA    0      NA          NA       NA
+5    5       ras           2  0.83 1.95 0.45   13   35 NA    0      20          NA       NA
+6    6      mmas           1  0.18 4.98 0.93   28   38 NA    0      NA          NA       NA
+[1] "Funcao race iniciando..."
+no.tasks 
+[1] 1000
+no.subtasks 
+[1] 1
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          6|          2|  3.541e+05|          6|
+|x|          2|          6|          1|  3.658e+06|         12|
+|x|          3|          6|          2|  2.657e+06|         18|
+|x|          4|          6|          1|  4.603e+06|         24|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]      [,2]    [,3]    [,4]    [,5]    [,6] [,7]
+[1,] 1787949  354105.3 5013356 5942176 3624032 2572664    1
+[2,] 5528763 7357629.9 5029338 3452428 9581150 6567802    2
+[3,] 9334931  258381.1 8291640 8287300 8989221 1974222    1
+[4,] 1761810 7335380.1 7390335 2501032 5683868 2994755    2
+[5,] 6276811  885455.4 6414979 2979443 9465334 7271237    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+6.142857
+valor do p-value:
+0.2925655
+hipótese H0 não rejeitada 
+|=|best 
+2
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1        V2      V3      V4      V5      V6 V7
+1 5799897  499313.9 6573325 5736306 7359529 3939374  1
+2 3645287 7346505.0 6209837 2976730 7632509 4781278  2
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+6.285714
+valor do p-value:
+0.2794019
+hipótese H0 não rejeitada 
+|=|bestagg 
+4          5|          6|          2|  3.238e+06|         30|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]      [,2]    [,3]    [,4]    [,5]    [,6] [,7]
+[1,] 1787949  354105.3 5013356 5942176 3624032 2572664    1
+[2,] 5528763 7357629.9 5029338 3452428 9581150 6567802    2
+[3,] 9334931  258381.1 8291640 8287300 8989221 1974222    1
+[4,] 1761810 7335380.1 7390335 2501032 5683868 2994755    2
+[5,] 6276811  885455.4 6414979 2979443 9465334 7271237    1
+[6,] 9073176 6469613.9 5312559 6046855 8124208 5776001    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+6
+Valor da estatistica: 
+5.619048
+valor do p-value:
+0.3450684
+hipótese H0 não rejeitada 
+|=|best 
+2
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1        V2      V3      V4      V5      V6 V7
+1 5799897  499313.9 6573325 5736306 7359529 3939374  1
+2 6359231 6908059.4 5761198 4511793 7878358 5278640  2
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+6.571429
+valor do p-value:
+0.2545135
+hipótese H0 não rejeitada 
+|=|bestagg 
+4          6|          6|          2|  3.777e+06|         36|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]      [,2]    [,3]    [,4]    [,5]    [,6] [,7]
+[1,] 1787949  354105.3 5013356 5942176 3624032 2572664    1
+[2,] 5528763 7357629.9 5029338 3452428 9581150 6567802    2
+[3,] 9334931  258381.1 8291640 8287300 8989221 1974222    1
+[4,] 1761810 7335380.1 7390335 2501032 5683868 2994755    2
+[5,] 6276811  885455.4 6414979 2979443 9465334 7271237    1
+[6,] 9073176 6469613.9 5312559 6046855 8124208 5776001    2
+[7,] 5220843 3780867.5 6173477 3425924 9369706 2362520    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+7
+Valor da estatistica: 
+8.55102
+valor do p-value:
+0.1283692
+hipótese H0 não rejeitada 
+|=|best 
+4
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6 V7
+1 5510370 2140091 6373401 4581115 8364617 3150947  1
+2 6359231 6908059 5761198 4511793 7878358 5278640  2
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+6.571429
+valor do p-value:
+0.2545135
+hipótese H0 não rejeitada 
+|=|bestagg 
+4          7|          6|          4|  4.662e+06|         42|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]      [,2]    [,3]      [,4]    [,5]    [,6] [,7]
+[1,] 1787949  354105.3 5013356 5942176.1 3624032 2572664    1
+[2,] 5528763 7357629.9 5029338 3452427.5 9581150 6567802    2
+[3,] 9334931  258381.1 8291640 8287300.0 8989221 1974222    1
+[4,] 1761810 7335380.1 7390335 2501032.1 5683868 2994755    2
+[5,] 6276811  885455.4 6414979 2979442.6 9465334 7271237    1
+[6,] 9073176 6469613.9 5312559 6046855.4 8124208 5776001    2
+[7,] 5220843 3780867.5 6173477 3425923.7 9369706 2362520    1
+[8,] 5114421  650335.0 3638358  797678.9 5238194 3851665    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+8
+Valor da estatistica: 
+11.35714
+valor do p-value:
+0.04474109
+|-|hipótese H0 rejeitada...
+Valor do teste t:
+13.74318vetor o:
+2 4 6 1 3 5best 
+2
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6 V7
+1 5510370 2140091 6373401 4581115 8364617 3150947  1
+2 5736826 3779197 4699778 2654736 6558276 4565153  2
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+8.857143
+valor do p-value:
+0.1148997
+hipótese H0 não rejeitada 
+|=|bestagg 
+2          8|          5|          2|  3.386e+06|         48|
+[1] 2
+[1] 2
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           2	mean value:  3.386e+06
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0  dlb rasrank elitistants
+12      mmas           0  4.14 5.81 0.26   61   NA NA <NA>      NA          NA
+
+
+[1] "variável Result \n"
+$precis
+[1] "\nRacing methods for the selection of the best\nCopyright (C) 2003 Mauro Birattari\nThis software comes with ABSOLUTELY NO WARRANTY\n\nRace name:                                                                irace \nNumber of candidates:                                                         6 \nNumber of available tasks:                                                 1000 \nMax number of experiments:                                                   63 \nStatistical test:                                                 Friedman test \nTasks seen before discarding:                                                 5 \nInitialization function:                                                     ok \n"
+
+$results
+        [,1]      [,2]    [,3]      [,4]    [,5]    [,6] [,7]
+[1,] 1787949  354105.3 5013356 5942176.1 3624032 2572664    1
+[2,] 5528763 7357629.9 5029338 3452427.5 9581150 6567802    2
+[3,] 9334931  258381.1 8291640 8287300.0 8989221 1974222    1
+[4,] 1761810 7335380.1 7390335 2501032.1 5683868 2994755    2
+[5,] 6276811  885455.4 6414979 2979442.6 9465334 7271237    1
+[6,] 9073176 6469613.9 5312559 6046855.4 8124208 5776001    2
+[7,] 5220843 3780867.5 6173477 3425923.7 9369706 2362520    1
+[8,] 5114421  650335.0 3638358  797678.9 5238194 3851665    2
+
+$time
+     [,1] [,2] [,3] [,4] [,5] [,6]
+[1,]   NA   NA   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA   NA   NA
+[7,]   NA   NA   NA   NA   NA   NA
+[8,]   NA   NA   NA   NA   NA   NA
+
+$no.candidates
+[1] 6
+
+$no.tasks
+[1] 8
+
+$no.subtasks
+[1] 1
+
+$no.experiments
+[1] 48
+
+$no.alive
+[1] 5
+
+$alive
+[1]  TRUE  TRUE  TRUE  TRUE FALSE  TRUE
+
+$best
+[1] 2
+
+$mean.best
+[1] 3386471
+
+$timestamp.start
+[1] "Mon Oct 26 20:49:17 2015"
+
+$race.data
+$race.data$no.candidates
+[1] 6
+
+$race.data$no.tasks
+[1] 1000
+
+$race.data$race.instances
+   [1] 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2
+
+$race.data$candidates
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+5        eas           3  2.80 2.45 0.49   57   22   NA    0      NA         565
+12      mmas           0  4.14 5.81 0.26   61   NA   NA <NA>      NA          NA
+17       eas           2  3.49 1.06 0.97   37   10   NA    0      NA         307
+9        acs           2  1.47 6.66 0.85   20    5 0.89    0      NA          NA
+14       acs           2  4.90 0.78 0.76   38    5 0.34    0      NA          NA
+18       ras           0  4.92 2.58 0.07   91   NA   NA <NA>      87          NA
+
+$race.data$candidatesagg
+  algorithm localsearch alpha beta  rho ants nnls q0  dlb rasrank elitistants
+1       eas           2  1.07 8.19 0.01   24   14 NA    1      NA         103
+2       eas           0  2.58 5.66 0.44   71   NA NA <NA>      NA         360
+3       eas           3  0.98 9.09 0.65   99   25 NA    0      NA         130
+4        as           3  4.03 6.61 0.96   55   50 NA    0      NA          NA
+5       ras           2  0.83 1.95 0.45   13   35 NA    0      20          NA
+6      mmas           1  0.18 4.98 0.93   28   38 NA    0      NA          NA
+
+$race.data$parameters
+$race.data$parameters$names
+$race.data$parameters$names$algorithm
+[1] "algorithm"
+
+$race.data$parameters$names$localsearch
+[1] "localsearch"
+
+$race.data$parameters$names$alpha
+[1] "alpha"
+
+$race.data$parameters$names$beta
+[1] "beta"
+
+$race.data$parameters$names$rho
+[1] "rho"
+
+$race.data$parameters$names$ants
+[1] "ants"
+
+$race.data$parameters$names$nnls
+[1] "nnls"
+
+$race.data$parameters$names$q0
+[1] "q0"
+
+$race.data$parameters$names$dlb
+[1] "dlb"
+
+$race.data$parameters$names$rasrank
+[1] "rasrank"
+
+$race.data$parameters$names$elitistants
+[1] "elitistants"
+
+
+$race.data$parameters$types
+$race.data$parameters$types$algorithm
+[1] "c"
+
+$race.data$parameters$types$localsearch
+[1] "c"
+
+$race.data$parameters$types$alpha
+[1] "r"
+
+$race.data$parameters$types$beta
+[1] "r"
+
+$race.data$parameters$types$rho
+[1] "r"
+
+$race.data$parameters$types$ants
+[1] "i"
+
+$race.data$parameters$types$nnls
+[1] "i"
+
+$race.data$parameters$types$q0
+[1] "r"
+
+$race.data$parameters$types$dlb
+[1] "c"
+
+$race.data$parameters$types$rasrank
+[1] "i"
+
+$race.data$parameters$types$elitistants
+[1] "i"
+
+
+$race.data$parameters$switches
+$race.data$parameters$switches$algorithm
+[1] "--"
+
+$race.data$parameters$switches$localsearch
+[1] "--localsearch "
+
+$race.data$parameters$switches$alpha
+[1] "--alpha "
+
+$race.data$parameters$switches$beta
+[1] "--beta "
+
+$race.data$parameters$switches$rho
+[1] "--rho  "
+
+$race.data$parameters$switches$ants
+[1] "--ants "
+
+$race.data$parameters$switches$nnls
+[1] "--nnls "
+
+$race.data$parameters$switches$q0
+[1] "--q0 "
+
+$race.data$parameters$switches$dlb
+[1] "--dlb "
+
+$race.data$parameters$switches$rasrank
+[1] "--rasranks "
+
+$race.data$parameters$switches$elitistants
+[1] "--elitistants "
+
+
+$race.data$parameters$boundary
+$race.data$parameters$boundary$algorithm
+[1] "as"   "mmas" "eas"  "ras"  "acs" 
+
+$race.data$parameters$boundary$localsearch
+[1] "0" "1" "2" "3"
+
+$race.data$parameters$boundary$alpha
+[1] 0 5
+
+$race.data$parameters$boundary$beta
+[1]  0 10
+
+$race.data$parameters$boundary$rho
+[1] 0.01 1.00
+
+$race.data$parameters$boundary$ants
+[1]   5 100
+
+$race.data$parameters$boundary$nnls
+[1]  5 50
+
+$race.data$parameters$boundary$q0
+[1] 0 1
+
+$race.data$parameters$boundary$dlb
+[1] "0" "1"
+
+$race.data$parameters$boundary$rasrank
+[1]   1 100
+
+$race.data$parameters$boundary$elitistants
+[1]   1 750
+
+
+$race.data$parameters$conditions
+$race.data$parameters$conditions$algorithm
+expression(TRUE)
+
+$race.data$parameters$conditions$localsearch
+expression(TRUE)
+
+$race.data$parameters$conditions$alpha
+expression(TRUE)
+
+$race.data$parameters$conditions$beta
+expression(TRUE)
+
+$race.data$parameters$conditions$rho
+expression(TRUE)
+
+$race.data$parameters$conditions$ants
+expression(TRUE)
+
+$race.data$parameters$conditions$nnls
+expression(localsearch %in% c(1, 2, 3))
+
+$race.data$parameters$conditions$q0
+expression(algorithm %in% c("acs"))
+
+$race.data$parameters$conditions$dlb
+expression(localsearch %in% c(1,2,3))
+
+$race.data$parameters$conditions$rasrank
+expression(algorithm %in% c("ras"))
+
+$race.data$parameters$conditions$elitistants
+expression(algorithm %in% c("eas"))
+
+
+$race.data$parameters$isFixed
+$race.data$parameters$isFixed$algorithm
+[1] FALSE
+
+$race.data$parameters$isFixed$localsearch
+[1] FALSE
+
+$race.data$parameters$isFixed$alpha
+[1] FALSE
+
+$race.data$parameters$isFixed$beta
+[1] FALSE
+
+$race.data$parameters$isFixed$rho
+[1] FALSE
+
+$race.data$parameters$isFixed$ants
+[1] FALSE
+
+$race.data$parameters$isFixed$nnls
+[1] FALSE
+
+$race.data$parameters$isFixed$q0
+[1] FALSE
+
+$race.data$parameters$isFixed$dlb
+[1] FALSE
+
+$race.data$parameters$isFixed$rasrank
+[1] FALSE
+
+$race.data$parameters$isFixed$elitistants
+[1] FALSE
+
+
+$race.data$parameters$nbParameters
+[1] 11
+
+$race.data$parameters$nbFixed
+[1] 0
+
+$race.data$parameters$nbVariable
+[1] 11
+
+
+$race.data$config
+$race.data$config$parameterFile
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/parameters-acotsp.txt"
+
+$race.data$config$execDir
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/acotsp-arena"
+
+$race.data$config$instanceDir
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances"
+
+$race.data$config$maxExperiments
+[1] 300
+
+$race.data$config$digits
+[1] 2
+
+$race.data$config$configurationFile
+[1] "./tune-conf"
+
+$race.data$config$logFile
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/acotsp-arena/irace.Rdata"
+
+$race.data$config$instances
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances//1000-1.tsp" "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances//1000-2.tsp"
+
+$race.data$config$instanceFile
+[1] ""
+
+$race.data$config$candidatesFile
+[1] ""
+
+$race.data$config$forbiddenFile
+[1] ""
+
+$race.data$config$hookRun
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/hook-run"
+
+$race.data$config$hookRunData
+[1] ""
+
+$race.data$config$timeBudget
+[1] 0
+
+$race.data$config$timeEstimate
+[1] 0
+
+$race.data$config$debugLevel
+[1] 0
+
+$race.data$config$nbIterations
+[1] 0
+
+$race.data$config$nbExperimentsPerIteration
+[1] 0
+
+$race.data$config$sampleInstances
+[1] TRUE
+
+$race.data$config$testType
+[1] "friedman"
+
+$race.data$config$firstTest
+[1] 5
+
+$race.data$config$eachTest
+[1] 1
+
+$race.data$config$minNbSurvival
+[1] 0
+
+$race.data$config$nbCandidates
+[1] 0
+
+$race.data$config$nbCandidatesagg
+[1] "0"
+
+$race.data$config$mu
+[1] 5
+
+$race.data$config$confidence
+[1] 0.95
+
+$race.data$config$seed
+[1] 451007644
+
+$race.data$config$parallel
+[1] 0
+
+$race.data$config$mpi
+[1] FALSE
+
+$race.data$config$sgeCluster
+[1] FALSE
+
+$race.data$config$softRestart
+[1] TRUE
+
+
+
+$ranks
+[1] 30 21 30 21 24
+
+$timestamp.end
+[1] "Mon Oct 26 20:49:17 2015"
+
+$description.best
+   algorithm localsearch alpha beta  rho ants nnls q0  dlb rasrank elitistants
+12      mmas           0  4.14 5.81 0.26   61   NA NA <NA>      NA          NA
+
+$alive.inTime
+[1] 7
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+12      mmas           0  4.14 5.81 0.26   61   NA   NA <NA>      NA          NA
+9        acs           2  1.47 6.66 0.85   20    5 0.89    0      NA          NA
+18       ras           0  4.92 2.58 0.07   91   NA   NA <NA>      87          NA
+5        eas           3  2.80 2.45 0.49   57   22   NA    0      NA         565
+17       eas           2  3.49 1.06 0.97   37   10   NA    0      NA         307
+[1] "nbCandidates \n"
+[1] 6
+[1] "nbCandidatesagg \n"
+[1] 6
+# 2015-10-26 20:49:17 BRST: Stopped because there is no enough budget left to race newly sampled configurations
+# Iteration: 6
+# nbIterations: 6
+# experimentsUsedSoFar: 285
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 15
+# currentBudget: 15
+# number of elites: 5
+# nbCandidates: 1
+# nbCandidatesagg: 6
+# mu: 5
+# Best candidates
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+12      mmas           0  4.14 5.81 0.26   61   NA   NA <NA>      NA          NA
+9        acs           2  1.47 6.66 0.85   20    5 0.89    0      NA          NA
+18       ras           0  4.92 2.58 0.07   91   NA   NA <NA>      87          NA
+5        eas           3  2.80 2.45 0.49   57   22   NA    0      NA         565
+17       eas           2  3.49 1.06 0.97   37   10   NA    0      NA         307
+# Best candidates (as commandlines)
+1  --mmas --localsearch 0 --alpha 4.14 --beta 5.81 --rho  0.26 --ants 61
+2  --acs --localsearch 2 --alpha 1.47 --beta 6.66 --rho  0.85 --ants 20 --nnls 5 --q0 0.89 --dlb 0
+3  --ras --localsearch 0 --alpha 4.92 --beta 2.58 --rho  0.07 --ants 91 --rasranks 87
+4  --eas --localsearch 3 --alpha 2.8 --beta 2.45 --rho  0.49 --ants 57 --nnls 22 --dlb 0 --elitistants 565
+5  --eas --localsearch 2 --alpha 3.49 --beta 1.06 --rho  0.97 --ants 37 --nnls 10 --dlb 0 --elitistants 307
+irace	version: 1.06.997
+********************************************************************************
+* irace: An implementation in R of Iterated Race                               *
+* Copyright (C) 2010-2014                                                      *
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@ulb.ac.be>                      *
+* Jeremie Dubois-Lacoste  <jeremie.dubois-lacoste@ulb.ac.be>                   *
+*                                                                              *
+* This is free software, and you are welcome to redistribute it under certain  *
+* conditions.  See the GNU General Public License for details. There is NO     *
+* warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  *
+*                                                                              *
+* irace builds upon previous code from the race package                        *
+* Copyright (C) 2003 Mauro Birattari                                           *
+********************************************************************************
+Warning: A default configuration file './tune-conf' has been found and will be read
+[1] "antes da chamada de irace.main"
+[1] "cheguei no fim de defaultConfiguration \n "
+[1] "cheguei aqui no irace \n"
+[1] "cheguei no fim de defaultConfiguration \n "
+[1] "cheguei no fim de defaultConfiguration \n "
+# 2015-10-26 22:22:57 BRST: Initialization
+# nbIterations: 5
+# minNbSurvival: 5
+# nbParameters: 11
+# seed: 155217500.355442
+# confidence level: 0.95
+# remainingBudget: 300
+# mu: 5
+
+[1] "nbCandidates \n"
+[1] 0
+[1] "nbCandidatesagg \n"
+[1] 0
+# 2015-10-26 22:22:57 BRST: Iteration 1 of 5
+# experimentsUsedSoFar: 0
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 300
+# currentBudget: 60
+# nbCandidates: 10
+[1] "testCandidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+1     1       acs           1  3.20 9.38 0.95   72   28 0.92    0      NA          NA       NA
+2     2       ras           1  4.08 1.60 0.78   17   37   NA    0      53          NA       NA
+3     3       eas           1  1.84 1.67 0.76   72    7   NA    1      NA         379       NA
+4     4       acs           3  3.57 4.46 0.93   80   49 0.29    1      NA          NA       NA
+5     5      mmas           2  1.08 4.95 0.01   11   32   NA    0      NA          NA       NA
+6     6        as           1  0.10 8.71 0.49   20   23   NA    1      NA          NA       NA
+7     7       eas           1  4.36 7.17 0.52   42   34   NA    0      NA         669       NA
+8     8       ras           0  4.48 6.18 0.32   92   NA   NA <NA>      19          NA       NA
+9     9       eas           3  4.19 6.72 0.80   54   30   NA    0      NA         714       NA
+10   10       acs           1  3.72 2.54 0.18   89   16 0.79    1      NA          NA       NA
+[1] "Funcao race iniciando..."
+no.tasks 
+[1] 1000
+no.subtasks 
+[1] 1
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|         10|          3|  6.375e+05|         10|
+|x|          2|         10|          4|  1.299e+06|         20|
+|x|          3|         10|          4|  9.868e+05|         30|
+|x|          4|         10|          3|  2.694e+06|         40|
+ 
+[1] "Estrutura não agregada \n"
+           [,1]    [,2]      [,3]      [,4]      [,5]       [,6]    [,7]      [,8]    [,9]   [,10] [,11]
+[1,] 6022071.21 6634590  637466.3 1647306.5  669041.7 5442195.37 8390825 2544053.7 7485495 7086512     1
+[2,] 9985754.85 2707049 3188984.2  950209.7  988638.4 8251646.57 3313837 3601109.1 1241064  579821     2
+[3,]   62359.03 3098956 6849980.5  362738.8 5968484.4   50521.63 8786374  705620.2 4237537 8928169     1
+[4,] 6922689.16 5045569  100352.9 8661250.3 4649326.0 1225397.29 8194391 4480449.2 5677006 6449646     2
+[5,] 6395551.08 9611871 9857433.4 1792712.5  732059.5 4909865.51 3204569 6014978.1 5682582 9693944     1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+9.305455
+valor do p-value:
+0.4095692
+hipótese H0 não rejeitada 
+|=|best 
+5
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7      V8      V9     V10 V11
+1 4159994 6448472 5781627 1267586 2456529 3467528 6793923 3088217 5801872 8569541   1
+2 8454222 3876309 1644669 4805730 2818982 4738522 5754114 4040779 3459035 3514733   2
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+8.290909
+valor do p-value:
+0.5051163
+hipótese H0 não rejeitada 
+|=|bestagg 
+5          5|         10|          5|  2.602e+06|         50|
+ 
+[1] "Estrutura não agregada \n"
+           [,1]    [,2]      [,3]      [,4]      [,5]       [,6]    [,7]      [,8]    [,9]   [,10] [,11]
+[1,] 6022071.21 6634590  637466.3 1647306.5  669041.7 5442195.37 8390825 2544053.7 7485495 7086512     1
+[2,] 9985754.85 2707049 3188984.2  950209.7  988638.4 8251646.57 3313837 3601109.1 1241064  579821     2
+[3,]   62359.03 3098956 6849980.5  362738.8 5968484.4   50521.63 8786374  705620.2 4237537 8928169     1
+[4,] 6922689.16 5045569  100352.9 8661250.3 4649326.0 1225397.29 8194391 4480449.2 5677006 6449646     2
+[5,] 6395551.08 9611871 9857433.4 1792712.5  732059.5 4909865.51 3204569 6014978.1 5682582 9693944     1
+[6,] 9879610.21 1127480 6340054.3 8344391.1 4997283.7  272540.22 4756865 6782825.5 1718109 5450216     2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+6
+Valor da estatistica: 
+9.163636
+valor do p-value:
+0.4223084
+hipótese H0 não rejeitada 
+|=|best 
+5
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7      V8      V9     V10 V11
+1 4159994 6448472 5781627 1267586 2456529 3467528 6793923 3088217 5801872 8569541   1
+2 9166916 2501895 3992361 6575061 3908133 2505531 5255489 5411802 2588572 4482475   2
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+6.654545
+valor do p-value:
+0.6730357
+hipótese H0 não rejeitada 
+|=|bestagg 
+5          6|         10|          5|  3.001e+06|         60|
+[1] 5
+[1] 5
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           5	mean value:  3.001e+06
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+5       ras           3  0.55 1.63 0.82   83   36 NA   0       5          NA
+
+
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           5	mean value:         NA
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+5       ras           3  0.55 1.63 0.82   83   36 NA   0       5          NA
+
+
+[1] "variável Result \n"
+$precis
+[1] "\nRacing methods for the selection of the best\nCopyright (C) 2003 Mauro Birattari\nThis software comes with ABSOLUTELY NO WARRANTY\n\nRace name:                                                                irace \nNumber of candidates:                                                        10 \nNumber of available tasks:                                                 1000 \nMax number of experiments:                                                   60 \nStatistical test:                                                 Friedman test \nTasks seen before discarding:                                                 5 \nInitialization function:                                                     ok \n"
+
+$results
+           [,1]    [,2]      [,3]      [,4]      [,5]       [,6]    [,7]      [,8]    [,9]   [,10] [,11]
+[1,] 6022071.21 6634590  637466.3 1647306.5  669041.7 5442195.37 8390825 2544053.7 7485495 7086512     1
+[2,] 9985754.85 2707049 3188984.2  950209.7  988638.4 8251646.57 3313837 3601109.1 1241064  579821     2
+[3,]   62359.03 3098956 6849980.5  362738.8 5968484.4   50521.63 8786374  705620.2 4237537 8928169     1
+[4,] 6922689.16 5045569  100352.9 8661250.3 4649326.0 1225397.29 8194391 4480449.2 5677006 6449646     2
+[5,] 6395551.08 9611871 9857433.4 1792712.5  732059.5 4909865.51 3204569 6014978.1 5682582 9693944     1
+[6,] 9879610.21 1127480 6340054.3 8344391.1 4997283.7  272540.22 4756865 6782825.5 1718109 5450216     2
+
+$time
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+[1,]   NA   NA   NA   NA   NA   NA   NA   NA   NA    NA
+[2,]   NA   NA   NA   NA   NA   NA   NA   NA   NA    NA
+[3,]   NA   NA   NA   NA   NA   NA   NA   NA   NA    NA
+[4,]   NA   NA   NA   NA   NA   NA   NA   NA   NA    NA
+[5,]   NA   NA   NA   NA   NA   NA   NA   NA   NA    NA
+[6,]   NA   NA   NA   NA   NA   NA   NA   NA   NA    NA
+
+$no.candidates
+[1] 10
+
+$no.tasks
+[1] 6
+
+$no.subtasks
+[1] 1
+
+$no.experiments
+[1] 60
+
+$no.alive
+[1] 10
+
+$alive
+ [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+
+$best
+[1] 5
+
+$mean.best
+[1] 3000806
+
+$timestamp.start
+[1] "Mon Oct 26 22:22:57 2015"
+
+$race.data
+$race.data$no.candidates
+[1] 10
+
+$race.data$no.tasks
+[1] 1000
+
+$race.data$race.instances
+   [1] 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2
+
+$race.data$candidates
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+1        ras           0  1.39 3.46 0.80   68   NA   NA <NA>      26          NA
+2        ras           2  1.26 7.55 0.27   36   35   NA    1      71          NA
+3        acs           2  1.30 1.17 0.73   30   24 0.95    0      NA          NA
+4         as           1  2.50 2.77 0.81   55   22   NA    1      NA          NA
+5        ras           3  0.55 1.63 0.82   83   36   NA    0       5          NA
+6        eas           2  0.02 8.29 0.26   39   24   NA    1      NA         501
+7        acs           0  3.22 5.31 0.44   25   NA 0.05 <NA>      NA          NA
+8         as           0  2.39 6.32 0.78   32   NA   NA <NA>      NA          NA
+9        acs           3  1.79 4.49 0.77   97   33 0.49    0      NA          NA
+10       ras           2  4.04 6.99 0.64   80   11   NA    1      29          NA
+
+$race.data$candidatesagg
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+1        acs           1  3.20 9.38 0.95   72   28 0.92    0      NA          NA
+2        ras           1  4.08 1.60 0.78   17   37   NA    0      53          NA
+3        eas           1  1.84 1.67 0.76   72    7   NA    1      NA         379
+4        acs           3  3.57 4.46 0.93   80   49 0.29    1      NA          NA
+5       mmas           2  1.08 4.95 0.01   11   32   NA    0      NA          NA
+6         as           1  0.10 8.71 0.49   20   23   NA    1      NA          NA
+7        eas           1  4.36 7.17 0.52   42   34   NA    0      NA         669
+8        ras           0  4.48 6.18 0.32   92   NA   NA <NA>      19          NA
+9        eas           3  4.19 6.72 0.80   54   30   NA    0      NA         714
+10       acs           1  3.72 2.54 0.18   89   16 0.79    1      NA          NA
+
+$race.data$parameters
+$race.data$parameters$names
+$race.data$parameters$names$algorithm
+[1] "algorithm"
+
+$race.data$parameters$names$localsearch
+[1] "localsearch"
+
+$race.data$parameters$names$alpha
+[1] "alpha"
+
+$race.data$parameters$names$beta
+[1] "beta"
+
+$race.data$parameters$names$rho
+[1] "rho"
+
+$race.data$parameters$names$ants
+[1] "ants"
+
+$race.data$parameters$names$nnls
+[1] "nnls"
+
+$race.data$parameters$names$q0
+[1] "q0"
+
+$race.data$parameters$names$dlb
+[1] "dlb"
+
+$race.data$parameters$names$rasrank
+[1] "rasrank"
+
+$race.data$parameters$names$elitistants
+[1] "elitistants"
+
+
+$race.data$parameters$types
+$race.data$parameters$types$algorithm
+[1] "c"
+
+$race.data$parameters$types$localsearch
+[1] "c"
+
+$race.data$parameters$types$alpha
+[1] "r"
+
+$race.data$parameters$types$beta
+[1] "r"
+
+$race.data$parameters$types$rho
+[1] "r"
+
+$race.data$parameters$types$ants
+[1] "i"
+
+$race.data$parameters$types$nnls
+[1] "i"
+
+$race.data$parameters$types$q0
+[1] "r"
+
+$race.data$parameters$types$dlb
+[1] "c"
+
+$race.data$parameters$types$rasrank
+[1] "i"
+
+$race.data$parameters$types$elitistants
+[1] "i"
+
+
+$race.data$parameters$switches
+$race.data$parameters$switches$algorithm
+[1] "--"
+
+$race.data$parameters$switches$localsearch
+[1] "--localsearch "
+
+$race.data$parameters$switches$alpha
+[1] "--alpha "
+
+$race.data$parameters$switches$beta
+[1] "--beta "
+
+$race.data$parameters$switches$rho
+[1] "--rho  "
+
+$race.data$parameters$switches$ants
+[1] "--ants "
+
+$race.data$parameters$switches$nnls
+[1] "--nnls "
+
+$race.data$parameters$switches$q0
+[1] "--q0 "
+
+$race.data$parameters$switches$dlb
+[1] "--dlb "
+
+$race.data$parameters$switches$rasrank
+[1] "--rasranks "
+
+$race.data$parameters$switches$elitistants
+[1] "--elitistants "
+
+
+$race.data$parameters$boundary
+$race.data$parameters$boundary$algorithm
+[1] "as"   "mmas" "eas"  "ras"  "acs" 
+
+$race.data$parameters$boundary$localsearch
+[1] "0" "1" "2" "3"
+
+$race.data$parameters$boundary$alpha
+[1] 0 5
+
+$race.data$parameters$boundary$beta
+[1]  0 10
+
+$race.data$parameters$boundary$rho
+[1] 0.01 1.00
+
+$race.data$parameters$boundary$ants
+[1]   5 100
+
+$race.data$parameters$boundary$nnls
+[1]  5 50
+
+$race.data$parameters$boundary$q0
+[1] 0 1
+
+$race.data$parameters$boundary$dlb
+[1] "0" "1"
+
+$race.data$parameters$boundary$rasrank
+[1]   1 100
+
+$race.data$parameters$boundary$elitistants
+[1]   1 750
+
+
+$race.data$parameters$conditions
+$race.data$parameters$conditions$algorithm
+expression(TRUE)
+
+$race.data$parameters$conditions$localsearch
+expression(TRUE)
+
+$race.data$parameters$conditions$alpha
+expression(TRUE)
+
+$race.data$parameters$conditions$beta
+expression(TRUE)
+
+$race.data$parameters$conditions$rho
+expression(TRUE)
+
+$race.data$parameters$conditions$ants
+expression(TRUE)
+
+$race.data$parameters$conditions$nnls
+expression(localsearch %in% c(1, 2, 3))
+
+$race.data$parameters$conditions$q0
+expression(algorithm %in% c("acs"))
+
+$race.data$parameters$conditions$dlb
+expression(localsearch %in% c(1,2,3))
+
+$race.data$parameters$conditions$rasrank
+expression(algorithm %in% c("ras"))
+
+$race.data$parameters$conditions$elitistants
+expression(algorithm %in% c("eas"))
+
+
+$race.data$parameters$isFixed
+$race.data$parameters$isFixed$algorithm
+[1] FALSE
+
+$race.data$parameters$isFixed$localsearch
+[1] FALSE
+
+$race.data$parameters$isFixed$alpha
+[1] FALSE
+
+$race.data$parameters$isFixed$beta
+[1] FALSE
+
+$race.data$parameters$isFixed$rho
+[1] FALSE
+
+$race.data$parameters$isFixed$ants
+[1] FALSE
+
+$race.data$parameters$isFixed$nnls
+[1] FALSE
+
+$race.data$parameters$isFixed$q0
+[1] FALSE
+
+$race.data$parameters$isFixed$dlb
+[1] FALSE
+
+$race.data$parameters$isFixed$rasrank
+[1] FALSE
+
+$race.data$parameters$isFixed$elitistants
+[1] FALSE
+
+
+$race.data$parameters$nbParameters
+[1] 11
+
+$race.data$parameters$nbFixed
+[1] 0
+
+$race.data$parameters$nbVariable
+[1] 11
+
+
+$race.data$config
+$race.data$config$parameterFile
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/parameters-acotsp.txt"
+
+$race.data$config$execDir
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/acotsp-arena"
+
+$race.data$config$instanceDir
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances"
+
+$race.data$config$maxExperiments
+[1] 300
+
+$race.data$config$digits
+[1] 2
+
+$race.data$config$configurationFile
+[1] "./tune-conf"
+
+$race.data$config$logFile
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/acotsp-arena/irace.Rdata"
+
+$race.data$config$instances
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances//1000-1.tsp" "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/Instances//1000-2.tsp"
+
+$race.data$config$instanceFile
+[1] ""
+
+$race.data$config$candidatesFile
+[1] ""
+
+$race.data$config$forbiddenFile
+[1] ""
+
+$race.data$config$hookRun
+[1] "/home/athila/doutorado/R-Course/iracex/iracex/acotsp-arena/hook-run"
+
+$race.data$config$hookRunData
+[1] ""
+
+$race.data$config$timeBudget
+[1] 0
+
+$race.data$config$timeEstimate
+[1] 0
+
+$race.data$config$debugLevel
+[1] 0
+
+$race.data$config$nbIterations
+[1] 0
+
+$race.data$config$nbExperimentsPerIteration
+[1] 0
+
+$race.data$config$sampleInstances
+[1] TRUE
+
+$race.data$config$testType
+[1] "friedman"
+
+$race.data$config$firstTest
+[1] 5
+
+$race.data$config$eachTest
+[1] 1
+
+$race.data$config$minNbSurvival
+[1] 0
+
+$race.data$config$nbCandidates
+[1] 0
+
+$race.data$config$nbCandidatesagg
+[1] "0"
+
+$race.data$config$mu
+[1] 5
+
+$race.data$config$confidence
+[1] 0.95
+
+$race.data$config$seed
+[1] 155217500
+
+$race.data$config$parallel
+[1] 0
+
+$race.data$config$mpi
+[1] FALSE
+
+$race.data$config$sgeCluster
+[1] FALSE
+
+$race.data$config$softRestart
+[1] TRUE
+
+
+
+$ranks
+ [1] 43 32 33 29 22 22 42 33 33 41
+
+$timestamp.end
+[1] "Mon Oct 26 22:22:57 2015"
+
+$description.best
+  algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+5       ras           3  0.55 1.63 0.82   83   36 NA   0       5          NA
+
+$alive.inTime
+[1] 11
+

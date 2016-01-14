@@ -1,0 +1,1550 @@
+irace	version: 1.06.997
+********************************************************************************
+* irace: An implementation in R of Iterated Race                               *
+* Copyright (C) 2010-2014                                                      *
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@ulb.ac.be>                      *
+* Jeremie Dubois-Lacoste  <jeremie.dubois-lacoste@ulb.ac.be>                   *
+*                                                                              *
+* This is free software, and you are welcome to redistribute it under certain  *
+* conditions.  See the GNU General Public License for details. There is NO     *
+* warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  *
+*                                                                              *
+* irace builds upon previous code from the race package                        *
+* Copyright (C) 2003 Mauro Birattari                                           *
+********************************************************************************
+Warning: A default configuration file './tune-conf' has been found and will be read
+[1] "antes da chamada de irace.main"
+[1] "cheguei no fim de defaultConfiguration \n "
+[1] "cheguei aqui no irace \n"
+[1] "cheguei no fim de defaultConfiguration \n "
+[1] "cheguei no fim de defaultConfiguration \n "
+# 2015-10-27 05:13:49 BRST: Initialization
+# nbIterations: 5
+# minNbSurvival: 5
+# nbParameters: 11
+# seed: 1557341166.04961
+# confidence level: 0.95
+# remainingBudget: 300
+# mu: 5
+
+[1] "nbCandidates \n"
+[1] 0
+[1] "nbCandidatesagg \n"
+[1] 0
+# 2015-10-27 05:13:49 BRST: Iteration 1 of 5
+# experimentsUsedSoFar: 0
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 300
+# currentBudget: 60
+# nbCandidates: 10
+[1] "testCandidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+1     1        as           0  3.35 4.04 0.40    7   NA   NA <NA>      NA          NA       NA
+2     2       eas           1  4.61 8.00 0.83   59   45   NA    1      NA         198       NA
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA
+4     4       acs           3  2.49 9.20 0.36   73   12 0.30    1      NA          NA       NA
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA
+7     7       acs           3  1.49 3.02 0.72   50   13 0.57    0      NA          NA       NA
+8     8       acs           3  3.60 0.10 0.39   27   11 0.26    0      NA          NA       NA
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA
+[1] "testCandidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+1     1        as           0  3.35 4.04 0.40    7   NA   NA <NA>      NA          NA       NA
+2     2       eas           1  4.61 8.00 0.83   59   45   NA    1      NA         198       NA
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA
+4     4       acs           3  2.49 9.20 0.36   73   12 0.30    1      NA          NA       NA
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA
+7     7       acs           3  1.49 3.02 0.72   50   13 0.57    0      NA          NA       NA
+8     8       acs           3  3.60 0.10 0.39   27   11 0.26    0      NA          NA       NA
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA
+[1] "Funcao race iniciando..."
+no.tasks 
+[1] 1000
+no.subtasks 
+[1] 1
+[1] "ids"
+ [1] "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10"
+[1] "idsagg"
+ [1] "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|         10|          6|  6.423e+05|         10|
+|x|          2|         10|          6|  4.493e+05|         20|
+|x|          3|         10|          6|  2.581e+06|         30|
+|x|          4|         10|          6|  3.244e+06|         40|
+ 
+[1] "Estrutura não agregada \n"
+           [,1]    [,2]    [,3]    [,4]      [,5]      [,6]    [,7]    [,8]    [,9]     [,10] [,11]
+[1,] 7900384.63 9802235 4064627 2008797 7038793.3  642261.2 5824517 5182976  831710 9394644.5     2
+[2,] 2381668.23 3257293 3728023 2534072  689559.2  256407.3 8620543 5259052 2606475  643385.6     1
+[3,] 7368831.03 4266552 7245414 6900730  952507.5 6844714.4  580994  728947 8500996  673873.3     2
+[4,]   59747.82 8452116 2307606 5169665 6709601.4 5233208.8 6912043 5091238 2855542 3454685.6     1
+[5,] 7497938.21 9131694 5981677 7338031 6934852.9  753636.5 8537960 9553714 4560163 2957011.5     2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+10.17818
+valor do p-value:
+0.336254
+hipótese H0 não rejeitada 
+|=|best 
+6
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7      V8      V9     V10 V11
+1 1220708 5854705 3017815 3851869 3699580 2744808 7766293 5175145 2731009 2049036   1
+2 7589051 7733493 5763906 5415853 4975385 2746871 4981157 5155212 4630956 4341843   2
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+11.67273
+valor do p-value:
+0.2323944
+hipótese H0 não rejeitada 
+|=|bestagg 
+10          5|         10|          6|  2.746e+06|         50|
+ 
+[1] "Estrutura não agregada \n"
+           [,1]    [,2]    [,3]    [,4]      [,5]      [,6]    [,7]    [,8]    [,9]     [,10] [,11]
+[1,] 7900384.63 9802235 4064627 2008797 7038793.3  642261.2 5824517 5182976  831710 9394644.5     2
+[2,] 2381668.23 3257293 3728023 2534072  689559.2  256407.3 8620543 5259052 2606475  643385.6     1
+[3,] 7368831.03 4266552 7245414 6900730  952507.5 6844714.4  580994  728947 8500996  673873.3     2
+[4,]   59747.82 8452116 2307606 5169665 6709601.4 5233208.8 6912043 5091238 2855542 3454685.6     1
+[5,] 7497938.21 9131694 5981677 7338031 6934852.9  753636.5 8537960 9553714 4560163 2957011.5     2
+[6,] 9057795.21 8371514 1363342 9971469 4336382.3 9350760.4 4016921 4064567 8605044 3343850.0     1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+6
+Valor da estatistica: 
+9.127273
+valor do p-value:
+0.4256098
+hipótese H0 não rejeitada 
+|=|best 
+10
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7      V8      V9     V10 V11
+1 5139252 7113110 2190578 6911669 4017981 6047784 5891607 4619856 5668026 2696443   1
+2 7589051 7733493 5763906 5415853 4975385 2746871 4981157 5155212 4630956 4341843   2
+Nro. de Candidatos: 
+10
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+10.58182
+valor do p-value:
+0.305465
+hipótese H0 não rejeitada 
+|=|bestagg 
+10          6|         10|         10|  3.411e+06|         60|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:          10	mean value:  3.411e+06
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+10        as           3  1.61 9.66 0.57   65   16 NA   0      NA          NA
+
+
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate aggregated test:          10	mean value:         NA
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+10        as           3  1.61 9.66 0.57   65   16 NA   0      NA          NA
+
+
+[1] "candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+1     1        as           0  3.35 4.04 0.40    7   NA   NA <NA>      NA          NA       NA
+2     2       eas           1  4.61 8.00 0.83   59   45   NA    1      NA         198       NA
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA
+4     4       acs           3  2.49 9.20 0.36   73   12 0.30    1      NA          NA       NA
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA
+7     7       acs           3  1.49 3.02 0.72   50   13 0.57    0      NA          NA       NA
+8     8       acs           3  3.60 0.10 0.39   27   11 0.26    0      NA          NA       NA
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA
+[1] "result$aliveagg \n"
+ [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[1] "candidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+1     1        as           0  3.35 4.04 0.40    7   NA   NA <NA>      NA          NA       NA    TRUE     37
+2     2       eas           1  4.61 8.00 0.83   59   45   NA    1      NA         198       NA    TRUE     47
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA    TRUE     27
+4     4       acs           3  2.49 9.20 0.36   73   12 0.30    1      NA          NA       NA    TRUE     37
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE     32
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA    TRUE     25
+7     7       acs           3  1.49 3.02 0.72   50   13 0.57    0      NA          NA       NA    TRUE     37
+8     8       acs           3  3.60 0.10 0.39   27   11 0.26    0      NA          NA       NA    TRUE     36
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA    TRUE     31
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE     21
+[1] "candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+1     1        as           0  3.35 4.04 0.40    7   NA   NA <NA>      NA          NA       NA    TRUE     14
+2     2       eas           1  4.61 8.00 0.83   59   45   NA    1      NA         198       NA    TRUE     20
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA    TRUE      9
+4     4       acs           3  2.49 9.20 0.36   73   12 0.30    1      NA          NA       NA    TRUE     16
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE      7
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA    TRUE      9
+7     7       acs           3  1.49 3.02 0.72   50   13 0.57    0      NA          NA       NA    TRUE     12
+8     8       acs           3  3.60 0.10 0.39   27   11 0.26    0      NA          NA       NA    TRUE     10
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA    TRUE      9
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE      4
+[1] "result$aliveagg \n"
+ [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[1] "raceResults$candidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE     21
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA    TRUE     25
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA    TRUE     27
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA    TRUE     31
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE     32
+8     8       acs           3  3.60 0.10 0.39   27   11 0.26    0      NA          NA       NA    TRUE     36
+1     1        as           0  3.35 4.04 0.40    7   NA   NA <NA>      NA          NA       NA    TRUE     37
+4     4       acs           3  2.49 9.20 0.36   73   12 0.30    1      NA          NA       NA    TRUE     37
+7     7       acs           3  1.49 3.02 0.72   50   13 0.57    0      NA          NA       NA    TRUE     37
+2     2       eas           1  4.61 8.00 0.83   59   45   NA    1      NA         198       NA    TRUE     47
+[1] "raceResults$candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE      4
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE      7
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA    TRUE      9
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA    TRUE      9
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA    TRUE      9
+8     8       acs           3  3.60 0.10 0.39   27   11 0.26    0      NA          NA       NA    TRUE     10
+7     7       acs           3  1.49 3.02 0.72   50   13 0.57    0      NA          NA       NA    TRUE     12
+1     1        as           0  3.35 4.04 0.40    7   NA   NA <NA>      NA          NA       NA    TRUE     14
+4     4       acs           3  2.49 9.20 0.36   73   12 0.30    1      NA          NA       NA    TRUE     16
+2     2       eas           1  4.61 8.00 0.83   59   45   NA    1      NA         198       NA    TRUE     20
+[1] "raceResults$nbAlive \n"
+[1] 10
+[1] "raceResults$nbAliveagg \n"
+[1] 10
+[1] "cheguei antes de extracElites para eliteCandidatesagg \n"
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA
+6         as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA
+3        acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA
+9        ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA
+5        acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA
+# Elite candidates Aggregated Test:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA
+5        acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA
+3        acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA
+6         as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA
+9        ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA
+[1] "nbCandidates \n"
+[1] 10
+[1] "nbCandidatesagg \n"
+[1] 10
+# 2015-10-27 05:13:49 BRST: Iteration 2 of 5
+# experimentsUsedSoFar: 60
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 240
+# currentBudget: 60
+# nbCandidates: 8
+[1] "vou calcular nro. de novos candidatos \n"
+[1] "nbCandidatesagg \n"
+[1] 8
+[1] "nrow(eliteCandidatesagg)"
+[1] 5
+[1] "testCandidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA
+11   11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697        3
+12   12       acs           3  3.44 4.56 0.18   86   33 0.42    0      NA          NA        3
+13   13       eas           2  0.38 8.74 0.80   54   30   NA    0      NA         261        5
+[1] "testCandidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA
+11   11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA        6
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6
+13   13       eas           0  0.79 3.50 0.49   62   NA   NA <NA>      NA         526       10
+[1] "Funcao race iniciando..."
+no.tasks 
+[1] 1000
+no.subtasks 
+[1] 1
+[1] "ids"
+[1] "10" "6"  "3"  "9"  "5"  "11" "12" "13"
+[1] "idsagg"
+[1] "10" "5"  "3"  "6"  "9"  "11" "12" "13"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          8|          7|  4.805e+04|          8|
+|x|          2|          8|          7|  1.399e+05|         16|
+|x|          3|          8|          7|  8.627e+05|         24|
+|x|          4|          8|          7|  3.066e+06|         32|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]      [,2]    [,3]      [,4]      [,5]      [,6]       [,7]    [,8] [,9]
+[1,] 2850796 7443620.3 7137574 9424734.5 5618715.8  876562.3   48052.82 5868655    2
+[2,] 6393301 6610821.1 8371415 5852010.2  880514.9 3033030.6  231795.33 9482901    1
+[3,] 7655031  133707.3 4632060 9192187.0 8402074.8 8160840.7 2308136.73 6700653    2
+[4,] 4523321 2709595.0 4060337  112020.5 2570627.3 2974753.8 9677963.29 6538532    1
+[5,] 3589470 3443162.1 4027206  428868.3 6843572.6 7715598.9  937067.25 9884587    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+6.133333
+valor do p-value:
+0.52427
+hipótese H0 não rejeitada 
+|=|best 
+7
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7      V8 V9
+1 5458311 4660208 6215876 2982015 1725571 3003892 4954879 8010716  1
+2 4698432 3673497 5265613 6348597 6954788 5584334 1097752 7484632  2
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+6.166667
+valor do p-value:
+0.5204291
+hipótese H0 não rejeitada 
+|=|bestagg 
+2          5|          8|          7|  2.641e+06|         40|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]      [,2]    [,3]      [,4]      [,5]      [,6]       [,7]      [,8] [,9]
+[1,] 2850796 7443620.3 7137574 9424734.5 5618715.8  876562.3   48052.82 5868654.7    2
+[2,] 6393301 6610821.1 8371415 5852010.2  880514.9 3033030.6  231795.33 9482901.2    1
+[3,] 7655031  133707.3 4632060 9192187.0 8402074.8 8160840.7 2308136.73 6700652.9    2
+[4,] 4523321 2709595.0 4060337  112020.5 2570627.3 2974753.8 9677963.29 6538531.7    1
+[5,] 3589470 3443162.1 4027206  428868.3 6843572.6 7715598.9  937067.25 9884587.1    2
+[6,] 7991429  621496.0 2445067 2264897.1 9666516.8 3127833.7 2682558.67  712993.7    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+6
+Valor da estatistica: 
+4.888889
+valor do p-value:
+0.6735206
+hipótese H0 não rejeitada 
+|=|best 
+7
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7      V8 V9
+1 6724870 2640852 4330472 2623456 5696044 3065863 3818719 4361855  1
+2 4698432 3673497 5265613 6348597 6954788 5584334 1097752 7484632  2
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+8.333333
+valor do p-value:
+0.3041204
+hipótese H0 não rejeitada 
+|=|bestagg 
+2          6|          8|          7|  2.648e+06|         48|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]      [,2]    [,3]      [,4]      [,5]      [,6]       [,7]      [,8] [,9]
+[1,] 2850796 7443620.3 7137574 9424734.5 5618715.8  876562.3   48052.82 5868654.7    2
+[2,] 6393301 6610821.1 8371415 5852010.2  880514.9 3033030.6  231795.33 9482901.2    1
+[3,] 7655031  133707.3 4632060 9192187.0 8402074.8 8160840.7 2308136.73 6700652.9    2
+[4,] 4523321 2709595.0 4060337  112020.5 2570627.3 2974753.8 9677963.29 6538531.7    1
+[5,] 3589470 3443162.1 4027206  428868.3 6843572.6 7715598.9  937067.25 9884587.1    2
+[6,] 7991429  621496.0 2445067 2264897.1 9666516.8 3127833.7 2682558.67  712993.7    1
+[7,] 1453360 5626433.5 8594115 7501756.9  223104.4 3273401.2  336474.41 5821340.0    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+7
+Valor da estatistica: 
+6.190476
+valor do p-value:
+0.517693
+hipótese H0 não rejeitada 
+|=|best 
+7
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6        V7      V8 V9
+1 6724870 2640852 4330472 2623456 5696044 3065863 3818719.0 4361855  1
+2 3075896 4649965 6929864 6925177 3588946 4428868  717113.3 6652986  2
+Nro. de Candidatos: 
+8
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+4.333333
+valor do p-value:
+0.7406825
+hipótese H0 não rejeitada 
+|=|bestagg 
+7          7|          8|          7|  2.317e+06|         56|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           7	mean value:  2.317e+06
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+12       acs           3  3.44 4.56 0.18   86   33 0.42   0      NA          NA
+
+
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate aggregated test:           7	mean value:         NA
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+12       acs           3  3.44 4.56 0.18   86   33 0.42   0      NA          NA
+
+
+[1] "candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA
+11   11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA        6
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6
+13   13       eas           0  0.79 3.50 0.49   62   NA   NA <NA>      NA         526       10
+[1] "result$aliveagg \n"
+[1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[1] "candidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE     33
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA    TRUE     26
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA    TRUE     38
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA    TRUE     32
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE     30
+11   11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697        3    TRUE     32
+12   12       acs           3  3.44 4.56 0.18   86   33 0.42    0      NA          NA        3    TRUE     21
+13   13       eas           2  0.38 8.74 0.80   54   30   NA    0      NA         261        5    TRUE     40
+[1] "candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE     10
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE      7
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA    TRUE     13
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA    TRUE      8
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA    TRUE     10
+11   11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA        6    TRUE      7
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6    TRUE      5
+13   13       eas           0  0.79 3.50 0.49   62   NA   NA <NA>      NA         526       10    TRUE     12
+[1] "result$aliveagg \n"
+[1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[1] "raceResults$candidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+12   12       acs           3  3.44 4.56 0.18   86   33 0.42    0      NA          NA        3    TRUE     21
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA    TRUE     26
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE     30
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA    TRUE     32
+11   11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697        3    TRUE     32
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE     33
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA    TRUE     38
+13   13       eas           2  0.38 8.74 0.80   54   30   NA    0      NA         261        5    TRUE     40
+[1] "raceResults$candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6    TRUE      5
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE      7
+11   11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA        6    TRUE      7
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA    TRUE      8
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE     10
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA    TRUE     10
+13   13       eas           0  0.79 3.50 0.49   62   NA   NA <NA>      NA         526       10    TRUE     12
+3     3       acs           0  3.22 1.40 0.73   71   NA 0.78 <NA>      NA          NA       NA    TRUE     13
+[1] "raceResults$nbAlive \n"
+[1] 8
+[1] "raceResults$nbAliveagg \n"
+[1] 8
+[1] "cheguei antes de extracElites para eliteCandidatesagg \n"
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+12       acs           3  3.44 4.56 0.18   86   33 0.42    0      NA          NA
+6         as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA
+5        acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA
+9        ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA
+11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697
+# Elite candidates Aggregated Test:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+12       ras           1  3.88 7.95 0.82   57   32   NA   0      80          NA
+5        acs           1  3.42 5.66 0.47   45   48 0.15   1      NA          NA
+11        as           1  3.64 9.37 0.65   96   32   NA   1      NA          NA
+6         as           3  3.60 9.13 0.35   95    8   NA   1      NA          NA
+10        as           3  1.61 9.66 0.57   65   16   NA   0      NA          NA
+[1] "nbCandidates \n"
+[1] 8
+[1] "nbCandidatesagg \n"
+[1] 8
+# 2015-10-27 05:13:49 BRST: Iteration 3 of 5
+# experimentsUsedSoFar: 116
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 184
+# currentBudget: 61
+# nbCandidates: 7
+[1] "vou calcular nro. de novos candidatos \n"
+[1] "nbCandidatesagg \n"
+[1] 7
+[1] "nrow(eliteCandidatesagg)"
+[1] 5
+[1] "testCandidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+12   12       acs           3  3.44 4.56 0.18   86   33 0.42    0      NA          NA        3
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA
+11   11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697        3
+14   14       acs           2  2.79 7.89 0.93   45   11 0.80    0      NA          NA       12
+15   15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA       11
+[1] "testCandidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA
+11   11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA        6
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA
+14   14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA       10
+15   15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA       11
+[1] "Funcao race iniciando..."
+no.tasks 
+[1] 1000
+no.subtasks 
+[1] 1
+[1] "ids"
+[1] "12" "6"  "5"  "9"  "11" "14" "15"
+[1] "idsagg"
+[1] "12" "5"  "11" "6"  "10" "14" "15"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          7|          5|  1.509e+06|          7|
+|x|          2|          7|          1|  1.621e+06|         14|
+|x|          3|          7|          1|  2.449e+06|         21|
+|x|          4|          7|          1|  4.059e+06|         28|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]      [,2]    [,3]    [,4]    [,5]      [,6]    [,7] [,8]
+[1,] 2658849.4 8424771.9 4360860 9983735 1509152 7625224.6 2520621    2
+[2,]  582826.2 6317995.1 2531953 7492670 8576377 7973605.8 9591430    1
+[3,] 4106531.1  574732.2 5957647 3715884 4146371 4884748.5 6966777    2
+[4,] 8888487.5 9678306.2 9931308 7816622 9129813 2687652.0 2715979    1
+[5,] 8753792.2 5772058.7 3696920 7808629 5012629  567727.3 9925833    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+1.971429
+valor do p-value:
+0.9223075
+hipótese H0 não rejeitada 
+|=|best 
+1
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 4735657 7998151 6231630 7654646 8853095 5330629 6153705  1
+2 5173058 4923854 4671809 7169416 3556051 4359233 6471077  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+4.5
+valor do p-value:
+0.6093393
+hipótese H0 não rejeitada 
+|=|bestagg 
+6          5|          7|          1|  4.998e+06|         35|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]      [,2]    [,3]    [,4]      [,5]      [,6]      [,7] [,8]
+[1,] 2658849.4 8424771.9 4360860 9983735 1509152.2 7625224.6 2520620.8    2
+[2,]  582826.2 6317995.1 2531953 7492670 8576377.2 7973605.8 9591430.1    1
+[3,] 4106531.1  574732.2 5957647 3715884 4146370.7 4884748.5 6966777.3    2
+[4,] 8888487.5 9678306.2 9931308 7816622 9129813.1 2687652.0 2715979.1    1
+[5,] 8753792.2 5772058.7 3696920 7808629 5012629.2  567727.3 9925833.4    2
+[6,] 2282788.3 6039710.5 5800882 3797477  139033.8 7913218.1  716728.2    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+6
+Valor da estatistica: 
+1.785714
+valor do p-value:
+0.9383141
+hipótese H0 não rejeitada 
+|=|best 
+1
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 3509223 7018931 6016256 5726062 4496064 6621924 3435216  1
+2 5173058 4923854 4671809 7169416 3556051 4359233 6471077  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+3.857143
+valor do p-value:
+0.6960017
+hipótese H0 não rejeitada 
+|=|bestagg 
+5          6|          7|          1|  4.546e+06|         42|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]      [,2]    [,3]    [,4]      [,5]      [,6]      [,7] [,8]
+[1,] 2658849.4 8424771.9 4360860 9983735 1509152.2 7625224.6 2520620.8    2
+[2,]  582826.2 6317995.1 2531953 7492670 8576377.2 7973605.8 9591430.1    1
+[3,] 4106531.1  574732.2 5957647 3715884 4146370.7 4884748.5 6966777.3    2
+[4,] 8888487.5 9678306.2 9931308 7816622 9129813.1 2687652.0 2715979.1    1
+[5,] 8753792.2 5772058.7 3696920 7808629 5012629.2  567727.3 9925833.4    2
+[6,] 2282788.3 6039710.5 5800882 3797477  139033.8 7913218.1  716728.2    1
+[7,] 5068500.7 7067128.0 4913883 5619894 2135453.0  906042.4  818509.0    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+7
+Valor da estatistica: 
+2.326531
+valor do p-value:
+0.8873541
+hipótese H0 não rejeitada 
+|=|best 
+5
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 3509223 7018931 6016256 5726062 4496064 6621924 3435216  1
+2 5120779 5995491 4792846 6394655 2845752 2632638 3644793  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+6.642857
+valor do p-value:
+0.3551412
+hipótese H0 não rejeitada 
+|=|bestagg 
+7          7|          7|          5|  4.378e+06|         49|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]      [,2]    [,3]    [,4]      [,5]      [,6]      [,7] [,8]
+[1,] 2658849.4 8424771.9 4360860 9983735 1509152.2 7625224.6 2520620.8    2
+[2,]  582826.2 6317995.1 2531953 7492670 8576377.2 7973605.8 9591430.1    1
+[3,] 4106531.1  574732.2 5957647 3715884 4146370.7 4884748.5 6966777.3    2
+[4,] 8888487.5 9678306.2 9931308 7816622 9129813.1 2687652.0 2715979.1    1
+[5,] 8753792.2 5772058.7 3696920 7808629 5012629.2  567727.3 9925833.4    2
+[6,] 2282788.3 6039710.5 5800882 3797477  139033.8 7913218.1  716728.2    1
+[7,] 5068500.7 7067128.0 4913883 5619894 2135453.0  906042.4  818509.0    2
+[8,] 8340127.8 5616117.7 1930452 2702403 8325096.7 3937753.9 4989502.5    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+8
+Valor da estatistica: 
+1.5
+valor do p-value:
+0.9594946
+hipótese H0 não rejeitada 
+|=|best 
+5
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 5924675 6317524 3973354 4214232 6410581 5279839 4212359  1
+2 5120779 5995491 4792846 6394655 2845752 2632638 3644793  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+5.571429
+valor do p-value:
+0.472866
+hipótese H0 não rejeitada 
+|=|bestagg 
+3          8|          7|          5|  4.872e+06|         56|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           5	mean value:  4.872e+06
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+11       eas           3  2.16  4.3 0.88   70   40 NA   1      NA         697
+
+
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate aggregated test:           3	mean value:         NA
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+5       acs           1  3.42 5.66 0.47   45   48 0.15   1      NA          NA
+
+
+[1] "candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA
+11   11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA        6
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA
+14   14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA       10
+15   15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA       11
+[1] "result$aliveagg \n"
+[1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[1] "candidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+12   12       acs           3  3.44 4.56 0.18   86   33 0.42    0      NA          NA        3    TRUE     32
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA    TRUE     38
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE     31
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA    TRUE     33
+11   11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697        3    TRUE     29
+14   14       acs           2  2.79 7.89 0.93   45   11 0.80    0      NA          NA       12    TRUE     29
+15   15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA       11    TRUE     32
+[1] "candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6    TRUE     10
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE     12
+11   11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA        6    TRUE      5
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA    TRUE     10
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE      9
+14   14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA       10    TRUE      5
+15   15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA       11    TRUE      5
+[1] "result$aliveagg \n"
+[1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[1] "raceResults$candidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+11   11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697        3    TRUE     29
+14   14       acs           2  2.79 7.89 0.93   45   11 0.80    0      NA          NA       12    TRUE     29
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE     31
+12   12       acs           3  3.44 4.56 0.18   86   33 0.42    0      NA          NA        3    TRUE     32
+15   15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA       11    TRUE     32
+9     9       ras           0  3.16 8.81 0.32   79   NA   NA <NA>      36          NA       NA    TRUE     33
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA    TRUE     38
+[1] "raceResults$candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+11   11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA        6    TRUE      5
+14   14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA       10    TRUE      5
+15   15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA       11    TRUE      5
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE      9
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6    TRUE     10
+6     6        as           3  3.60 9.13 0.35   95    8   NA    1      NA          NA       NA    TRUE     10
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE     12
+[1] "raceResults$nbAlive \n"
+[1] 7
+[1] "raceResults$nbAliveagg \n"
+[1] 7
+[1] "cheguei antes de extracElites para eliteCandidatesagg \n"
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697
+14       acs           2  2.79 7.89 0.93   45   11 0.80    0      NA          NA
+5        acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA
+12       acs           3  3.44 4.56 0.18   86   33 0.42    0      NA          NA
+15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA
+# Elite candidates Aggregated Test:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA
+14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA
+15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA
+10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA
+12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA
+[1] "nbCandidates \n"
+[1] 7
+[1] "nbCandidatesagg \n"
+[1] 7
+# 2015-10-27 05:13:49 BRST: Iteration 4 of 5
+# experimentsUsedSoFar: 172
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 128
+# currentBudget: 64
+# nbCandidates: 7
+[1] "vou calcular nro. de novos candidatos \n"
+[1] "nbCandidatesagg \n"
+[1] 7
+[1] "nrow(eliteCandidatesagg)"
+[1] 5
+[1] "testCandidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+11   11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697        3
+14   14       acs           2  2.79 7.89 0.93   45   11 0.80    0      NA          NA       12
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA
+12   12       acs           3  3.44 4.56 0.18   86   33 0.42    0      NA          NA        3
+15   15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA       11
+16   16       acs           2  2.20 6.07 0.61   55    9 0.38    0      NA          NA       14
+17   17       acs           3  4.96 4.64 0.16   35   44 0.63    1      NA          NA       12
+[1] "testCandidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+11   11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA        6
+14   14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA       10
+15   15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA       11
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6
+16   16       acs           0  0.68 8.83 0.74   22   NA 0.13 <NA>      NA          NA       14
+17   17       ras           1  4.05 7.36 0.74   89   25   NA    1      86          NA       11
+[1] "Funcao race iniciando..."
+no.tasks 
+[1] 1000
+no.subtasks 
+[1] 1
+[1] "ids"
+[1] "11" "14" "5"  "12" "15" "16" "17"
+[1] "idsagg"
+[1] "11" "14" "15" "10" "12" "16" "17"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          7|          3|  8.494e+05|          7|
+|x|          2|          7|          3|   9.68e+05|         14|
+|x|          3|          7|          3|  7.875e+05|         21|
+|x|          4|          7|          3|  1.472e+06|         28|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]      [,3]    [,4]      [,5]      [,6]    [,7] [,8]
+[1,] 1951092.8 9619612  849437.7 4212947 3668685.6 6500441.4 9594063    1
+[2,] 8217748.1 6414449 1086578.0 5892657   81594.7 9623247.5 6390887    2
+[3,] 1909375.2 4920259  426407.4 2978867 8943823.0 2430904.4 8766310    1
+[4,]  110626.1 4062404 3526689.3 5288836 2098398.1  792468.2 8504758    2
+[5,] 7281476.1 7938950 9102415.2 6742474 4980335.1 4001483.9 7884400    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+8.485714
+valor do p-value:
+0.204633
+hipótese H0 não rejeitada 
+|=|best 
+1
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 3713981 7492940 3459420 4644763 5864281 4310943 8748258  1
+2 4164187 5238426 2306634 5590746 1089996 5207858 7447822  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+9.428571
+valor do p-value:
+0.1508712
+hipótese H0 não rejeitada 
+|=|bestagg 
+3          5|          7|          1|  3.894e+06|         35|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]      [,3]    [,4]      [,5]      [,6]    [,7] [,8]
+[1,] 1951092.8 9619612  849437.7 4212947 3668685.6 6500441.4 9594063    1
+[2,] 8217748.1 6414449 1086578.0 5892657   81594.7 9623247.5 6390887    2
+[3,] 1909375.2 4920259  426407.4 2978867 8943823.0 2430904.4 8766310    1
+[4,]  110626.1 4062404 3526689.3 5288836 2098398.1  792468.2 8504758    2
+[5,] 7281476.1 7938950 9102415.2 6742474 4980335.1 4001483.9 7884400    1
+[6,] 8000560.1 5458620 3497677.5 6321491 5759217.4 5207997.8 9505136    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+6
+Valor da estatistica: 
+9.857143
+valor do p-value:
+0.1307984
+hipótese H0 não rejeitada 
+|=|best 
+3
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 3713981 7492940 3459420 4644763 5864281 4310943 8748258  1
+2 6082374 5348523 2902156 5956119 3424607 5207928 8476479  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+8.785714
+valor do p-value:
+0.1859928
+hipótese H0 não rejeitada 
+|=|bestagg 
+3          6|          7|          3|  3.082e+06|         42|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]    [,2]      [,3]    [,4]      [,5]      [,6]    [,7] [,8]
+[1,] 1951092.8 9619612  849437.7 4212947 3668685.6 6500441.4 9594063    1
+[2,] 8217748.1 6414449 1086578.0 5892657   81594.7 9623247.5 6390887    2
+[3,] 1909375.2 4920259  426407.4 2978867 8943823.0 2430904.4 8766310    1
+[4,]  110626.1 4062404 3526689.3 5288836 2098398.1  792468.2 8504758    2
+[5,] 7281476.1 7938950 9102415.2 6742474 4980335.1 4001483.9 7884400    1
+[6,] 8000560.1 5458620 3497677.5 6321491 5759217.4 5207997.8 9505136    2
+[7,] 8275076.8  601962 1882808.9 6260764 4182166.0 4940948.8 2195639    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+7
+Valor da estatistica: 
+7.653061
+valor do p-value:
+0.2646384
+hipótese H0 não rejeitada 
+|=|best 
+3
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 5994529 4047451 2671115 5452763 5023224 4625946 5471948  1
+2 6082374 5348523 2902156 5956119 3424607 5207928 8476479  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+10.92857
+valor do p-value:
+0.09060926
+hipótese H0 não rejeitada 
+|=|bestagg 
+3          7|          7|          3|   2.91e+06|         49|
+ 
+[1] "Estrutura não agregada \n"
+          [,1]       [,2]      [,3]    [,4]      [,5]      [,6]    [,7] [,8]
+[1,] 1951092.8 9619611.62  849437.7 4212947 3668685.6 6500441.4 9594063    1
+[2,] 8217748.1 6414448.64 1086578.0 5892657   81594.7 9623247.5 6390887    2
+[3,] 1909375.2 4920258.99  426407.4 2978867 8943823.0 2430904.4 8766310    1
+[4,]  110626.1 4062404.17 3526689.3 5288836 2098398.1  792468.2 8504758    2
+[5,] 7281476.1 7938949.76 9102415.2 6742474 4980335.1 4001483.9 7884400    1
+[6,] 8000560.1 5458619.92 3497677.5 6321491 5759217.4 5207997.8 9505136    2
+[7,] 8275076.8  601961.98 1882808.9 6260764 4182166.0 4940948.8 2195639    1
+[8,] 5778415.8   83075.28 1586598.3 6744667 4129791.9 1175607.7 5439266    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+8
+Valor da estatistica: 
+8.678571
+valor do p-value:
+0.1924782
+hipótese H0 não rejeitada 
+|=|best 
+3
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 5994529 4047451 2671115 5452763 5023224 4625946 5471948  1
+2 5930395 2715799 2244377 6350393 3777199 3191768 6957872  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+11.35714
+valor do p-value:
+0.07794606
+hipótese H0 não rejeitada 
+|=|bestagg 
+3          8|          7|          3|  2.745e+06|         56|
+ 
+[1] "Estrutura não agregada \n"
+           [,1]       [,2]      [,3]    [,4]      [,5]      [,6]    [,7] [,8]
+ [1,] 1951092.8 9619611.62  849437.7 4212947 3668685.6 6500441.4 9594063    1
+ [2,] 8217748.1 6414448.64 1086578.0 5892657   81594.7 9623247.5 6390887    2
+ [3,] 1909375.2 4920258.99  426407.4 2978867 8943823.0 2430904.4 8766310    1
+ [4,]  110626.1 4062404.17 3526689.3 5288836 2098398.1  792468.2 8504758    2
+ [5,] 7281476.1 7938949.76 9102415.2 6742474 4980335.1 4001483.9 7884400    1
+ [6,] 8000560.1 5458619.92 3497677.5 6321491 5759217.4 5207997.8 9505136    2
+ [7,] 8275076.8  601961.98 1882808.9 6260764 4182166.0 4940948.8 2195639    1
+ [8,] 5778415.8   83075.28 1586598.3 6744667 4129791.9 1175607.7 5439266    2
+ [9,] 8822479.9 5138717.57 5891211.6 6501928 7045188.2 3820900.3 4851594    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+9
+Valor da estatistica: 
+8.190476
+valor do p-value:
+0.2244781
+hipótese H0 não rejeitada 
+|=|best 
+3
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6      V7 V8
+1 7408505 4593084 4281163 5977346 6034206 4223423 5161771  1
+2 5930395 2715799 2244377 6350393 3777199 3191768 6957872  2
+Nro. de Candidatos: 
+7
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+9.428571
+valor do p-value:
+0.1508712
+hipótese H0 não rejeitada 
+|=|bestagg 
+3          9|          7|          3|  3.094e+06|         63|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           3	mean value:  3.094e+06
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+5       acs           1  3.42 5.66 0.47   45   48 0.15   1      NA          NA
+
+
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate aggregated test:           3	mean value:         NA
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+5       acs           1  3.42 5.66 0.47   45   48 0.15   1      NA          NA
+
+
+[1] "candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+11   11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA        6
+14   14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA       10
+15   15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA       11
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6
+16   16       acs           0  0.68 8.83 0.74   22   NA 0.13 <NA>      NA          NA       14
+17   17       ras           1  4.05 7.36 0.74   89   25   NA    1      86          NA       11
+[1] "result$aliveagg \n"
+[1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[1] "candidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+11   11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697        3    TRUE     41
+14   14       acs           2  2.79 7.89 0.93   45   11 0.80    0      NA          NA       12    TRUE     36
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE     25
+12   12       acs           3  3.44 4.56 0.18   86   33 0.42    0      NA          NA        3    TRUE     43
+15   15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA       11    TRUE     34
+16   16       acs           2  2.20 6.07 0.61   55    9 0.38    0      NA          NA       14    TRUE     28
+17   17       acs           3  4.96 4.64 0.16   35   44 0.63    1      NA          NA       12    TRUE     45
+[1] "candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+11   11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA        6    TRUE     12
+14   14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA       10    TRUE      5
+15   15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA       11    TRUE      3
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE     11
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6    TRUE     10
+16   16       acs           0  0.68 8.83 0.74   22   NA 0.13 <NA>      NA          NA       14    TRUE      4
+17   17       ras           1  4.05 7.36 0.74   89   25   NA    1      86          NA       11    TRUE     11
+[1] "result$aliveagg \n"
+[1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[1] "raceResults$candidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE     25
+16   16       acs           2  2.20 6.07 0.61   55    9 0.38    0      NA          NA       14    TRUE     28
+15   15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA       11    TRUE     34
+14   14       acs           2  2.79 7.89 0.93   45   11 0.80    0      NA          NA       12    TRUE     36
+11   11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697        3    TRUE     41
+12   12       acs           3  3.44 4.56 0.18   86   33 0.42    0      NA          NA        3    TRUE     43
+17   17       acs           3  4.96 4.64 0.16   35   44 0.63    1      NA          NA       12    TRUE     45
+[1] "raceResults$candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+15   15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA       11    TRUE      3
+16   16       acs           0  0.68 8.83 0.74   22   NA 0.13 <NA>      NA          NA       14    TRUE      4
+14   14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA       10    TRUE      5
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6    TRUE     10
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE     11
+17   17       ras           1  4.05 7.36 0.74   89   25   NA    1      86          NA       11    TRUE     11
+11   11        as           1  3.64 9.37 0.65   96   32   NA    1      NA          NA        6    TRUE     12
+[1] "raceResults$nbAlive \n"
+[1] 7
+[1] "raceResults$nbAliveagg \n"
+[1] 7
+[1] "cheguei antes de extracElites para eliteCandidatesagg \n"
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+5        acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA
+16       acs           2  2.20 6.07 0.61   55    9 0.38    0      NA          NA
+15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA
+14       acs           2  2.79 7.89 0.93   45   11 0.80    0      NA          NA
+11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697
+# Elite candidates Aggregated Test:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA
+16       acs           0  0.68 8.83 0.74   22   NA 0.13 <NA>      NA          NA
+14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA
+12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA
+10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA
+[1] "nbCandidates \n"
+[1] 7
+[1] "nbCandidatesagg \n"
+[1] 7
+# 2015-10-27 05:13:49 BRST: Iteration 5 of 5
+# experimentsUsedSoFar: 235
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 65
+# currentBudget: 65
+# nbCandidates: 6
+[1] "vou calcular nro. de novos candidatos \n"
+[1] "nbCandidatesagg \n"
+[1] 6
+[1] "nrow(eliteCandidatesagg)"
+[1] 5
+[1] "testCandidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA
+16   16       acs           2  2.20 6.07 0.61   55    9 0.38    0      NA          NA       14
+15   15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA       11
+14   14       acs           2  2.79 7.89 0.93   45   11 0.80    0      NA          NA       12
+11   11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697        3
+18   18       ras           0  1.03 6.81 0.81   53   NA   NA <NA>      60          NA       15
+[1] "testCandidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+15   15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA       11
+16   16       acs           0  0.68 8.83 0.74   22   NA 0.13 <NA>      NA          NA       14
+14   14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA       10
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA
+18   18       acs           0  1.73 9.10 0.60   15   NA 0.87 <NA>      NA          NA       16
+[1] "Funcao race iniciando..."
+no.tasks 
+[1] 1000
+no.subtasks 
+[1] 1
+[1] "ids"
+[1] "5"  "16" "15" "14" "11" "18"
+[1] "idsagg"
+[1] "15" "16" "14" "12" "10" "18"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          6|          6|  1.985e+06|          6|
+|x|          2|          6|          1|  4.789e+06|         12|
+|x|          3|          6|          6|   3.92e+06|         18|
+|x|          4|          6|          6|  3.054e+06|         24|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]    [,2]    [,3]    [,4]    [,5]      [,6] [,7]
+[1,] 6219495 3278006 8018358 5926668 3162022 1984503.7    1
+[2,] 3359309 5861457 1432131 4127263 6029174 8978256.6    2
+[3,] 5406395 9700809 1977293 3661618 2117851  796628.9    1
+[4,] 3775444 9743253 7114466 4410439 1624399  458389.7    2
+[5,] 8642018 8855113 7862239 7513278 4625735 2920674.2    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+5
+Valor da estatistica: 
+7.514286
+valor do p-value:
+0.1851141
+hipótese H0 não rejeitada 
+|=|best 
+6
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6 V7
+1 6755969 7277976 5952630 5700522 3301870 1900602  1
+2 3567376 7802355 4273299 4268851 3826786 4718323  2
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+5.428571
+valor do p-value:
+0.3658419
+hipótese H0 não rejeitada 
+|=|bestagg 
+5          5|          6|          6|  3.028e+06|         30|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]    [,2]    [,3]    [,4]    [,5]      [,6] [,7]
+[1,] 6219495 3278006 8018358 5926668 3162022 1984503.7    1
+[2,] 3359309 5861457 1432131 4127263 6029174 8978256.6    2
+[3,] 5406395 9700809 1977293 3661618 2117851  796628.9    1
+[4,] 3775444 9743253 7114466 4410439 1624399  458389.7    2
+[5,] 8642018 8855113 7862239 7513278 4625735 2920674.2    1
+[6,] 5838221 2228734 6321652 6715116 8118953 1632282.5    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+6
+Valor da estatistica: 
+6.952381
+valor do p-value:
+0.224206
+hipótese H0 não rejeitada 
+|=|best 
+6
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6 V7
+1 6755969 7277976 5952630 5700522 3301870 1900602  1
+2 4702799 5015545 5297475 5491983 5972870 3175303  2
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+4.571429
+valor do p-value:
+0.4703838
+hipótese H0 não rejeitada 
+|=|bestagg 
+6          6|          6|          6|  2.795e+06|         36|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]    [,2]    [,3]    [,4]    [,5]      [,6] [,7]
+[1,] 6219495 3278006 8018358 5926668 3162022 1984503.7    1
+[2,] 3359309 5861457 1432131 4127263 6029174 8978256.6    2
+[3,] 5406395 9700809 1977293 3661618 2117851  796628.9    1
+[4,] 3775444 9743253 7114466 4410439 1624399  458389.7    2
+[5,] 8642018 8855113 7862239 7513278 4625735 2920674.2    1
+[6,] 5838221 2228734 6321652 6715116 8118953 1632282.5    2
+[7,] 4624049 3296288 3807757 9984996 5499209 5518024.4    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+7
+Valor da estatistica: 
+4.387755
+valor do p-value:
+0.4950404
+hipótese H0 não rejeitada 
+|=|best 
+6
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6 V7
+1 5690009 5287132 4880194 7842759 4400540 3709313  1
+2 4702799 5015545 5297475 5491983 5972870 3175303  2
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+6
+valor do p-value:
+0.3062189
+hipótese H0 não rejeitada 
+|=|bestagg 
+6          7|          6|          6|  3.184e+06|         42|
+ 
+[1] "Estrutura não agregada \n"
+        [,1]    [,2]    [,3]    [,4]    [,5]      [,6] [,7]
+[1,] 6219495 3278006 8018358 5926668 3162022 1984503.7    1
+[2,] 3359309 5861457 1432131 4127263 6029174 8978256.6    2
+[3,] 5406395 9700809 1977293 3661618 2117851  796628.9    1
+[4,] 3775444 9743253 7114466 4410439 1624399  458389.7    2
+[5,] 8642018 8855113 7862239 7513278 4625735 2920674.2    1
+[6,] 5838221 2228734 6321652 6715116 8118953 1632282.5    2
+[7,] 4624049 3296288 3807757 9984996 5499209 5518024.4    1
+[8,] 2568781 4625837 5768251 8496526 1462386 7996168.6    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+8
+Valor da estatistica: 
+4.142857
+valor do p-value:
+0.5290369
+hipótese H0 não rejeitada 
+|=|best 
+6
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6 V7
+1 5690009 5287132 4880194 7842759 4400540 3709313  1
+2 3635790 4820691 5532863 6994255 3717628 5585736  2
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+5.142857
+valor do p-value:
+0.3986958
+hipótese H0 não rejeitada 
+|=|bestagg 
+5          8|          6|          6|  3.786e+06|         48|
+ 
+[1] "Estrutura não agregada \n"
+         [,1]    [,2]    [,3]    [,4]    [,5]      [,6] [,7]
+ [1,] 6219495 3278006 8018358 5926668 3162022 1984503.7    1
+ [2,] 3359309 5861457 1432131 4127263 6029174 8978256.6    2
+ [3,] 5406395 9700809 1977293 3661618 2117851  796628.9    1
+ [4,] 3775444 9743253 7114466 4410439 1624399  458389.7    2
+ [5,] 8642018 8855113 7862239 7513278 4625735 2920674.2    1
+ [6,] 5838221 2228734 6321652 6715116 8118953 1632282.5    2
+ [7,] 4624049 3296288 3807757 9984996 5499209 5518024.4    1
+ [8,] 2568781 4625837 5768251 8496526 1462386 7996168.6    2
+ [9,] 3885474 4381261 7194188 3533246 1675016 3913012.3    1
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+9
+Valor da estatistica: 
+4.111111
+valor do p-value:
+0.5335322
+hipótese H0 não rejeitada 
+|=|best 
+6
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6 V7
+1 4787742 4834197 6037191 5688003 3037778 3811163  1
+2 3635790 4820691 5532863 6994255 3717628 5585736  2
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+7.142857
+valor do p-value:
+0.2102308
+hipótese H0 não rejeitada 
+|=|bestagg 
+5          9|          6|          6|    3.8e+06|         54|
+ 
+[1] "Estrutura não agregada \n"
+         [,1]    [,2]    [,3]    [,4]    [,5]      [,6] [,7]
+ [1,] 6219495 3278006 8018358 5926668 3162022 1984503.7    1
+ [2,] 3359309 5861457 1432131 4127263 6029174 8978256.6    2
+ [3,] 5406395 9700809 1977293 3661618 2117851  796628.9    1
+ [4,] 3775444 9743253 7114466 4410439 1624399  458389.7    2
+ [5,] 8642018 8855113 7862239 7513278 4625735 2920674.2    1
+ [6,] 5838221 2228734 6321652 6715116 8118953 1632282.5    2
+ [7,] 4624049 3296288 3807757 9984996 5499209 5518024.4    1
+ [8,] 2568781 4625837 5768251 8496526 1462386 7996168.6    2
+ [9,] 3885474 4381261 7194188 3533246 1675016 3913012.3    1
+[10,] 7803312 9074193 3958241 9755947 9063779 2530690.9    2
+[1] "Teste Friedman com estrutura não agregada \n"
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+10
+Valor da estatistica: 
+5.942857
+valor do p-value:
+0.3118189
+hipótese H0 não rejeitada 
+|=|best 
+6
+[1] "estrutura agregada \n"
+[1] "Teste de Friedman com estrutura agregada \n"
+       V1      V2      V3      V4      V5      V6 V7
+1 4787742 4834197 6037191 5688003 3037778 3811163  1
+2 5719551 6947442 4745552 8375101 6390704 4058213  2
+Nro. de Candidatos: 
+6
+Nro. de Instancias: 
+2
+Valor da estatistica: 
+6
+valor do p-value:
+0.3062189
+hipótese H0 não rejeitada 
+|=|bestagg 
+6         10|          6|          6|  3.673e+06|         60|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           6	mean value:  3.673e+06
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0  dlb rasrank elitistants
+18       ras           0  1.03 6.81 0.81   53   NA NA <NA>      60          NA
+
+
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate aggregated test:           6	mean value:         NA
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0  dlb rasrank elitistants
+18       ras           0  1.03 6.81 0.81   53   NA NA <NA>      60          NA
+
+
+[1] "candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT.
+15   15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA       11
+16   16       acs           0  0.68 8.83 0.74   22   NA 0.13 <NA>      NA          NA       14
+14   14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA       10
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA
+18   18       acs           0  1.73 9.10 0.60   15   NA 0.87 <NA>      NA          NA       16
+[1] "result$aliveagg \n"
+[1] TRUE TRUE TRUE TRUE TRUE TRUE
+[1] "candidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE     34
+16   16       acs           2  2.20 6.07 0.61   55    9 0.38    0      NA          NA       14    TRUE     41
+15   15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA       11    TRUE     36
+14   14       acs           2  2.79 7.89 0.93   45   11 0.80    0      NA          NA       12    TRUE     43
+11   11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697        3    TRUE     30
+18   18       ras           0  1.03 6.81 0.81   53   NA   NA <NA>      60          NA       15    TRUE     26
+[1] "candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+15   15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA       11    TRUE      6
+16   16       acs           0  0.68 8.83 0.74   22   NA 0.13 <NA>      NA          NA       14    TRUE      9
+14   14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA       10    TRUE      8
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6    TRUE     11
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE      5
+18   18       acs           0  1.73 9.10 0.60   15   NA 0.87 <NA>      NA          NA       16    TRUE      3
+[1] "result$aliveagg \n"
+[1] TRUE TRUE TRUE TRUE TRUE TRUE
+[1] "raceResults$candidates \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+18   18       ras           0  1.03 6.81 0.81   53   NA   NA <NA>      60          NA       15    TRUE     26
+11   11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697        3    TRUE     30
+5     5       acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA       NA    TRUE     34
+15   15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA       11    TRUE     36
+16   16       acs           2  2.20 6.07 0.61   55    9 0.38    0      NA          NA       14    TRUE     41
+14   14       acs           2  2.79 7.89 0.93   45   11 0.80    0      NA          NA       12    TRUE     43
+[1] "raceResults$candidatesagg \n"
+   .ID. algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants .PARENT. .ALIVE. .RANK.
+18   18       acs           0  1.73 9.10 0.60   15   NA 0.87 <NA>      NA          NA       16    TRUE      3
+10   10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA       NA    TRUE      5
+15   15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA       11    TRUE      6
+14   14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA       10    TRUE      8
+16   16       acs           0  0.68 8.83 0.74   22   NA 0.13 <NA>      NA          NA       14    TRUE      9
+12   12       ras           1  3.88 7.95 0.82   57   32   NA    0      80          NA        6    TRUE     11
+[1] "raceResults$nbAlive \n"
+[1] 6
+[1] "raceResults$nbAliveagg \n"
+[1] 6
+[1] "cheguei antes de extracElites para eliteCandidatesagg \n"
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+18       ras           0  1.03 6.81 0.81   53   NA   NA <NA>      60          NA
+11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697
+5        acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA
+15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA
+16       acs           2  2.20 6.07 0.61   55    9 0.38    0      NA          NA
+# Elite candidates Aggregated Test:
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+18       acs           0  1.73 9.10 0.60   15   NA 0.87 <NA>      NA          NA
+10        as           3  1.61 9.66 0.57   65   16   NA    0      NA          NA
+15        as           0  1.60 7.45 0.85   75   NA   NA <NA>      NA          NA
+14       acs           0  0.52 7.72 0.75   47   NA 0.18 <NA>      NA          NA
+16       acs           0  0.68 8.83 0.74   22   NA 0.13 <NA>      NA          NA
+[1] "nbCandidates \n"
+[1] 6
+[1] "nbCandidatesagg \n"
+[1] 6
+# 2015-10-27 05:13:50 BRST: Stopped because there is no enough budget left to race newly sampled configurations
+# Iteration: 6
+# nbIterations: 6
+# experimentsUsedSoFar: 295
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 5
+# currentBudget: 5
+# number of elites: 5
+# nbCandidates: 0
+# nbCandidatesagg: 0
+# mu: 5
+# Best candidates
+   algorithm localsearch alpha beta  rho ants nnls   q0  dlb rasrank elitistants
+18       ras           0  1.03 6.81 0.81   53   NA   NA <NA>      60          NA
+11       eas           3  2.16 4.30 0.88   70   40   NA    1      NA         697
+5        acs           1  3.42 5.66 0.47   45   48 0.15    1      NA          NA
+15       ras           0  1.16 7.06 0.61   62   NA   NA <NA>      80          NA
+16       acs           2  2.20 6.07 0.61   55    9 0.38    0      NA          NA
+# Best candidates (as commandlines)
+1  --ras --localsearch 0 --alpha 1.03 --beta 6.81 --rho  0.81 --ants 53 --rasranks 60
+2  --eas --localsearch 3 --alpha 2.16 --beta 4.3 --rho  0.88 --ants 70 --nnls 40 --dlb 1 --elitistants 697
+3  --acs --localsearch 1 --alpha 3.42 --beta 5.66 --rho  0.47 --ants 45 --nnls 48 --q0 0.15 --dlb 1
+4  --ras --localsearch 0 --alpha 1.16 --beta 7.06 --rho  0.61 --ants 62 --rasranks 80
+5  --acs --localsearch 2 --alpha 2.2 --beta 6.07 --rho  0.61 --ants 55 --nnls 9 --q0 0.38 --dlb 0
+[1] "10" "6"  "3" 

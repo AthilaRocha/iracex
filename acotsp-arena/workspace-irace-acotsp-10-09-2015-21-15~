@@ -1,0 +1,276 @@
+irace	version: 1.06.997
+********************************************************************************
+* irace: An implementation in R of Iterated Race                               *
+* Copyright (C) 2010-2014                                                      *
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@ulb.ac.be>                      *
+* Jeremie Dubois-Lacoste  <jeremie.dubois-lacoste@ulb.ac.be>                   *
+*                                                                              *
+* This is free software, and you are welcome to redistribute it under certain  *
+* conditions.  See the GNU General Public License for details. There is NO     *
+* warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  *
+*                                                                              *
+* irace builds upon previous code from the race package                        *
+* Copyright (C) 2003 Mauro Birattari                                           *
+********************************************************************************
+Warning: A default configuration file './tune-conf' has been found and will be read
+# 2015-09-10 19:32:20 BRT: Initialization
+# nbIterations: 5
+# minNbSurvival: 5
+# nbParameters: 11
+# seed: 1921893170.7101
+# confidence level: 0.95
+# remainingBudget: 300
+# mu: 5
+
+# 2015-09-10 19:32:20 BRT: Iteration 1 of 5
+# experimentsUsedSoFar: 0
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 300
+# currentBudget: 60
+# nbCandidates: 10
+[1] "passou pela funcao race"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|         10|          6|  2.312e+07|         10|
+|x|          2|         10|          6|  2.328e+07|         20|
+|x|          3|         10|          6|  2.324e+07|         30|
+|x|          4|         10|          6|  2.328e+07|         40|
+
+[1] "Teste de Friedman..."
+
+Nro. de Candidatos: 10
+
+Nro. de Instancias: 5
+
+Valor da estatistica: 43.21091
+
+valor do p-value:1.971705e-06
+
+vetor r: 9 8 8 8 8 6 5 7 6 6 2 2 3 2 2 4 3 5 3 4 3 4 2 4 3 1 1 1 1 1 5 6 4 5 5 8 10 10 9 10 7 7 6 7 7 10 9 9 10 9
+
+valor de A: 1925
+
+vetor R: 41 30 11 19 16 5 25 47 34 47
+
+hipótese Ho rejeitada...
+
+|-|          5|          1|          6|  2.325e+07|         50|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           6	mean value:  2.325e+07
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta rho ants nnls q0 dlb rasrank elitistants
+6      mmas           3   2.2 7.24 0.2   33   12 NA   0      NA          NA
+
+
+# Elite candidates:
+  algorithm localsearch alpha beta rho ants nnls q0 dlb rasrank elitistants
+6      mmas           3   2.2 7.24 0.2   33   12 NA   0      NA          NA
+# 2015-09-10 19:49:14 BRT: Iteration 2 of 5
+# experimentsUsedSoFar: 50
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 250
+# currentBudget: 62
+# nbCandidates: 8
+[1] "passou pela funcao race"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          8|          4|  2.316e+07|          8|
+|x|          2|          8|          1|   2.33e+07|         16|
+|x|          3|          8|          1|  2.324e+07|         24|
+|x|          4|          8|          1|  2.328e+07|         32|
+
+[1] "Teste de Friedman..."
+Nro. de Candidatos: 8Nro. de Instancias: 5Valor da estatistica: 31.46667valor do p-value:5.098405e-05vetor r: 3 1 1 2 1 5 5 5 4 5 2 2 2 3 2 1 4 4 5 4 7 7 6 7 6 4 3 3 1 3 8 8 8 8 8 6 6 7 6 7valor de A: 1020vetor R: 8 24 11 18 33 14 40 32|-|hipótese Ho rejeitada...          5|          2|          1|  2.325e+07|         40|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           1	mean value:  2.325e+07
+
+Description of the selected candidate:
+  algorithm localsearch alpha beta rho ants nnls q0 dlb rasrank elitistants
+6      mmas           3   2.2 7.24 0.2   33   12 NA   0      NA          NA
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+6       mmas           3  2.20 7.24 0.20   33   12 NA   0      NA          NA
+12      mmas           3  1.94 6.68 0.35   32   29 NA   1      NA          NA
+# 2015-09-10 20:02:45 BRT: Iteration 3 of 5
+# experimentsUsedSoFar: 90
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 210
+# currentBudget: 70
+# nbCandidates: 8
+[1] "passou pela funcao race"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          8|          3|   2.34e+07|          8|
+|x|          2|          8|          1|  2.328e+07|         16|
+|x|          3|          8|          2|  2.332e+07|         24|
+|x|          4|          8|          2|  2.329e+07|         32|
+[1] "Teste de Friedman..."
+Nro. de Candidatos: 8Nro. de Instancias: 5Valor da estatistica: 29.53333valor do p-value:0.000115617vetor r: 2 2 4 1 4 3 1 1 2 2 1 3 2 4 1 8 8 8 8 8 6 5 6 3 5 5 4 3 5 3 7 7 7 7 6 4 6 5 6 7valor de A: 1020vetor R: 13 9 11 40 25 20 34 28|-|hipótese Ho rejeitada...          5|          3|          2|  2.331e+07|         40|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           2	mean value:  2.331e+07
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls q0 dlb rasrank elitistants
+12      mmas           3  1.94 6.68 0.35   32   29 NA   1      NA          NA
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+12      mmas           3  1.94 6.68 0.35   32   29   NA   1      NA          NA
+18       acs           3  2.27 6.56 0.30   26   38 0.65   0      NA          NA
+6       mmas           3  2.20 7.24 0.20   33   12   NA   0      NA          NA
+# 2015-09-10 20:16:16 BRT: Iteration 4 of 5
+# experimentsUsedSoFar: 130
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 170
+# currentBudget: 85
+# nbCandidates: 9
+[1] "passou pela funcao race"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|          9|          3|  2.315e+07|          9|
+|x|          2|          9|          2|  2.329e+07|         18|
+|x|          3|          9|          2|  2.324e+07|         27|
+|x|          4|          9|          2|  2.329e+07|         36|
+[1] "Teste de Friedman..."
+Nro. de Candidatos: 9Nro. de Instancias: 5Valor da estatistica: 21.81333valor do p-value:0.00527366vetor r: 7 2 2 2 2 4 1 1 3 3 1 5 7 6 1 6 4 5 7 7 8 8 3 9 8 9 7 9 8 9 5 9 6 5 4 2 6 8 4 6 3 3 4 1 5valor de A: 1425vetor R: 15 12 20 29 36 42 29 26 16|-|hipótese Ho rejeitada...          5|          4|          2|  2.326e+07|         45|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           2	mean value:  2.326e+07
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta rho ants nnls   q0 dlb rasrank elitistants
+18       acs           3  2.27 6.56 0.3   26   38 0.65   0      NA          NA
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+18       acs           3  2.27 6.56 0.30   26   38 0.65   0      NA          NA
+12      mmas           3  1.94 6.68 0.35   32   29   NA   1      NA          NA
+29       acs           3  2.79 8.09 0.62   68   45 0.54   1      NA          NA
+6       mmas           3  2.20 7.24 0.20   33   12   NA   0      NA          NA
+# 2015-09-10 20:31:28 BRT: Iteration 5 of 5
+# experimentsUsedSoFar: 175
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 125
+# currentBudget: 125
+# nbCandidates: 12
+[1] "passou pela funcao race"
+                            Markers:                           
+                               x No test is performed.         
+                               - The test is performed and     
+                                 some candidates are discarded.
+                               = The test is performed but     
+                                 no candidate is discarded.    
+                                                               
+                                                               
++-+-----------+-----------+-----------+-----------+-----------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|
++-+-----------+-----------+-----------+-----------+-----------+
+|x|          1|         12|          6|  2.313e+07|         12|
+|x|          2|         12|          7|  2.326e+07|         24|
+|x|          3|         12|          7|  2.323e+07|         36|
+|x|          4|         12|          4|  2.328e+07|         48|
+[1] "Teste de Friedman..."
+Nro. de Candidatos: 12Nro. de Instancias: 5Valor da estatistica: 33.92308valor do p-value:0.0003723161vetor r: 8 8 1 2 3 6 1 7 8 9 9 9 5 7 2 3 5 3 3 5 7 2 4 1 6 1 10 8 5 8 2 4 2 9 1 11 12 12 12 12 4 6 6 4 4 12 11 11 11 11 5 3 9 6 7 10 7 10 10 10valor de A: 3250vetor R: 22 31 32 19 20 32 18 59 24 56 30 47|-|hipótese Ho rejeitada...          5|          9|          7|  2.325e+07|         60|
+[1] "Teste de Friedman..."
+Nro. de Candidatos: 9Nro. de Instancias: 6Valor da estatistica: 9.511111valor do p-value:0.3010279vetor r: 8 7 1 2 3 6 6 1 7 8 9 7 9 8 5 7 2 5 3 5 3 3 5 8 7 2 4 1 6 2 1 9 8 5 8 9 2 4 2 9 1 1 4 6 6 4 4 3 5 3 9 6 7 4valor de A: 1710vetor R: 27 38 36 27 22 40 19 27 34|=|          6|          9|          7|  2.327e+07|         69|
+[1] "Teste de Friedman..."
+Nro. de Candidatos: 9Nro. de Instancias: 7Valor da estatistica: 9.257143valor do p-value:0.3210704vetor r: 8 7 1 2 3 6 2 6 1 7 8 9 7 1 9 8 5 7 2 5 3 3 5 3 3 5 8 4 7 2 4 1 6 2 6 1 9 8 5 8 9 9 2 4 2 9 1 1 5 4 6 6 4 4 3 8 5 3 9 6 7 4 7valor de A: 1995vetor R: 29 39 39 31 28 49 24 35 41|=|          7|          9|          7|  2.326e+07|         78|
+[1] "Teste de Friedman..."
+Nro. de Candidatos: 9Nro. de Instancias: 8Valor da estatistica: 9.033333valor do p-value:0.3394918vetor r: 8 7 1 2 3 6 2 7 6 1 7 8 9 7 1 9 9 8 5 7 2 5 3 1 3 5 3 3 5 8 4 3 7 2 4 1 6 2 6 2 1 9 8 5 8 9 9 6 2 4 2 9 1 1 5 8 4 6 6 4 4 3 8 4 5 3 9 6 7 4 7 5valor de A: 2280vetor R: 36 48 40 34 30 55 32 39 46|=|          8|          9|          5|  2.328e+07|         87|
+[1] "Teste de Friedman..."
+Nro. de Candidatos: 9Nro. de Instancias: 9Valor da estatistica: 10.72593valor do p-value:0.2177174vetor r: 8 7 1 2 3 6 2 7 7 6 1 7 8 9 7 1 9 5 9 8 5 7 2 5 3 1 4 3 5 3 3 5 8 4 3 3 7 2 4 1 6 2 6 2 1 1 9 8 5 8 9 9 6 9 2 4 2 9 1 1 5 8 8 4 6 6 4 4 3 8 4 6 5 3 9 6 7 4 7 5 2valor de A: 2565vetor R: 43 53 44 37 31 64 40 45 48|=|          9|          9|          5|  2.327e+07|         96|
+[1] "Teste de Friedman..."
+Nro. de Candidatos: 9Nro. de Instancias: 10Valor da estatistica: 11.97333valor do p-value:0.1523977vetor r: 8 7 1 2 3 6 2 7 7 8 6 1 7 8 9 7 1 9 5 2 9 8 5 7 2 5 3 1 4 1 3 5 3 3 5 8 4 3 3 5 7 2 4 1 6 2 6 2 1 4 1 9 8 5 8 9 9 6 9 9 2 4 2 9 1 1 5 8 8 7 4 6 6 4 4 3 8 4 6 3 5 3 9 6 7 4 7 5 2 6valor de A: 2850vetor R: 51 55 45 42 35 73 47 48 54|=|         10|          9|          5|  2.328e+07|        105|
+[1] "Teste de Friedman..."
+Nro. de Candidatos: 9Nro. de Instancias: 11Valor da estatistica: 12.24242valor do p-value:0.1407108vetor r: 8 7 1 2 3 6 2 7 7 8 1 6 1 7 8 9 7 1 9 5 2 9 9 8 5 7 2 5 3 1 4 1 7 3 5 3 3 5 8 4 3 3 5 6 7 2 4 1 6 2 6 2 1 4 3 1 9 8 5 8 9 9 6 9 9 4 2 4 2 9 1 1 5 8 8 7 2 4 6 6 4 4 3 8 4 6 3 5 5 3 9 6 7 4 7 5 2 6 8valor de A: 3135vetor R: 52 64 52 48 38 77 49 53 62|=|         11|          9|          5|  2.327e+07|        114|
+[1] "Teste de Friedman..."
+Nro. de Candidatos: 9Nro. de Instancias: 12Valor da estatistica: 13.66667valor do p-value:0.09087813vetor r: 8 7 1 2 3 6 2 7 7 8 1 2 6 1 7 8 9 7 1 9 5 2 9 5 9 8 5 7 2 5 3 1 4 1 7 1 3 5 3 3 5 8 4 3 3 5 6 4 7 2 4 1 6 2 6 2 1 4 3 8 1 9 8 5 8 9 9 6 9 9 4 9 2 4 2 9 1 1 5 8 8 7 2 3 4 6 6 4 4 3 8 4 6 3 5 7 5 3 9 6 7 4 7 5 2 6 8 6valor de A: 3420vetor R: 54 69 53 52 46 86 52 60 68|=|         12|          9|          5|  2.329e+07|        123|
++-+-----------+-----------+-----------+-----------+-----------+
+
+Selected candidate:           5	mean value:  2.329e+07
+
+Description of the selected candidate:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+30       acs           3   2.8 8.29 0.08   26   29 0.64   0      NA          NA
+
+
+# Elite candidates:
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+30       acs           3  2.80 8.29 0.08   26   29 0.64   0      NA          NA
+6       mmas           3  2.20 7.24 0.20   33   12   NA   0      NA          NA
+32       acs           3  2.20 4.30 0.43   47   22 0.81   0      NA          NA
+29       acs           3  2.79 8.09 0.62   68   45 0.54   1      NA          NA
+18       acs           3  2.27 6.56 0.30   26   38 0.65   0      NA          NA
+# 2015-09-10 21:12:59 BRT: Stopped because there is no enough budget left to race newly sampled configurations
+# Iteration: 6
+# nbIterations: 6
+# experimentsUsedSoFar: 298
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 2
+# currentBudget: 2
+# number of elites: 5
+# nbCandidates: 0
+# mu: 5
+# Best candidates
+   algorithm localsearch alpha beta  rho ants nnls   q0 dlb rasrank elitistants
+30       acs           3  2.80 8.29 0.08   26   29 0.64   0      NA          NA
+6       mmas           3  2.20 7.24 0.20   33   12   NA   0      NA          NA
+32       acs           3  2.20 4.30 0.43   47   22 0.81   0      NA          NA
+29       acs           3  2.79 8.09 0.62   68   45 0.54   1      NA          NA
+18       acs           3  2.27 6.56 0.30   26   38 0.65   0      NA          NA
+# Best candidates (as commandlines)
+1  --acs --localsearch 3 --alpha 2.8 --beta 8.29 --rho  0.08 --ants 26 --nnls 29 --q0 0.64 --dlb 0
+2  --mmas --localsearch 3 --alpha 2.2 --beta 7.24 --rho  0.2 --ants 33 --nnls 12 --dlb 0
+3  --acs --localsearch 3 --alpha 2.2 --beta 4.3 --rho  0.43 --ants 47 --nnls 22 --q0 0.81 --dlb 0
+4  --acs --localsearch 3 --alpha 2.79 --beta 8.09 --rho  0.62 --ants 68 --nnls 45 --q0 0.54 --dlb 1
+5  --acs --localsearch 3 --alpha 2.27 --beta 6.56 --rho  0.3 --ants 26 --nnls 38 --q0 0.65 --dlb 0
